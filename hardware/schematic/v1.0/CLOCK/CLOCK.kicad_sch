@@ -2901,7 +2901,7 @@
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "Counter:DOPFITKR2-10M"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5660,6 +5660,16 @@
 	)
 	(wire
 		(pts
+			(xy 304.8 213.36) (xy 323.85 213.36)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "3ae587a1-dfe7-4a18-a625-bdbc176e0dcb")
+	)
+	(wire
+		(pts
 			(xy 66.04 201.93) (xy 66.04 213.36)
 		)
 		(stroke
@@ -5840,6 +5850,16 @@
 	)
 	(wire
 		(pts
+			(xy 312.42 215.9) (xy 312.42 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bce7214-9212-46a5-aaa0-0bc6e6830883")
+	)
+	(wire
+		(pts
 			(xy 143.51 121.92) (xy 143.51 123.19)
 		)
 		(stroke
@@ -6007,6 +6027,16 @@
 			(type default)
 		)
 		(uuid "568fbd8f-ba7d-46dd-bdf4-e0191b63eaed")
+	)
+	(wire
+		(pts
+			(xy 304.8 215.9) (xy 312.42 215.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "573df82a-2c38-4b33-8795-61137500c620")
 	)
 	(polyline
 		(pts
@@ -8194,6 +8224,30 @@
 			)
 		)
 	)
+	(global_label "XO_P"
+		(shape output)
+		(at 304.8 213.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "16b52cce-d3b2-4c33-be88-686eb161cf1e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 297.0372 213.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "VDDO_3"
 		(shape input)
 		(at 142.24 66.04 90)
@@ -8743,6 +8797,30 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(global_label "XO_N"
+		(shape output)
+		(at 304.8 215.9 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6d17282d-7121-4aad-af88-ab006d596f7c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 296.9767 215.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
@@ -13488,6 +13566,95 @@
 		)
 	)
 	(symbol
+		(lib_id "Counter:OCXO-10M")
+		(at 332.74 217.17 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "368bd65b-6bdd-4a4f-ada3-1e96406d3d77")
+		(property "Reference" "U6"
+			(at 332.74 205.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OCXO-10M"
+			(at 332.74 208.28 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Counter:DOPFITKR2-10M"
+			(at 332.74 217.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 332.74 217.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 332.74 217.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "fb392f60-a27e-4e69-ab4c-1dfddc04a9b2")
+		)
+		(pin "2"
+			(uuid "eb103b9f-b9a6-4539-a6a5-9a296e644b21")
+		)
+		(pin "1"
+			(uuid "467e5e6f-c7a1-473d-a75d-d1afe6f9792c")
+		)
+		(pin "5"
+			(uuid "5ab8ee3b-7fa4-463b-928a-b0c0e33c0015")
+		)
+		(pin "4"
+			(uuid "dece5336-3b93-4b6f-b27c-ab087e86ef0a")
+		)
+		(instances
+			(project "CLOCK"
+				(path "/a8714d66-6565-4fb4-a698-a884e68083d2"
+					(reference "U6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 311.15 96.52 0)
 		(unit 1)
@@ -14616,6 +14783,85 @@
 			(project "CLOCK"
 				(path "/a8714d66-6565-4fb4-a698-a884e68083d2"
 					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 312.42 222.25 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4cc536b1-40cd-4d89-af5f-d88014391b18")
+		(property "Reference" "#PWR0113"
+			(at 312.42 228.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 312.42 227.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 312.42 222.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 312.42 222.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 312.42 222.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2c8ed38c-e519-4de3-96dd-e6618867397a")
+		)
+		(instances
+			(project "CLOCK"
+				(path "/a8714d66-6565-4fb4-a698-a884e68083d2"
+					(reference "#PWR0113")
 					(unit 1)
 				)
 			)
@@ -21153,95 +21399,6 @@
 			(project "CLOCK"
 				(path "/a8714d66-6565-4fb4-a698-a884e68083d2"
 					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Counter:OCXO-10M")
-		(at 332.74 217.17 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b8bee3d6-fe67-4311-8f92-9664a1ffcd3e")
-		(property "Reference" "U6"
-			(at 332.74 205.74 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "OCXO-10M"
-			(at 332.74 208.28 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector:Joint-Tech_C5080WR-04P_1x04_P5.08mm_Vertical"
-			(at 332.74 217.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 332.74 217.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 332.74 217.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "109a87ea-6c4e-49e8-8923-67caf977ad63")
-		)
-		(pin "4"
-			(uuid "e7c95cb2-e2ea-43c2-be64-4c216e7736cc")
-		)
-		(pin "3"
-			(uuid "1bf1400a-1512-42ed-8f0b-41c50f2c73b6")
-		)
-		(pin "5"
-			(uuid "56a497f1-f4ed-4196-8cf4-c691b3e7fbdd")
-		)
-		(pin "2"
-			(uuid "7b4229d4-2b95-454f-872a-35ed0125c830")
-		)
-		(instances
-			(project "CLOCK"
-				(path "/a8714d66-6565-4fb4-a698-a884e68083d2"
-					(reference "U6")
 					(unit 1)
 				)
 			)

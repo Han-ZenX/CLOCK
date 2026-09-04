@@ -1026,115 +1026,98 @@ def ocxo_buckboost():
         d.add(Circle(x, y, 1.8, fillColor=wire_c, strokeColor=wire_c))
 
     # ---- 输入侧 ----
-    d.add(Polygon([38, 215, 34, 209, 42, 209],
+    d.add(Polygon([40, 207, 36, 201, 44, 201],
                   fillColor=colors.white, strokeColor=wire_c, strokeWidth=0.8))
-    wire([(38, 208), (38, 209)])
-    _txt(d, 38, 222, 'VBUS', 7.5, BOLD, DARK, 'middle')
-    _txt(d, 38, 231, '4.25 ~ 5.25 V', 6, FONT, GREY, 'middle')
-    wire([(38, 208), (175, 208)])
+    wire([(40, 200), (40, 201)])
+    _txt(d, 40, 214, 'VBUS', 7.5, BOLD, DARK, 'middle')
+    _txt(d, 40, 223, '4.25 ~ 5.25 V', 6, FONT, GREY, 'middle')
+    wire([(40, 200), (145, 200)])
 
-    node(65, 208)
-    wire([(65, 208), (65, 188)])
-    cap(65, 188)
-    wire([(65, 182), (65, 166)])
-    gnd(65, 166)
-    _txt(d, 50, 185, 'C53  10µF', 6.5, FONT, DARK, 'end')
-    _txt(d, 50, 175, 'C54  100nF', 6.5, FONT, DARK, 'end')
+    node(65, 200)
+    wire([(65, 200), (65, 180)])
+    cap(65, 180)
+    wire([(65, 174), (65, 158)])
+    gnd(65, 158)
+    _txt(d, 50, 174, 'C53  10µF', 6.5, FONT, DARK, 'end')
+    _txt(d, 50, 164, 'C54  100nF', 6.5, FONT, DARK, 'end')
 
-    # ---- VINA 的 RC 滤波（控制级独立供电）----
-    node(105, 208)
-    wire([(105, 208), (105, 193)])
-    _box(d, 105, 186, 25, 14, colors.white, DARK, 0.7, r=2)
-    wire([(130, 193), (175, 193)])
-    _txt(d, 117, 180, 'R38  10 Ω', 6.5, FONT, DARK, 'middle')
-    node(150, 193)
-    wire([(150, 193), (150, 181)])
-    cap(150, 181)
-    wire([(150, 175), (150, 167)])
-    gnd(150, 167)
-    _txt(d, 138, 170, 'C58  1µF', 6.5, FONT, DARK, 'end')
+    # EN / PS 接 VIN
+    wire([(145, 175), (122, 175)])
+    _txt(d, 119, 172, 'VIN', 6.5, BOLD, ACCENT, 'end')
+    wire([(145, 155), (122, 155)])
+    _txt(d, 119, 152, 'VIN', 6.5, BOLD, ACCENT, 'end')
 
     # ---- 主芯片 ----
-    _box(d, 175, 128, 115, 90, colors.HexColor('#f0f2f4'), GREY, 0.7, r=3)
-    _txt(d, 232, 192, 'U7', 8, BOLD, DARK, 'middle')
-    _txt(d, 232, 178, 'TPS63020', 7, FONT, DARK, 'middle')
-    _txt(d, 180, 205, 'VIN', 6.5, FONT, DARK)
-    _txt(d, 180, 190, 'VINA', 6.5, BOLD, ACCENT)
-    _txt(d, 180, 162, 'EN　　接 VIN', 6.5, FONT, DARK)
-    _txt(d, 180, 144, 'PS/SYNC　接 VIN', 6.5, FONT, DARK)
-    _txt(d, 285, 205, 'VOUT', 6.5, FONT, DARK, 'end')
-    _txt(d, 285, 172, 'FB', 6.5, FONT, DARK, 'end')
-    _txt(d, 285, 144, 'PG', 6.5, BOLD, ACCENT, 'end')
-    _txt(d, 196, 211, 'L1', 6.5, FONT, DARK)
-    _txt(d, 261, 211, 'L2', 6.5, FONT, DARK)
-    _txt(d, 199, 133, 'GND', 6.5, FONT, DARK)
-    _txt(d, 253, 133, 'PGND', 6.5, FONT, DARK)
-    wire([(175, 165), (165, 165)])
-    wire([(175, 147), (165, 147)])
-    wire([(205, 128), (205, 116)])
-    gnd(205, 116)
-    wire([(260, 128), (260, 116)])
-    gnd(260, 116)
+    _box(d, 145, 130, 115, 85, colors.HexColor('#f0f2f4'), GREY, 0.7, r=3)
+    _txt(d, 202, 186, 'U7', 8, BOLD, DARK, 'middle')
+    _txt(d, 202, 173, 'TPS63020', 7, FONT, DARK, 'middle')
+    _txt(d, 202, 162, 'buck-boost', 6.5, FONT, GREY, 'middle')
+    _txt(d, 150, 197, 'VIN', 6.5, FONT, DARK)
+    _txt(d, 150, 172, 'EN', 6.5, FONT, DARK)
+    _txt(d, 150, 152, 'PS/SYNC', 6.5, FONT, DARK)
+    _txt(d, 255, 197, 'VOUT', 6.5, FONT, DARK, 'end')
+    _txt(d, 255, 157, 'FB', 6.5, FONT, DARK, 'end')
+    _txt(d, 166, 207, 'L1', 6.5, FONT, DARK)
+    _txt(d, 231, 207, 'L2', 6.5, FONT, DARK)
+    _txt(d, 168, 135, 'GND', 6.5, FONT, DARK)
+    _txt(d, 240, 135, 'PGND', 6.5, FONT, DARK, 'end')
+    wire([(175, 130), (175, 118)])
+    gnd(175, 118)
+    wire([(230, 130), (230, 118)])
+    gnd(230, 118)
 
     # ---- 电感 ----
-    wire([(200, 218), (200, 245), (212, 245)])
-    wire([(254, 245), (265, 245), (265, 218)])
-    _box(d, 212, 238, 42, 14, colors.white, DARK, 0.7, r=2)
-    _txt(d, 233, 258, 'L1   2.2 µH', 7, BOLD, DARK, 'middle')
-
-    # ---- PG（开漏，可选上拉）----
-    wire([(290, 147), (302, 147)])
-    d.add(Circle(304, 147, 2.2, fillColor=colors.white,
-                 strokeColor=ACCENT, strokeWidth=0.8))
+    wire([(170, 215), (170, 242), (180, 242)])
+    wire([(225, 242), (235, 242), (235, 215)])
+    _box(d, 180, 235, 45, 14, colors.white, DARK, 0.7, r=2)
+    _txt(d, 202, 256, 'L1   2.2 µH', 7, BOLD, DARK, 'middle')
 
     # ---- 输出与反馈 ----
-    wire([(290, 208), (466, 208)])
+    wire([(260, 200), (450, 200)])
 
-    node(330, 208)
-    wire([(330, 208), (330, 196)])
-    _box(d, 323, 170, 14, 26, colors.white, DARK, 0.7, r=2)
-    node(330, 168)
-    wire([(330, 168), (312, 168), (312, 175), (290, 175)])
-    wire([(330, 168), (330, 162)])
-    _box(d, 323, 136, 14, 26, colors.white, DARK, 0.7, r=2)
-    wire([(330, 136), (330, 124)])
-    gnd(330, 124)
-    _txt(d, 342, 182, 'R36  909k', 6.5, FONT, DARK)
-    _txt(d, 342, 148, 'R37  100k', 6.5, FONT, DARK)
+    node(278, 200)
+    wire([(278, 200), (278, 192)])
+    _box(d, 271, 166, 14, 26, colors.white, DARK, 0.7, r=2)
+    node(278, 164)
+    wire([(278, 166), (278, 158)])
+    wire([(278, 164), (268, 164), (268, 157), (260, 157)])
+    _box(d, 271, 132, 14, 26, colors.white, DARK, 0.7, r=2)
+    wire([(278, 132), (278, 120)])
+    gnd(278, 120)
+    _txt(d, 290, 180, 'R36  909k', 6.5, FONT, DARK)
+    _txt(d, 290, 146, 'R37  100k', 6.5, FONT, DARK)
 
-    node(368, 208)
-    wire([(368, 208), (368, 188)])
-    cap(368, 188)
-    wire([(368, 182), (368, 166)])
-    gnd(368, 166)
-    _txt(d, 382, 185, 'C55  22µF', 6.5, FONT, DARK)
+    node(340, 200)
+    wire([(340, 200), (340, 180)])
+    cap(340, 180)
+    wire([(340, 174), (340, 158)])
+    gnd(340, 158)
+    _txt(d, 355, 177, 'C55  22µF', 6.5, FONT, DARK)
 
-    _box(d, 395, 201, 36, 14, colors.HexColor('#fdf6e6'), AMBER, 0.7, r=2)
-    _txt(d, 413, 222, 'FB8', 6.5, BOLD, DARK, 'middle')
-    _txt(d, 413, 231, '600 Ω @100 MHz', 6, FONT, GREY, 'middle')
+    _box(d, 368, 193, 38, 14, colors.HexColor('#fdf6e6'), AMBER, 0.7, r=2)
+    _txt(d, 387, 214, 'FB8', 6.5, BOLD, DARK, 'middle')
+    _txt(d, 387, 223, '600 Ω @100 MHz', 6, FONT, GREY, 'middle')
 
-    node(442, 208)
-    wire([(442, 208), (442, 188)])
-    cap(442, 188)
-    wire([(442, 182), (442, 166)])
-    gnd(442, 166)
-    _txt(d, 452, 194, 'C57', 6.5, FONT, DARK)
-    _txt(d, 452, 185, '10µF', 6.5, FONT, DARK)
+    node(425, 200)
+    wire([(425, 200), (425, 180)])
+    cap(425, 180)
+    wire([(425, 174), (425, 158)])
+    gnd(425, 158)
+    _txt(d, 440, 177, 'C57  10µF', 6.5, FONT, DARK)
 
-    d.add(Polygon([472, 208, 465, 204.5, 465, 211.5],
+    d.add(Polygon([456, 200, 449, 196.5, 449, 203.5],
                   fillColor=GREEN, strokeColor=GREEN))
-    _txt(d, 450, 220, '至 OCXO', 7, BOLD, GREEN, 'middle')
+    _txt(d, 445, 212, '至 OCXO', 7, BOLD, GREEN, 'middle')
 
-    _box(d, 28, 20, 440, 62, colors.HexColor('#f8fafb'),
+    _box(d, 28, 20, 430, 62, colors.HexColor('#f8fafb'),
          colors.HexColor('#d5dee7'), 0.6, r=3)
-    _txt(d, 38, 68, 'VINA 是控制级独立供电，必须经 R38 + C58 与功率级 VIN 隔离，'
-                    '否则开关噪声会窜进控制环路', 6.5, BOLD, DARK)
-    _txt(d, 38, 52, 'PS/SYNC 接高强制 PWM：省电模式下开关频率随负载漂移，'
+    _txt(d, 38, 68, 'PS/SYNC 必须接高电平强制 PWM：省电模式下开关频率随负载漂移，'
                     '低频噪声会调制进相位噪声', 6.5, FONT, DARK)
-    _txt(d, 38, 36, 'VOUT = 0.5 V × (1 + R36/R37)，手册要求 R37 在 100 kΩ~1 MΩ；'
-                    'PG 为开漏，可上拉作电源就绪指示', 6.5, FONT, DARK)
+    _txt(d, 38, 52, 'VOUT = 0.5 V × (1 + R36/R37)。手册要求 R37 落在 100 kΩ ~ 1 MΩ，'
+                    '取 909k / 100k 得 5.05 V', 6.5, FONT, DARK)
+    _txt(d, 38, 36, 'FB8 与 C55、C57 构成 π 型滤波，把开关纹波压到几 mV；'
+                    'C57 必须紧贴 OCXO 的供电引脚放置', 6.5, BOLD, DARK)
     return d
-
 
 
 # ------------------------------------------------- 图：开关电源布局要点

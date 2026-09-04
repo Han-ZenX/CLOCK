@@ -3611,184 +3611,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:L"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "L"
-				(at -1.27 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "L"
-				(at 1.905 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Inductor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "inductor choke coil reactor magnetic"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "L_0_1"
-				(arc
-					(start 0 2.54)
-					(mid 0.6323 1.905)
-					(end 0 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 1.27)
-					(mid 0.6323 0.635)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.6323 -0.635)
-					(end 0 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.27)
-					(mid 0.6323 -1.905)
-					(end 0 -2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "L_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:LED"
 			(pin_numbers
 				(hide yes)
@@ -4113,6 +3935,200 @@
 					(at 0 -3.81 90)
 					(length 1.27)
 					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "JLCImport:FNR4030S2R2MT"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "L"
+				(at 0 2 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "FNR4030S2R2MT"
+				(at 2.032 -4.794 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "JLCImport:FNR4030S2R2MT"
+				(at 2.032 -2.794 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_cjiang--Changjiang-Microelectronics-Tech-FNR4030S2R2MT_C167869.pdf"
+				(at 2.032 -2.794 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "2.2uH 3.2A 39mΩ 5.8A Magnetic Shielded Inductor ±20% SMD,4x4mm Power Inductors ROHS"
+				(at 2.032 -2.794 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C167869"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "cjiang (Changjiang Microelectronics Tech)"
+				(at 2.032 -2.794 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part" "FNR4030S2R2MT"
+				(at 2.032 -2.794 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "C167869 FNR4030S2R2MT IND-SMD_L4.0-W4.0_FNR40XXS cjiang (Changjiang Microelectronics Tech)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "FNR4030S2R2MT_0_1"
+				(arc
+					(start -4.2883 0.0173)
+					(mid -3.2763 1.0283)
+					(end -2.2652 0.0163)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.1336 0.018)
+					(mid -1.1214 1.0291)
+					(end -0.1105 0.0168)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.017 0.018)
+					(mid 1.0292 1.0291)
+					(end 2.0401 0.0168)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.2098 0.0175)
+					(mid 3.222 1.0284)
+					(end 4.233 0.0163)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 0 0)
+					(length 0.762)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 5.08 0 180)
+					(length 0.762)
+					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5409,6 +5425,12 @@
 		(uuid "31fc97c6-91be-4d8a-9b80-81a47552e1ac")
 	)
 	(junction
+		(at 327.66 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "331f2908-d1a4-4ec9-9a80-950e82e2a235")
+	)
+	(junction
 		(at 144.78 208.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5535,12 +5557,6 @@
 		(uuid "7211adef-99de-437f-89d0-a2b1d71ee870")
 	)
 	(junction
-		(at 327.66 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7443f849-d36d-470d-8044-99a535541c25")
-	)
-	(junction
 		(at 222.25 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5649,12 +5665,6 @@
 		(uuid "a09e5898-bf8a-4602-8b72-794ee5f8a47b")
 	)
 	(junction
-		(at 317.5 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a1e8cb9e-60e1-4869-a6d3-64d141ed74a2")
-	)
-	(junction
 		(at 363.22 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5683,6 +5693,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a8b2e292-0583-472a-85b8-06bba61d9ffa")
+	)
+	(junction
+		(at 317.5 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "abcfbb7f-6ac6-4779-8ad8-f3faa171e2a8")
 	)
 	(junction
 		(at 93.98 257.81)
@@ -6898,7 +6914,7 @@
 	)
 	(wire
 		(pts
-			(xy 317.5 110.49) (xy 317.5 105.41)
+			(xy 317.5 110.49) (xy 317.5 106.68)
 		)
 		(stroke
 			(width 0)
@@ -7135,16 +7151,6 @@
 			(type default)
 		)
 		(uuid "3cc61833-a683-47e0-8bc4-9d3742bc0b3e")
-	)
-	(wire
-		(pts
-			(xy 317.5 105.41) (xy 318.77 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3d1f00a0-de78-42ab-80e5-252230f0a144")
 	)
 	(wire
 		(pts
@@ -8235,16 +8241,6 @@
 			(type default)
 		)
 		(uuid "84d5f6e1-5ad3-46ed-aa96-34427a091914")
-	)
-	(wire
-		(pts
-			(xy 326.39 105.41) (xy 327.66 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "84e7fda7-bb4a-48d8-9e7f-9e0c3e960baa")
 	)
 	(wire
 		(pts
@@ -9588,7 +9584,7 @@
 	)
 	(wire
 		(pts
-			(xy 327.66 105.41) (xy 327.66 110.49)
+			(xy 327.66 106.68) (xy 327.66 110.49)
 		)
 		(stroke
 			(width 0)
@@ -12946,6 +12942,118 @@
 			(project "CLOCK"
 				(path "/a8714d66-6565-4fb4-a698-a884e68083d2"
 					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "JLCImport:FNR4030S2R2MT")
+		(at 322.58 106.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "07159153-daff-4510-b5e8-ebb442568def")
+		(property "Reference" "L1"
+			(at 322.5523 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "2.2uH"
+			(at 322.58 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JLCImport:FNR4030S2R2MT"
+			(at 324.612 109.474 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_cjiang--Changjiang-Microelectronics-Tech-FNR4030S2R2MT_C167869.pdf"
+			(at 324.612 109.474 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "2.2uH 3.2A 39mΩ 5.8A Magnetic Shielded Inductor ±20% SMD,4x4mm Power Inductors ROHS"
+			(at 324.612 109.474 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C167869"
+			(at 322.58 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "cjiang (Changjiang Microelectronics Tech)"
+			(at 324.612 109.474 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "FNR4030S2R2MT"
+			(at 324.612 109.474 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7d7fdea7-ffa6-4c9d-8ef1-e9e85122f5d3")
+		)
+		(pin "2"
+			(uuid "893f94d4-4608-4c62-8707-01b285092e43")
+		)
+		(instances
+			(project "CLOCK"
+				(path "/a8714d66-6565-4fb4-a698-a884e68083d2"
+					(reference "L1")
 					(unit 1)
 				)
 			)
@@ -25630,87 +25738,6 @@
 			(project "CLOCK"
 				(path "/a8714d66-6565-4fb4-a698-a884e68083d2"
 					(reference "#PWR070")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L")
-		(at 322.58 105.41 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "98ab6b7e-2837-48a0-886b-d75db43c65f0")
-		(property "Reference" "L1"
-			(at 319.024 104.14 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2.2uH"
-			(at 326.898 103.378 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 322.58 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 322.58 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Inductor"
-			(at 322.58 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "acb9d083-058e-40f8-932b-d3e72dd7dd2c")
-		)
-		(pin "2"
-			(uuid "1a1bf457-93c9-49e1-886d-913ede86e96a")
-		)
-		(instances
-			(project "CLOCK"
-				(path "/a8714d66-6565-4fb4-a698-a884e68083d2"
-					(reference "L1")
 					(unit 1)
 				)
 			)

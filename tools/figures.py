@@ -742,6 +742,266 @@ def ocxo_ptree():
     return d
 
 
+# ------------------------------------------------- 图：LVDS 输出的交流端接回路
+
+def lvds_out_ac():
+    """AC 耦合的 LVDS 输出：两只 49.9Ω 在交流上串联成 100Ω 差分负载。"""
+    d = Drawing(W, 215)
+    wire_c = colors.HexColor('#444444')
+
+    def wire(pts):
+        d.add(PolyLine([c for p in pts for c in p],
+                       strokeColor=wire_c, strokeWidth=0.8))
+
+    def gnd(x, y):
+        for hw, dy in ((9, 0), (5.5, 3.2), (2, 6.4)):
+            d.add(Line(x - hw, y - dy, x + hw, y - dy,
+                       strokeColor=wire_c, strokeWidth=0.8))
+
+    def cap(x, y):
+        d.add(Line(x, y - 8, x, y + 8, strokeColor=DARK, strokeWidth=1.2))
+        d.add(Line(x + 6, y - 8, x + 6, y + 8, strokeColor=DARK, strokeWidth=1.2))
+
+    _box(d, 40, 100, 80, 100, colors.HexColor('#f0f2f4'), GREY, 0.7, r=3)
+    _txt(d, 80, 160, 'U1', 8.5, BOLD, DARK, 'middle')
+    _txt(d, 80, 145, 'LVDS 驱动', 7.5, FONT, DARK, 'middle')
+    _txt(d, 80, 128, '3.5 mA 电流源', 7, FONT, GREY, 'middle')
+
+    # P 路
+    wire([(120, 185), (163, 185)])
+    cap(163, 185)
+    wire([(169, 185), (330, 185)])
+    _txt(d, 124, 190, 'OUT_P', 7, FONT, ACCENT)
+    _txt(d, 166, 200, 'C3  100nF', 7, FONT, DARK, 'middle')
+
+    # N 路
+    wire([(120, 115), (163, 115)])
+    cap(163, 115)
+    wire([(169, 115), (330, 115)])
+    _txt(d, 124, 120, 'OUT_N', 7, FONT, ACCENT)
+    _txt(d, 166, 100, 'C4  100nF', 7, FONT, DARK, 'middle')
+
+    # 端接：交流上 R7 与 R8 串联，中点接地
+    _box(d, 273, 155, 14, 26, colors.white, DARK, 0.7, r=2)
+    _box(d, 273, 127, 14, 26, colors.white, DARK, 0.7, r=2)
+    wire([(280, 185), (280, 181)])
+    wire([(280, 155), (280, 153)])
+    wire([(280, 127), (280, 115)])
+    d.add(Circle(280, 185, 1.8, fillColor=wire_c, strokeColor=wire_c))
+    d.add(Circle(280, 115, 1.8, fillColor=wire_c, strokeColor=wire_c))
+    d.add(Circle(280, 154, 1.8, fillColor=wire_c, strokeColor=wire_c))
+    wire([(280, 154), (240, 154), (240, 146)])
+    gnd(240, 146)
+    _txt(d, 292, 166, 'R7  49.9Ω', 7, FONT, DARK)
+    _txt(d, 292, 138, 'R8  49.9Ω', 7, FONT, DARK)
+
+    # SMA
+    for y, ref in ((185, 'J4'), (115, 'J5')):
+        d.add(Circle(336, y, 5, fillColor=colors.white,
+                     strokeColor=wire_c, strokeWidth=0.8))
+        d.add(Circle(336, y, 1.6, fillColor=wire_c, strokeColor=wire_c))
+        _txt(d, 346, y - 3, ref, 7, FONT, DARK)
+
+    _box(d, 40, 28, 330, 50, colors.HexColor('#f8fafb'),
+         colors.HexColor('#d5dee7'), 0.6, r=3)
+    _txt(d, 50, 60, '交流回路：OUT_P → C3 → R7 → 地 → R8 → C4 → OUT_N', 7.5, FONT, DARK)
+    _txt(d, 50, 43, '差分负载 = 49.9 + 49.9 = 99.8 Ω，正是 LVDS 需要的 100 Ω',
+         7.5, BOLD, ACCENT)
+    return d
+
+
+# ------------------------------------------------- 图：三种负载下的差分阻抗
+
+def lvds_out_load():
+    """SMA 接上 50Ω 仪器后，板上端接被并联，差分负载随之塌缩。"""
+    d = Drawing(W, 200)
+    wire_c = colors.HexColor('#444444')
+
+    def cell(x0, title, ext_p, ext_n, rdiff, swing, verdict, vcol):
+        _box(d, x0, 45, 140, 140, colors.white,
+             colors.HexColor('#d5dee7'), 0.6, r=3)
+        _txt(d, x0 + 70, 170, title, 7.5, BOLD, DARK, 'middle')
+        cx = x0 + 70
+        d.add(Line(x0 + 20, 148, x0 + 120, 148, strokeColor=wire_c, strokeWidth=0.8))
+        d.add(Line(x0 + 20, 108, x0 + 120, 108, strokeColor=wire_c, strokeWidth=0.8))
+        _txt(d, x0 + 17, 145, 'P', 6.5, BOLD, ACCENT, 'end')
+        _txt(d, x0 + 17, 105, 'N', 6.5, BOLD, ACCENT, 'end')
+
+        # 板上端接
+        _box(d, cx - 7, 130, 14, 14, colors.white, DARK, 0.6, r=1.5)
+        _box(d, cx - 7, 112, 14, 14, colors.white, DARK, 0.6, r=1.5)
+        d.add(Line(cx, 148, cx, 144, strokeColor=wire_c, strokeWidth=0.8))
+        d.add(Line(cx, 130, cx, 126, strokeColor=wire_c, strokeWidth=0.8))
+        d.add(Line(cx, 112, cx, 108, strokeColor=wire_c, strokeWidth=0.8))
+        d.add(Circle(cx, 128, 1.5, fillColor=wire_c, strokeColor=wire_c))
+        d.add(Line(cx, 128, cx - 22, 128, strokeColor=wire_c, strokeWidth=0.8))
+        for hw, dy in ((7, 0), (4.2, 2.6), (1.6, 5.2)):
+            d.add(Line(cx - 22 - hw, 128 - dy, cx - 22 + hw, 128 - dy,
+                       strokeColor=wire_c, strokeWidth=0.8))
+        _txt(d, cx + 10, 135, '49.9', 6.5, FONT, DARK)
+        _txt(d, cx + 10, 117, '49.9', 6.5, FONT, DARK)
+
+        # 外部 50Ω 负载（虚线 = 仪器输入）
+        for on, y in ((ext_p, 148), (ext_n, 108)):
+            if not on:
+                continue
+            ex = x0 + 108
+            d.add(Rect(ex - 7, y - 22, 14, 14, fillColor=colors.white,
+                       strokeColor=RED, strokeWidth=0.6,
+                       strokeDashArray=[1.5, 1.5]))
+            d.add(Line(ex, y, ex, y - 8, strokeColor=RED, strokeWidth=0.6,
+                       strokeDashArray=[1.5, 1.5]))
+            d.add(Line(ex, y - 22, ex, y - 26, strokeColor=RED, strokeWidth=0.6,
+                       strokeDashArray=[1.5, 1.5]))
+            for hw, dy in ((6, 0), (3.6, 2.4), (1.4, 4.8)):
+                d.add(Line(ex - hw, y - 26 - dy, ex + hw, y - 26 - dy,
+                           strokeColor=RED, strokeWidth=0.6))
+            _txt(d, ex - 10, y - 18, '50', 6.5, FONT, RED, 'end')
+
+        _txt(d, cx, 88, rdiff, 7.5, BOLD, ACCENT, 'middle')
+        _txt(d, cx, 73, swing, 7, FONT, DARK, 'middle')
+        _txt(d, cx, 57, verdict, 7, BOLD, vcol, 'middle')
+
+    cell(15, '两端均空载', False, False,
+         'R_diff = 99.8 Ω', '差分摆幅 349 mV', '合规', GREEN)
+    cell(170, '仅 P 端接仪器', True, False,
+         'R_diff = 74.9 Ω', '差分摆幅 262 mV', '幅度降、两侧不对称', AMBER)
+    cell(325, '两端均接仪器', True, True,
+         'R_diff = 49.9 Ω', '差分摆幅 175 mV', '低于 LVDS 下限 247 mV', RED)
+
+    _txt(d, 15, 28, 'LVDS 驱动电流按典型值 3.5 mA 计；虚线为仪器输入端的 50 Ω，'
+                    '它与板上 49.9 Ω 并联', 7, FONT, GREY)
+    return d
+
+
+# ------------------------------------------------- 图：OCXO 输出的高阻取样
+
+def xo_tap():
+    """主路径直通、校准口经串联电阻旁路取样。"""
+    d = Drawing(W, 230)
+    wire_c = colors.HexColor('#444444')
+
+    def wire(pts, col=None, dash=None):
+        kw = dict(strokeColor=col or wire_c, strokeWidth=0.8)
+        if dash:
+            kw['strokeDashArray'] = dash
+        d.add(PolyLine([c for p in pts for c in p], **kw))
+
+    def gnd(x, y):
+        for hw, dy in ((9, 0), (5.5, 3.2), (2, 6.4)):
+            d.add(Line(x - hw, y - dy, x + hw, y - dy,
+                       strokeColor=wire_c, strokeWidth=0.8))
+
+    _box(d, 35, 155, 75, 50, colors.HexColor('#f0f2f4'), GREY, 0.7, r=3)
+    _txt(d, 72, 191, 'U6  OCXO', 8.5, BOLD, DARK, 'middle')
+    _txt(d, 72, 176, '10 MHz', 7, FONT, GREY, 'middle')
+    _txt(d, 106, 163, 'RF', 7, FONT, DARK, 'end')
+
+    # 主路径：直通
+    d.add(PolyLine([110, 180, 400, 180], strokeColor=GREEN, strokeWidth=1.8))
+    _txt(d, 250, 187, 'XO_P　50 Ω 走线，全程无有源器件', 7.5, BOLD, GREEN, 'middle')
+    _txt(d, 120, 168, '+7 dBm（示例）', 7, FONT, GREY)
+    d.add(Circle(175, 180, 2, fillColor=wire_c, strokeColor=wire_c))
+
+    _box(d, 400, 155, 75, 50, colors.HexColor('#f0f2f4'), GREY, 0.7, r=3)
+    _txt(d, 437, 191, 'U1', 8.5, BOLD, DARK, 'middle')
+    _txt(d, 437, 176, 'LMK5B12204', 7, FONT, GREY, 'middle')
+    _txt(d, 404, 163, 'XO_N', 7, FONT, DARK)
+    wire([(400, 160), (380, 160), (380, 150)])
+    gnd(380, 150)
+
+    # 取样支路
+    wire([(175, 180), (175, 140)])
+    _box(d, 168, 112, 14, 28, colors.white, DARK, 0.7, r=2)
+    _txt(d, 189, 130, 'R34  1 kΩ', 7, BOLD, DARK)
+    _txt(d, 189, 119, '（现为 0 Ω，改值即可）', 6.5, FONT, GREY)
+    wire([(175, 112), (175, 95), (215, 95)])
+    d.add(Line(215, 87, 215, 103, strokeColor=DARK, strokeWidth=1.2))
+    d.add(Line(221, 87, 221, 103, strokeColor=DARK, strokeWidth=1.2))
+    _txt(d, 218, 108, 'C52  100nF', 7, FONT, DARK, 'middle')
+    wire([(221, 95), (280, 95)])
+    d.add(Circle(286, 95, 5, fillColor=colors.white,
+                 strokeColor=wire_c, strokeWidth=0.8))
+    d.add(Circle(286, 95, 1.6, fillColor=wire_c, strokeColor=wire_c))
+    _txt(d, 280, 78, 'J12  校准口', 7, BOLD, DARK, 'middle')
+    _txt(d, 280, 68, '约 −19 dBm', 7, FONT, ACCENT, 'middle')
+
+    wire([(292, 95), (330, 95)], RED, [2, 2])
+    d.add(Rect(330, 80, 72, 30, fillColor=colors.white, strokeColor=RED,
+               strokeWidth=0.7, rx=3, ry=3, strokeDashArray=[2, 2]))
+    _txt(d, 366, 97, '频率计', 7.5, BOLD, RED, 'middle')
+    _txt(d, 366, 86, '50 Ω，仅校准时接', 6.5, FONT, GREY, 'middle')
+
+    _box(d, 35, 18, 440, 40, colors.HexColor('#eaf3de'), GREEN, 0.7, r=3)
+    _txt(d, 45, 44, '主路径不经过任何有源器件，OCXO 的相位噪声零劣化', 7.5, BOLD, DARK)
+    _txt(d, 45, 28, '1 kΩ 串联使支路对主路径的负载影响仅 −0.4 dB；不接频率计时支路开路，影响为零',
+         7, FONT, DARK)
+    return d
+
+
+# ------------------------------------------------- 图：三种分路方案对比
+
+def xo_split_cmp():
+    """高阻取样、电阻功分、有源缓冲三种做法的代价对比。"""
+    d = Drawing(W, 290)
+    wire_c = colors.HexColor('#444444')
+
+    def blk(x, y, w, h, txt, fill, edge, size=7):
+        _box(d, x, y, w, h, fill, edge, 0.7, r=2)
+        _txt(d, x + w / 2, y + h / 2 - 2.5, txt, size, BOLD, DARK, 'middle')
+
+    def row(base, title, tcol, notes, mode):
+        _box(d, 20, base, 448, 88, colors.white,
+             colors.HexColor('#d5dee7'), 0.6, r=3)
+        _txt(d, 32, base + 76, title, 7.5, BOLD, tcol)
+        y = base + 60
+        blk(32, y - 10, 44, 20, 'OCXO', colors.HexColor('#f0f2f4'), GREY)
+
+        if mode == 'tap':
+            d.add(PolyLine([76, y, 150, y], strokeColor=GREEN, strokeWidth=1.6))
+            d.add(Circle(100, y, 1.8, fillColor=wire_c, strokeColor=wire_c))
+            d.add(Line(100, y, 100, base + 22, strokeColor=wire_c, strokeWidth=0.8))
+            _txt(d, 105, base + 38, '1 kΩ', 6.5, FONT, DARK)
+        elif mode == 'split':
+            d.add(Line(76, y, 100, y, strokeColor=wire_c, strokeWidth=0.8))
+            d.add(Circle(100, y, 1.8, fillColor=wire_c, strokeColor=wire_c))
+            d.add(Line(100, y, 150, y, strokeColor=wire_c, strokeWidth=0.8))
+            d.add(Line(100, y, 100, base + 22, strokeColor=wire_c, strokeWidth=0.8))
+            _txt(d, 80, y + 5, '16.9', 6.5, FONT, DARK)
+            _txt(d, 120, y + 5, '16.9', 6.5, FONT, DARK)
+            _txt(d, 105, base + 38, '16.9', 6.5, FONT, DARK)
+        else:
+            d.add(Line(76, y, 88, y, strokeColor=wire_c, strokeWidth=0.8))
+            blk(88, y - 10, 34, 20, 'BUF', colors.HexColor('#fdf6e6'), AMBER, 6.5)
+            d.add(Line(122, y, 150, y, strokeColor=wire_c, strokeWidth=0.8))
+            d.add(Circle(136, y, 1.8, fillColor=wire_c, strokeColor=wire_c))
+            d.add(Line(136, y, 136, base + 22, strokeColor=wire_c, strokeWidth=0.8))
+
+        blk(150, y - 10, 52, 20, 'LMK', colors.HexColor('#e6f1fb'), ACCENT)
+        fx = 100 if mode != 'buf' else 136
+        blk(fx - 26, base + 2, 52, 20, '频率计', colors.white, GREY)
+
+        for i, (s, c) in enumerate(notes):
+            _txt(d, 230, base + 66 - i * 15, s, 7, BOLD if c else FONT, c or DARK)
+
+    row(196, '方案 A：高阻取样（推荐）', GREEN, [
+        ('主路径相噪劣化：无', GREEN),
+        ('主路径插损：−0.4 dB', None),
+        ('校准口电平：约 −19 dBm（OCXO +7 dBm 时）', None),
+        ('新增：1 只电容 + 1 个 SMA，R34 已在板上', None)], 'tap')
+    row(100, '方案 B：6 dB 电阻功分', ACCENT, [
+        ('主路径相噪劣化：无', GREEN),
+        ('主路径插损：−6 dB', AMBER),
+        ('两口对称、三端口均匹配 50 Ω', None),
+        ('新增：3 只电阻 + 1 个 SMA', None)], 'split')
+    row(4, '方案 C：有源缓冲（LMK1C1102 等）', AMBER, [
+        ('主路径相噪劣化：取决于缓冲器 1/f 噪声', RED),
+        ('主路径插损：无，且可提供增益', None),
+        ('端口隔离好（通常 >40 dB）', None),
+        ('新增：芯片 + 供电去耦，且需核对附加相噪', None)], 'buf')
+    return d
+
+
 FIGURES = {
     'flow': flow,
     'stackup': stackup,
@@ -757,6 +1017,10 @@ FIGURES = {
     'ocxo_vctrl': ocxo_vctrl,
     'ocxo_vsel': ocxo_vsel,
     'ocxo_ptree': ocxo_ptree,
+    'lvds_out_ac': lvds_out_ac,
+    'lvds_out_load': lvds_out_load,
+    'xo_tap': xo_tap,
+    'xo_split_cmp': xo_split_cmp,
 }
 
 

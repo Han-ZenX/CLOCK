@@ -2049,7 +2049,7 @@
 						(type none)
 					)
 				)
-				(pin passive line
+				(pin unspecified line
 					(at 5.08 0 180)
 					(length 2.54)
 					(name "1"
@@ -2067,7 +2067,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin unspecified line
 					(at 0 5.08 270)
 					(length 2.54)
 					(name "2"
@@ -2085,7 +2085,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin unspecified line
 					(at -5.08 0 0)
 					(length 2.54)
 					(name "3"
@@ -3397,7 +3397,7 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin output line
 					(at -8.89 0 0)
 					(length 2.54)
 					(name "GND"
@@ -4455,7 +4455,7 @@
 						(type background)
 					)
 				)
-				(pin passive line
+				(pin unspecified line
 					(at -3.81 2.54 0)
 					(length 2.54)
 					(name "1"
@@ -4473,7 +4473,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin unspecified line
 					(at -3.81 0 0)
 					(length 2.54)
 					(name "2"
@@ -4491,7 +4491,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin unspecified line
 					(at -3.81 -2.54 0)
 					(length 2.54)
 					(name "3"
@@ -8640,16 +8640,6 @@
 			(type default)
 		)
 		(uuid "d71c5028-1f7c-42fd-be03-feda451a798e")
-	)
-	(wire
-		(pts
-			(xy 45.72 157.48) (xy 45.72 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d76f1c3e-b68b-436d-a582-bdea4b6cb84d")
 	)
 	(polyline
 		(pts
@@ -15380,84 +15370,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 45.72 162.56 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3c468b08-2e93-4ebc-ba57-f9dfd370afa2")
-		(property "Reference" "#PWR0200"
-			(at 45.72 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 45.72 166.37 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 45.72 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 45.72 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 45.72 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "789ba1be-367b-4340-8aa4-8a7d078a29fb")
-		)
-		(instances
-			(project "CLOCK"
-				(path "/a8714d66-6565-4fb4-a698-a884e68083d2"
-					(reference "#PWR0200")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 46.99 215.9 180)
 		(unit 1)
@@ -17631,83 +17543,6 @@
 			(project "CLOCK"
 				(path "/a8714d66-6565-4fb4-a698-a884e68083d2"
 					(reference "#PWR0124")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 45.72 157.48 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "5ccecbf2-696e-43c8-8d4f-44923b212463")
-		(property "Reference" "#FLG05"
-			(at 45.72 151.13 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 45.974 153.162 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 45.72 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 45.72 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 45.72 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5f40ebac-06c5-464d-bc29-c41467129d90")
-		)
-		(instances
-			(project "CLOCK"
-				(path "/a8714d66-6565-4fb4-a698-a884e68083d2"
-					(reference "#FLG05")
 					(unit 1)
 				)
 			)

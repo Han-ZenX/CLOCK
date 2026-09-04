@@ -1191,6 +1191,105 @@ def ocxo_bb_layout():
     return d
 
 
+# ------------------------------------------------- 图：CLOCK 板整板布局规划
+
+def clk_layout():
+    """100×100 mm 板框内的分区、连接器排布与输出走线方向。"""
+    d = Drawing(W, 350)
+    BX, BY, BW = 108, 42, 255     # 板框：255 pt 代表 100 mm
+
+    _box(d, BX, BY, BW, BW, colors.HexColor('#fbfbf9'),
+         colors.HexColor('#8a8a85'), 1.0, r=2)
+    _txt(d, BX + BW / 2, BY + BW + 30, '板框 100 × 100 mm（免费打样上限）',
+         7.5, BOLD, DARK, 'middle')
+
+    d.add(Line(BX, BY - 14, BX + BW, BY - 14, strokeColor=GREY, strokeWidth=0.6))
+    for x in (BX, BX + BW):
+        d.add(Line(x, BY - 18, x, BY - 10, strokeColor=GREY, strokeWidth=0.6))
+    _txt(d, BX + BW / 2, BY - 26, '100 mm', 7, FONT, GREY, 'middle')
+
+    def sma_h(x, y):
+        d.add(Rect(x - 8, y - 6, 16, 12, fillColor=colors.HexColor('#fdf6e6'),
+                   strokeColor=AMBER, strokeWidth=0.7))
+
+    def sma_v(x, y):
+        d.add(Rect(x - 6, y - 8, 12, 16, fillColor=colors.HexColor('#fdf6e6'),
+                   strokeColor=AMBER, strokeWidth=0.7))
+
+    CX = BX + BW / 2
+    xs = [CX - 49.5, CX - 16.5, CX + 16.5, CX + 49.5]
+
+    # 上下两边：8 路时钟输出，正对 U1
+    for x in xs:
+        sma_h(x, BY + BW)
+        sma_h(x, BY)
+        d.add(Line(x, BY + BW - 8, x, BY + 232, strokeColor=GREEN, strokeWidth=1.4))
+        d.add(Line(x, BY + 8, x, BY + 118, strokeColor=GREEN, strokeWidth=1.4))
+    _txt(d, CX, BY + BW + 14, 'OUT0 / OUT1   4 × SMA', 6.5, BOLD, AMBER, 'middle')
+    _txt(d, CX, BY - 34, 'OUT2 / OUT3   4 × SMA', 6.5, BOLD, AMBER, 'middle')
+
+    # 左边参考输入、右边校准口与 USB
+    for y, lb in ((BY + 205, 'J1'), (BY + 178, 'J6')):
+        sma_v(BX, y)
+        _txt(d, BX - 10, y - 2, lb, 6.5, FONT, DARK, 'end')
+    _txt(d, BX - 10, BY + 226, '参考输入', 6.5, BOLD, DARK, 'end')
+    sma_v(BX + BW, BY + 200)
+    _txt(d, BX + BW + 10, BY + 198, 'J12 校准口', 6.5, FONT, DARK)
+    d.add(Rect(BX + BW - 6, BY + 68, 12, 24, fillColor=colors.HexColor('#e6f1fb'),
+               strokeColor=ACCENT, strokeWidth=0.7))
+    _txt(d, BX + BW + 10, BY + 77, 'USB-C', 6.5, BOLD, ACCENT)
+
+    # 中央：U1
+    _box(d, BX + 72, BY + 118, 110, 114, colors.HexColor('#eef3f8'), ACCENT, 0.8, r=3)
+    _txt(d, CX, BY + 220, 'U1  时钟发生器', 7, BOLD, ACCENT, 'middle')
+    _box(d, CX - 20, BY + 160, 40, 40, colors.white, DARK, 0.8, r=2)
+    _txt(d, CX, BY + 176, 'U1', 8, BOLD, DARK, 'middle')
+    _txt(d, CX, BY + 144, '七路电源域去耦环绕', 6, FONT, GREY, 'middle')
+    _txt(d, CX, BY + 130, '每域 10µF + 100nF 贴引脚', 6, FONT, GREY, 'middle')
+
+    # 左上：参考缓冲
+    _box(d, BX + 8, BY + 158, 58, 74, colors.HexColor('#f2f0f7'),
+         colors.HexColor('#8878a8'), 0.7, r=3)
+    _txt(d, BX + 37, BY + 220, 'U2 / U3', 6.5, BOLD, colors.HexColor('#6b5b95'), 'middle')
+    _txt(d, BX + 37, BY + 206, '缓冲', 6, FONT, GREY, 'middle')
+    _txt(d, BX + 37, BY + 176, 'J14', 6, FONT, GREY, 'middle')
+    _txt(d, BX + 37, BY + 164, '主控接口', 6, FONT, GREY, 'middle')
+
+    # 右上：OCXO
+    _box(d, BX + 189, BY + 158, 58, 74, colors.HexColor('#eaf3de'), GREEN, 0.7, r=3)
+    _txt(d, BX + 218, BY + 220, 'OCXO 区', 6.5, BOLD, GREEN, 'middle')
+    _box(d, BX + 199, BY + 180, 38, 30, colors.white, DARK, 0.8, r=2)
+    _txt(d, BX + 218, BY + 191, 'U6', 7.5, BOLD, DARK, 'middle')
+    _txt(d, BX + 218, BY + 168, 'H1 / TP1 紧邻', 6, FONT, GREY, 'middle')
+
+    # 左下：DC-DC（远离 OCXO）
+    _box(d, BX + 8, BY + 20, 58, 84, colors.HexColor('#fdf0e6'), RED, 0.7, r=3)
+    _txt(d, BX + 37, BY + 92, 'DC-DC  U7', 6.5, BOLD, RED, 'middle')
+    _txt(d, BX + 37, BY + 76, 'L1 环路', 6, FONT, DARK, 'middle')
+    _txt(d, BX + 37, BY + 64, '面积最小', 6, FONT, DARK, 'middle')
+    _txt(d, BX + 37, BY + 44, '与 OCXO', 6, BOLD, RED, 'middle')
+    _txt(d, BX + 37, BY + 32, '对角最远', 6, BOLD, RED, 'middle')
+
+    # 右下：LDO
+    _box(d, BX + 189, BY + 20, 58, 84, colors.HexColor('#f0f2f4'), GREY, 0.7, r=3)
+    _txt(d, BX + 218, BY + 92, 'U4 / U5', 6.5, BOLD, DARK, 'middle')
+    _txt(d, BX + 218, BY + 78, 'LDO', 6, FONT, GREY, 'middle')
+    _txt(d, BX + 218, BY + 56, '散热铜箔', 6, BOLD, DARK, 'middle')
+    _txt(d, BX + 218, BY + 44, '≥ 200 mm²', 6, FONT, DARK, 'middle')
+
+    _txt(d, BX + BW + 10, BY + 240, '差分对垂直出线', 6, BOLD, GREEN)
+    _txt(d, BX + BW + 10, BY + 231, '不绕行、不交叉', 6, FONT, GREEN)
+
+    _box(d, 28, 8, 430, 26, colors.HexColor('#f8fafb'),
+         colors.HexColor('#d5dee7'), 0.6, r=3)
+    _txt(d, 38, 24, 'U1 的 OUT0/1 与 OUT2/3 位于 QFN 相对两侧，故输出 SMA 排在上下两边，'
+                    'U1 居中、上下留出纯净出线通道', 6.5, BOLD, DARK)
+    _txt(d, 38, 13, 'DC-DC 与 OCXO 置于对角，物理距离最大化；参考输入与 USB 分居左右，'
+                    '不侵入输出走线区', 6.5, FONT, DARK)
+    return d
+
+
+
 FIGURES = {
     'flow': flow,
     'stackup': stackup,
@@ -1212,6 +1311,7 @@ FIGURES = {
     'xo_split_cmp': xo_split_cmp,
     'ocxo_buckboost': ocxo_buckboost,
     'ocxo_bb_layout': ocxo_bb_layout,
+    'clk_layout': clk_layout,
 }
 
 

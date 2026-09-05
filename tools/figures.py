@@ -62,7 +62,7 @@ def _arrow(d, x1, y1, x2, y2, color=ACCENT, sw=1.0, head=4):
 
 def flow():
     """十阶段流程总览，边框颜色表示返工代价。"""
-    d = Drawing(W, 250)
+    d = Drawing(W, 268)
     stages = [
         ('一', '开工前决策', '层数 / 板厂 / 板框', RED),
         ('二', '原理图收尾', '批注 / 封装 / ERC', AMBER),
@@ -76,7 +76,7 @@ def flow():
         ('十', '制造输出', 'Gerber / 钻孔 / BOM', GREEN),
     ]
     bw, bh, gx, gy = 218, 38, 24, 8
-    x0, y0 = 4, 250 - bh - 16
+    x0, y0 = 4, 268 - bh - 16
     for i, (num, name, sub, col) in enumerate(stages):
         cx = x0 + (i % 2) * (bw + gx)
         cy = y0 - (i // 2) * (bh + gy)
@@ -158,7 +158,7 @@ def microstrip():
     _txt(d, bx - 6, by - 8, 'In1.Cu', 8, BOLD, DARK, 'end')
     _txt(d, bx - 6, by + 18, 'Prepreg', 8, FONT, DARK, 'end')
     _txt(d, bx + bw2 + 8, by - 8, '参考平面（完整 GND）', 8, FONT, GREY)
-    _txt(d, tx + tw + 10, by + 45, '走线 (F.Cu)', 8, FONT, GREY)
+    _txt(d, tx + tw + 10, by + 57, '走线 (F.Cu)', 8, FONT, GREY)
 
     # W 标注
     d.add(Line(tx, by + 68, tx + tw, by + 68, strokeColor=ACCENT, strokeWidth=0.9))
@@ -185,7 +185,7 @@ def microstrip():
 
 def priority():
     """布线优先级阶梯。"""
-    d = Drawing(W, 208)
+    d = Drawing(W, 248)
     items = [
         ('1', '去耦电容 → 电源/地引脚', '环路面积最小'),
         ('2', '晶振、时钟源', '最短最直，远离干扰'),
@@ -197,7 +197,7 @@ def priority():
         ('8', '电源走线', '加宽即可，最后填空隙'),
     ]
     bh, gy = 20, 3.5
-    y = 208 - 26
+    y = 248 - 26
     for i, (n, name, why) in enumerate(items):
         y -= bh
         ratio = 1 - i * 0.055
@@ -210,8 +210,8 @@ def priority():
         _txt(d, 352, y + 6, why, 7.5, FONT, GREY)
         y -= gy
 
-    _arrow(d, 12, 208 - 30, 12, y + 14, ACCENT, 1.0)
-    _txt(d, 4, 208 - 18, '先', 8, BOLD, ACCENT)
+    _arrow(d, 12, 248 - 30, 12, y + 14, ACCENT, 1.0)
+    _txt(d, 4, 248 - 18, '先', 8, BOLD, ACCENT)
     _txt(d, 4, y + 4, '后', 8, BOLD, ACCENT)
     _txt(d, 40, 8, '越敏感、越难改的越先走；LED 按键这类线多晚布都能绕过去', 8, BOLD, DARK)
     return d
@@ -1290,6 +1290,100 @@ def clk_layout():
 
 
 
+# ------------------------------------------------------- 图：网络类与布线规则
+
+def pcb_netclass():
+    """网络类划分与线宽 / 间距 / 过孔规则的对应。"""
+    d = Drawing(W, 220)
+    heads = [(14, '网络类'), (96, '成员网络'), (250, '线宽'), (314, '间距'), (378, '过孔')]
+    for x, t in heads:
+        _txt(d, x, 220 - 14, t, 8, BOLD, ACCENT)
+    d.add(Line(6, 220 - 20, 474, 220 - 20, strokeColor=ACCENT, strokeWidth=0.8))
+
+    rows = [
+        (RED, 'CLK_DIFF', 'OUT0～OUT3 共 8 对差分', '0.2 mm', '对内 0.2', '禁用',
+         '100 Ω 差分；全程走 L1，对与对之间 ≥ 0.6 mm（3W）'),
+        (RED, 'RF_50', 'XO_P、PRIREF', '0.36 mm', '≥ 0.72', '禁用',
+         '50 Ω 单端微带；计算时 H 取 0.2104 mm，不是板厚 1.6 mm'),
+        (AMBER, 'PWR_5V', 'VBUS、+5V_OCXO', '≥ 0.5，建议 1.0', '0.3 mm', '0.8 / 0.4',
+         '冷启动 1.43 A；1.0 mm 外层 1 oz 在 ΔT=20 ℃ 下可过 3.2 A'),
+        (AMBER, 'PWR_3V3', '+3.3V 与七路磁珠分支', '0.5 mm', '0.3 mm', '0.8 / 0.4',
+         '负载 0.65 A；主干靠 L3 铜皮，只有分支才用走线'),
+        (ACCENT, 'Default', 'I2C、GPIO、STATUS', '0.2 mm', '0.2 mm', '0.6 / 0.3',
+         '低速信号，统一收到 L4'),
+    ]
+    y = 220 - 26
+    for col, name, member, tw, gap, via, note in rows:
+        y -= 34
+        _box(d, 6, y, 468, 32, colors.white, colors.HexColor('#d5dee7'), 0.6, r=3)
+        d.add(Rect(6, y, 3.5, 32, fillColor=col, strokeColor=col))
+        _txt(d, 14, y + 20, name, 8, BOLD, col)
+        _txt(d, 96, y + 20, member, 7.5, FONT, DARK)
+        _txt(d, 250, y + 20, tw, 7.5, BOLD, DARK)
+        _txt(d, 314, y + 20, gap, 7.5, FONT, DARK)
+        _txt(d, 378, y + 20, via, 7.5, FONT, DARK)
+        _txt(d, 96, y + 7, note, 6.5, FONT, GREY)
+
+    _txt(d, 6, 14, '当前工程只有 Default 一个网络类——布线前必须先补齐前四类，'
+                   '否则线宽全靠手动改，改一次就是全板返工。', 8, BOLD, RED)
+    _txt(d, 6, 3, '过孔一栏的「禁用」指阻抗线不换层：换层会打断参考平面，'
+                  '必须换时须在旁边补地过孔。', 7.5, FONT, GREY)
+    return d
+
+
+# ------------------------------------------------------- 图：制造输出与核对
+
+def pcb_output():
+    """制造输出文件与投板前的核对闭环。"""
+    d = Drawing(W, 256)
+
+    _box(d, 6, 60, 156, 176, colors.HexColor('#f8fafb'), ACCENT, 0.9, r=4)
+    _txt(d, 84, 220, 'KiCad 导出', 9, BOLD, ACCENT, 'middle')
+    items = [('Gerber ×9 层', 'F/In1/In2/B.Cu、阻焊、丝印、Edge.Cuts'),
+             ('钻孔文件', 'PTH + NPTH，Excellon 格式'),
+             ('贴片坐标', 'Pos，CSV，元件中心 + 旋转角'),
+             ('BOM', '位号 + 型号 + 封装 + 数量')]
+    y = 206
+    for name, sub in items:
+        y -= 38
+        _box(d, 16, y, 136, 32, colors.white, colors.HexColor('#94a7b8'), 0.7, r=3)
+        _txt(d, 24, y + 19, name, 7.8, BOLD, DARK)
+        _txt(d, 24, y + 7, sub, 6.1, FONT, GREY)
+
+    _arrow(d, 166, 148, 186, 148, ACCENT, 1.1)
+
+    _box(d, 190, 118, 108, 60, colors.HexColor('#eef3f8'), ACCENT, 0.9, r=4)
+    _txt(d, 244, 160, 'ZIP 打包', 9, BOLD, ACCENT, 'middle')
+    _txt(d, 244, 144, '归入 hardware/gerber/', 6.5, FONT, GREY, 'middle')
+    _txt(d, 244, 130, '按 v1.0 版本号命名', 6.5, FONT, GREY, 'middle')
+
+    _arrow(d, 302, 148, 322, 148, ACCENT, 1.1)
+
+    _box(d, 326, 60, 150, 176, colors.HexColor('#f7fbf8'), GREEN, 0.9, r=4)
+    _txt(d, 401, 220, '投板前核对', 9, BOLD, GREEN, 'middle')
+    checks = [('板框', '90 × 90 mm，Edge.Cuts 闭合'),
+              ('层序', 'F.Cu / In1 / In2 / B.Cu'),
+              ('叠层', 'JLC04161H-7628，1.6 mm'),
+              ('阻抗', '备注写明 50 Ω / 100 Ω 及所在层'),
+              ('丝印', '极性与 1 脚标记未被焊盘盖住')]
+    y = 206
+    for name, sub in checks:
+        y -= 30
+        d.add(Rect(334, y + 10, 8, 8, fillColor=colors.white,
+                   strokeColor=GREEN, strokeWidth=0.8))
+        _txt(d, 338, y + 12, '✓', 7, BOLD, GREEN, 'middle')
+        _txt(d, 348, y + 17, name, 7.5, BOLD, DARK)
+        _txt(d, 348, y + 6, sub, 6.1, FONT, GREY)
+
+    _txt(d, 6, 30, '嘉立创免费打样只认常规工艺：阻抗按 ±20% 管控，'
+                   '需要 ±10% 精密阻抗要单独下单并额外付费。', 7.5, FONT, DARK)
+    _txt(d, 6, 17, '四层板必须在下单页面手动指定叠层型号，默认叠层的介质厚度与'
+                   '阻抗计算依据不一致。', 7.5, BOLD, RED)
+    _txt(d, 6, 4, 'Gerber 一旦发出就不可撤回——核对清单五项逐条打勾，'
+                  '比返工一版便宜得多。', 7.5, FONT, GREY)
+    return d
+
+
 FIGURES = {
     'flow': flow,
     'stackup': stackup,
@@ -1312,6 +1406,8 @@ FIGURES = {
     'ocxo_buckboost': ocxo_buckboost,
     'ocxo_bb_layout': ocxo_bb_layout,
     'clk_layout': clk_layout,
+    'pcb_netclass': pcb_netclass,
+    'pcb_output': pcb_output,
 }
 
 

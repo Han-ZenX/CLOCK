@@ -1384,6 +1384,457 @@ def pcb_output():
     return d
 
 
+# ------------------------------------------- 图：LMK5B12204 引脚域与去耦布局
+
+# U1 (LMK5B12204, VQFN-48 RGZ 7×7 mm) 引脚相对芯片中心的偏移，单位 mm。
+# 顺序与 KiCad 屏幕一致：dx 向右为正、dy 向下为正。
+_LMK_PINS = {
+    1: (-3.4375, -2.75, 'STATUS0', 'log'), 2: (-3.4375, -2.25, 'STATUS1', 'log'),
+    3: (-3.4375, -1.75, 'CAP_DIG', 'cap'), 4: (-3.4375, -1.25, 'VDD_DIG', 'pwr'),
+    5: (-3.4375, -0.75, 'VDD_IN', 'pwr'), 6: (-3.4375, -0.25, 'PRIREF_P', 'clk'),
+    7: (-3.4375, 0.25, 'PRIREF_N', 'gnd'), 8: (-3.4375, 0.75, 'REFSEL', 'gnd'),
+    9: (-3.4375, 1.25, 'HW_SW_CTRL', 'log'), 10: (-3.4375, 1.75, 'SECREF_P', 'nc'),
+    11: (-3.4375, 2.25, 'SECREF_N', 'nc'), 12: (-3.4375, 2.75, 'GPIO0', 'log'),
+    13: (-2.75, 3.4375, 'PDN', 'log'), 14: (-2.25, 3.4375, 'NC', 'nc'),
+    15: (-1.75, 3.4375, 'NC', 'nc'), 16: (-1.25, 3.4375, 'OUT0_N', 'out'),
+    17: (-0.75, 3.4375, 'OUT0_P', 'out'), 18: (-0.25, 3.4375, 'VDDO_0', 'pwr'),
+    19: (0.25, 3.4375, 'VDDO_1', 'pwr'), 20: (0.75, 3.4375, 'OUT1_P', 'out'),
+    21: (1.25, 3.4375, 'OUT1_N', 'out'), 22: (1.75, 3.4375, 'NC', 'nc'),
+    23: (2.25, 3.4375, 'NC', 'nc'), 24: (2.75, 3.4375, 'GPIO1', 'log'),
+    25: (3.4375, 2.75, 'SDA', 'log'), 26: (3.4375, 2.25, 'SCL', 'log'),
+    27: (3.4375, 1.75, 'VDD_PLL1', 'pwr'), 28: (3.4375, 1.25, 'CAP_PLL1', 'cap'),
+    29: (3.4375, 0.75, 'LF1', 'cap'), 30: (3.4375, 0.25, 'GPIO2', 'log'),
+    31: (3.4375, -0.25, 'XO_P', 'clk'), 32: (3.4375, -0.75, 'XO_N', 'gnd'),
+    33: (3.4375, -1.25, 'VDD_XO', 'pwr'), 34: (3.4375, -1.75, 'LF2', 'cap'),
+    35: (3.4375, -2.25, 'CAP_PLL2', 'cap'), 36: (3.4375, -2.75, 'VDD_PLL2', 'pwr'),
+    37: (2.75, -3.4375, 'VDDO_2', 'pwr'), 38: (2.25, -3.4375, 'NC', 'nc'),
+    39: (1.75, -3.4375, 'NC', 'nc'), 40: (1.25, -3.4375, 'VDDO_2', 'pwr'),
+    41: (0.75, -3.4375, 'OUT2_N', 'out'), 42: (0.25, -3.4375, 'OUT2_P', 'out'),
+    43: (-0.25, -3.4375, 'VDDO_3', 'pwr'), 44: (-0.75, -3.4375, 'OUT3_N', 'out'),
+    45: (-1.25, -3.4375, 'OUT3_P', 'out'), 46: (-1.75, -3.4375, 'VDDO_3', 'pwr'),
+    47: (-2.25, -3.4375, 'NC', 'nc'), 48: (-2.75, -3.4375, 'NC', 'nc'),
+}
+
+_PIN_COLOR = {'pwr': AMBER, 'cap': colors.HexColor('#7d5ba6'), 'out': GREEN,
+              'clk': ACCENT, 'gnd': colors.HexColor('#555555'),
+              'log': colors.HexColor('#9aa7b2'), 'nc': colors.HexColor('#dcdcdc')}
+
+# 推荐摆放：(位号, 值, 封装, dx, dy, 旋转, 层)。dx/dy 为相对 U1 中心的 mm 偏移。
+_LMK_PLACE = [
+    # 左侧：DIG / IN 电源域，正面
+    ('C28', '100nF', '0402', -4.9, -1.25, 0, 'F'),
+    ('C29', '100nF', '0402', -4.9, 0.25, 0, 'F'),
+    ('C23', '10µF', '0402', -4.9, -2.75, 0, 'F'),
+    ('R9', '0Ω', '0402', -4.9, 1.75, 0, 'F'),
+    ('C65', '10µF', '0603', -7.1, -1.25, 0, 'F'),
+    ('C20', '10µF', '0603', -7.1, 0.25, 0, 'F'),
+    ('FB1', '220Ω', '0603', -9.8, -1.25, 0, 'F'),
+    ('FB3', '220Ω', '0603', -9.8, 0.25, 0, 'F'),
+    # 右侧：PLL1 / PLL2 / XO 域，正面
+    ('C31', '100nF', '0402', 4.9, -2.75, 0, 'F'),
+    ('C64', '100nF', '0402', 4.9, -1.25, 0, 'F'),
+    ('C26', '470nF', '0402', 4.9, 0.75, 0, 'F'),
+    ('C30', '100nF', '0402', 4.9, 2.25, 0, 'F'),
+    ('C25', '10µF', '0402', 6.7, -2.75, 0, 'F'),
+    ('C27', '100nF', '0402', 6.7, -1.25, 0, 'F'),
+    ('C24', '10µF', '0402', 6.7, 1.75, 0, 'F'),
+    ('C61', '10µF', '0603', 8.9, -2.75, 0, 'F'),
+    ('C63', '10µF', '0603', 8.9, -1.25, 0, 'F'),
+    ('C60', '10µF', '0603', 8.9, 2.25, 0, 'F'),
+    ('FB9', '220Ω', '0603', 11.6, -2.75, 0, 'F'),
+    ('FB10', '220Ω', '0603', 11.6, -1.25, 0, 'F'),
+    ('FB7', '220Ω', '0603', 11.6, 2.25, 0, 'F'),
+    # 顶边：VDDO_2/3，100nF 走背面，储能与磁珠留正面
+    ('C36', '100nF', '0402', -1.75, -4.98, 90, 'B'),
+    ('C37', '100nF', '0402', -0.25, -4.98, 90, 'B'),
+    ('C35', '100nF', '0402', 1.25, -4.98, 90, 'B'),
+    ('C34', '100nF', '0402', 2.75, -4.98, 90, 'B'),
+    ('C22', '10µF', '0603', 0.5, -7.6, 90, 'F'),
+    ('FB5', '220Ω', '0603', 0.5, -9.9, 90, 'F'),
+    # 底边：VDDO_0/1，同样走背面
+    ('C33', '100nF', '0402', -0.25, 4.98, 90, 'B'),
+    ('C32', '100nF', '0402', 0.25, 6.60, 90, 'B'),
+    ('C21', '10µF', '0603', 0.0, 8.8, 90, 'F'),
+    ('FB4', '220Ω', '0603', 0.0, 11.1, 90, 'F'),
+]
+
+# 元件本体 + 焊盘的外形尺寸（长 × 宽，mm），用于按真实比例出图。
+_PKG = {'0402': (1.52, 0.62), '0603': (2.45, 0.95)}
+
+
+def _dim(d, x1, y1, x2, y2, label, color=None, size=5.2, off=0):
+    """双向箭头尺寸线（水平或垂直），label 标在中点。"""
+    c = color or GREY
+    d.add(Line(x1, y1, x2, y2, strokeColor=c, strokeWidth=0.45))
+    if abs(y2 - y1) < 0.01:                                # 水平
+        for x, s in ((x1, 3), (x2, -3)):
+            d.add(Polygon([x, y1, x + s, y1 - 1.6, x + s, y1 + 1.6],
+                          fillColor=c, strokeColor=c))
+        _txt(d, (x1 + x2) / 2, y1 + 2.2 + off, label, size, FONT, c, 'middle')
+    else:                                                  # 垂直
+        for y, s in ((y1, 3), (y2, -3)):
+            d.add(Polygon([x1, y, x1 - 1.6, y + s, x1 + 1.6, y + s],
+                          fillColor=c, strokeColor=c))
+        _txt(d, x1 + 2.5 + off, (y1 + y2) / 2 - 1.8, label, size, FONT, c)
+
+
+def lmk_pinmap():
+    """LMK5B12204 (VQFN-48) 引脚功能分区与七个电源域的归属。"""
+    d = Drawing(W, 278)
+    CX, CY, S = 215, 158, 17.0                # S: pt per mm
+    B = 7.0 * S / 2
+
+    _box(d, CX - B, CY - B, 2 * B, 2 * B, colors.HexColor('#f0f0ee'),
+         colors.HexColor('#8a8a85'), 0.9, r=2)
+    ep = 5.15 * S / 2
+    _box(d, CX - ep, CY - ep, 2 * ep, 2 * ep, colors.HexColor('#e2e6e9'),
+         colors.HexColor('#a8b3bc'), 0.6)
+    for i in (-2, -1, 0, 1, 2):
+        for j in (-2, -1, 0, 1, 2):
+            d.add(Circle(CX + i * 1.16 * S, CY + j * 1.16 * S, 1.6,
+                         fillColor=colors.white,
+                         strokeColor=colors.HexColor('#8a99a6'), strokeWidth=0.4))
+    _box(d, CX - 52, CY - 8, 104, 25, colors.white,
+         colors.HexColor('#c9d2d9'), 0.5, r=2)
+    _txt(d, CX, CY + 8, 'U1  LMK5B12204', 7.5, BOLD, DARK, 'middle')
+    _txt(d, CX, CY - 2, 'VQFN-48  7 × 7 mm', 6, FONT, GREY, 'middle')
+    _txt(d, CX, CY - 4.4 * S - 26, 'E-PAD：5 × 5 过孔阵列直连各层地平面', 5.8, FONT,
+         colors.HexColor('#5c7080'), 'middle')
+
+    pl, pw = 0.85 * S, 0.28 * S
+    for n, (dx, dy, name, kind) in _LMK_PINS.items():
+        col = _PIN_COLOR[kind]
+        px, py = CX + dx * S, CY - dy * S
+        if abs(dx) > abs(dy):
+            d.add(Rect(px - pl / 2, py - pw / 2, pl, pw, fillColor=col,
+                       strokeColor=col, strokeWidth=0.3))
+        else:
+            d.add(Rect(px - pw / 2, py - pl / 2, pw, pl, fillColor=col,
+                       strokeColor=col, strokeWidth=0.3))
+    d.add(Circle(CX - 2.9 * S, CY + 2.75 * S, 2.6, fillColor=DARK, strokeColor=DARK))
+    _txt(d, CX - 2.9 * S - 6, CY + 2.75 * S - 2, '1', 5.5, BOLD, DARK, 'end')
+
+    def side(x, y, title, rows, anchor='start'):
+        _txt(d, x, y, title, 6.4, BOLD, AMBER, anchor)
+        yy = y
+        for r in rows:
+            yy -= 9.6
+            _txt(d, x, yy, r, 5.8, FONT, DARK, anchor)
+
+    side(CX - 4.5 * S, CY + 2.4 * S, '左侧 · DIG / IN 域', [
+        'pin 3　CAP_DIG　10 µF',
+        'pin 4　VDD_DIG　100 nF',
+        'pin 5　VDD_IN　 100 nF',
+        'pin 6　PRIREF_P　50 Ω 输入',
+        'pin 7 / 8　直接接地',
+    ], 'end')
+    side(CX + 4.5 * S, CY + 2.9 * S, '右侧 · PLL1 / PLL2 / XO 域', [
+        'pin 27　VDD_PLL1　100 nF',
+        'pin 28　CAP_PLL1　10 µF',
+        'pin 29　LF1　　　 470 nF',
+        'pin 31　XO_P　　　50 Ω 输入',
+        'pin 33　VDD_XO　　100 nF ← 缺件',
+        'pin 34　LF2　　　 100 nF',
+        'pin 35　CAP_PLL2　10 µF',
+        'pin 36　VDD_PLL2　100 nF',
+    ])
+    _txt(d, CX, CY + 4.4 * S + 8, '顶边 · VDDO_2 / VDDO_3（pin 37 / 40 / 43 / 46）'
+                                  '　4 × 100 nF，夹在 OUT2 / OUT3 中间',
+         6.2, BOLD, AMBER, 'middle')
+    _txt(d, CX, CY - 4.4 * S - 14, '底边 · VDDO_0 / VDDO_1（pin 18 / 19）'
+                                   '　2 × 100 nF，夹在 OUT0 / OUT1 中间',
+         6.2, BOLD, AMBER, 'middle')
+
+    lg = [('pwr', '电源引脚'), ('cap', '外接电容节点'), ('out', '差分输出'),
+          ('clk', '时钟输入'), ('gnd', '接地'), ('log', '逻辑 / I2C'), ('nc', 'NC')]
+    x = 14
+    for k, t in lg:
+        d.add(Rect(x, 10, 8, 5, fillColor=_PIN_COLOR[k],
+                   strokeColor=_PIN_COLOR[k], strokeWidth=0.3))
+        _txt(d, x + 11, 10, t, 5.8, FONT, DARK)
+        x += 11 + len(t) * 6.4 + 8
+    _txt(d, 14, 26, '关键约束：VDDO 的 6 个电源引脚全部夹在差分输出之间，'
+                    '正面出线通道被占满——它们的 100 nF 只能走背面。',
+         6.2, BOLD, RED)
+    return d
+
+
+def lmk_decap():
+    """LMK5B12204 外围电容 / 电阻 / 磁珠的推荐落位（按 1:1 比例）。"""
+    d = Drawing(W, 372)
+    CX, CY, S = 196, 190, 11.5                # S: pt per mm，覆盖约 ±13 mm
+
+    def X(dx):
+        return CX + dx * S
+
+    def Y(dy):
+        return CY - dy * S
+
+    for r in (4.9, 7.1, 9.8, 11.6):
+        d.add(Rect(X(-r), Y(r), 2 * r * S, 2 * r * S, fillColor=None,
+                   strokeColor=colors.HexColor('#e6ebef'), strokeWidth=0.4,
+                   strokeDashArray=[2, 2]))
+
+    # 出线 / 敏感信号通道
+    d.add(Rect(X(-1.4), Y(-3.44), 2.8 * S, 9.4 * S,
+               fillColor=colors.HexColor('#eef7ee'), strokeColor=None))
+    d.add(Rect(X(-1.4), Y(12.84), 2.8 * S, 9.4 * S,
+               fillColor=colors.HexColor('#eef7ee'), strokeColor=None))
+    d.add(Rect(X(3.44), Y(0.45), 9.4 * S, 1.4 * S,
+               fillColor=colors.HexColor('#e9f1f8'), strokeColor=None))
+    _txt(d, X(0), Y(-12.3), 'OUT2 / OUT3 出线通道', 5.6, BOLD, GREEN, 'middle')
+    _txt(d, X(0), Y(12.9), 'OUT0 / OUT1 出线通道', 5.6, BOLD, GREEN, 'middle')
+    _txt(d, X(8.4), Y(-0.42), 'XO_P 通道　留空 1.4 mm', 5.4, BOLD, ACCENT, 'middle')
+
+    B = 3.5 * S
+    _box(d, X(-3.5), Y(3.5), 2 * B, 2 * B, colors.HexColor('#f0f0ee'),
+         colors.HexColor('#8a8a85'), 0.8, r=1.5)
+    ep = 2.575 * S
+    _box(d, X(-2.575), Y(2.575), 2 * ep, 2 * ep, colors.HexColor('#e2e6e9'),
+         colors.HexColor('#a8b3bc'), 0.5)
+    _txt(d, X(0), Y(-0.1), 'U1', 7.5, BOLD, DARK, 'middle')
+    _txt(d, X(0), Y(0.55), 'LMK5B12204', 5, FONT, GREY, 'middle')
+
+    pl, pw = 0.85 * S, 0.28 * S
+    for n, (dx, dy, name, kind) in _LMK_PINS.items():
+        col = _PIN_COLOR[kind]
+        px, py = X(dx), Y(dy)
+        if abs(dx) > abs(dy):
+            d.add(Rect(px - pl / 2, py - pw / 2, pl, pw, fillColor=col,
+                       strokeColor=col, strokeWidth=0.25))
+        else:
+            d.add(Rect(px - pw / 2, py - pl / 2, pw, pl, fillColor=col,
+                       strokeColor=col, strokeWidth=0.25))
+
+    PUR = colors.HexColor('#7d5ba6')
+    STYLE = {                       # 值 -> (填充, 描边)
+        '100nF': (colors.white, ACCENT),
+        '470nF': (colors.HexColor('#f4f0fa'), PUR),
+        '10µF': (colors.HexColor('#e6f1fb'), ACCENT),
+        '220Ω': (colors.HexColor('#fdf3e4'), AMBER),
+        '0Ω': (colors.HexColor('#f0f2f4'), GREY),
+    }
+    # 顶 / 底两边的位号标注方位：1 = 上/右，-1 = 下/左
+    SIDE = {'C36': 1, 'C37': 1, 'C35': 1, 'C34': 1,
+            'C33': -1, 'C32': 1, 'C21': 1, 'FB4': 1, 'C22': 1, 'FB5': 1}
+
+    for ref, val, pkg, dx, dy, rot, layer in _LMK_PLACE:
+        L, Wd = _PKG[pkg]
+        w, h = (L * S, Wd * S) if rot == 0 else (Wd * S, L * S)
+        fill, edge = STYLE[val]
+        kw = dict(fillColor=fill, strokeColor=edge, strokeWidth=0.7)
+        if layer == 'B':
+            kw['strokeDashArray'] = [1.6, 1.4]
+            kw['strokeColor'] = PUR
+            edge = PUR
+        d.add(Rect(X(dx) - w / 2, Y(dy) - h / 2, w, h, **kw))
+        if rot == 0:
+            _txt(d, X(dx), Y(dy) - 1.7, ref, 4.7, BOLD, edge, 'middle')
+        else:
+            s = SIDE.get(ref, 1)
+            if ref in ('C33', 'C32'):     # 底边两颗贴得近，改标左右
+                sx = X(dx) + s * (w / 2 + 3)
+                _txt(d, sx, Y(dy) - 1.7, ref, 4.7, BOLD, edge,
+                     'start' if s > 0 else 'end')
+            else:
+                _txt(d, X(dx), Y(dy) + h / 2 + 2.6, ref, 4.7, BOLD, edge, 'middle')
+
+    # 半径尺寸链（画在左下角空白区）
+    yb = Y(6.4)
+    _dim(d, X(-3.86), yb, X(-4.9), yb, '4.9', ACCENT, 5.0)
+    _dim(d, X(-4.9), yb - 13, X(-7.1), yb - 13, '7.1', ACCENT, 5.0)
+    _dim(d, X(-7.1), yb - 26, X(-9.8), yb - 26, '9.8 mm', AMBER, 5.0)
+    _txt(d, X(-7.0), yb - 42, '半径链：引脚 ← 100 nF ← 10 µF ← 磁珠', 5.4, BOLD,
+         DARK, 'middle')
+
+    lx = 366
+    _txt(d, lx, 352, '图例', 6.4, BOLD, ACCENT)
+    items = [('100nF', '100 nF  0402'), ('470nF', '470 nF  0402（LF1）'),
+             ('10µF', '10 µF  0402 / 0603'), ('220Ω', '220 Ω 磁珠  0603'),
+             ('0Ω', '0 Ω 下拉  0402')]
+    y = 338
+    for val, t in items:
+        fill, edge = STYLE[val]
+        d.add(Rect(lx, y - 4, 15, 6.5, fillColor=fill, strokeColor=edge,
+                   strokeWidth=0.7))
+        _txt(d, lx + 19, y - 3, t, 5.4, FONT, DARK)
+        y -= 15
+    d.add(Rect(lx, y - 4, 15, 6.5, fillColor=colors.white, strokeColor=PUR,
+               strokeWidth=0.7, strokeDashArray=[1.6, 1.4]))
+    _txt(d, lx + 19, y - 3, '虚线 = 背面 B.Cu', 5.4, BOLD, PUR)
+    y -= 24
+    d.add(Rect(lx, y - 4, 15, 6.5, fillColor=colors.HexColor('#eef7ee'),
+               strokeColor=None))
+    _txt(d, lx + 19, y - 3, '差分输出通道', 5.4, FONT, DARK)
+    y -= 15
+    d.add(Rect(lx, y - 4, 15, 6.5, fillColor=colors.HexColor('#e9f1f8'),
+               strokeColor=None))
+    _txt(d, lx + 19, y - 3, 'XO_P 单端 50 Ω', 5.4, FONT, DARK)
+
+    y -= 30
+    _txt(d, lx, y, '两颗新增件', 6.4, BOLD, RED)
+    _txt(d, lx, y - 12, 'C64　100 nF　VDD_XO', 5.4, BOLD, DARK)
+    _txt(d, lx, y - 21, '当前该域只有 10 µF', 5.0, FONT, GREY)
+    _txt(d, lx, y - 34, 'C65　10 µF　VDD_DIG', 5.4, BOLD, DARK)
+    _txt(d, lx, y - 43, '当前该域只有 100 nF', 5.0, FONT, GREY)
+
+    _txt(d, 14, 22, '左右两侧没有差分输出，11 颗电容全部走正面，内圈半径 4.9 mm；'
+                    '顶底两边被 8 对差分输出占满，6 颗 100 nF 改到背面正对引脚。',
+         6.2, BOLD, DARK)
+    _txt(d, 14, 10, 'XO_P（pin 31）向右出线的 1.4 mm 通道必须留空——'
+                    'VDD_XO 的 C64 与 LF1 的 C26 分列通道上下，不得越界。',
+         6.2, FONT, DARK)
+    return d
+
+
+def lmk_fanout():
+    """两种扇出方式的尺寸细节：正面就近 与 背面正对。"""
+    d = Drawing(W, 262)
+    S = 46.0                                  # pt per mm
+    PUR = colors.HexColor('#7d5ba6')
+
+    def panel(ox, title, sub, tcol):
+        _box(d, ox - 24, 40, 226, 200, colors.HexColor('#fbfcfd'),
+             colors.HexColor('#dde4ea'), 0.6, r=3)
+        _txt(d, ox + 89, 226, title, 7, BOLD, tcol, 'middle')
+        _txt(d, ox + 89, 215, sub, 5.6, FONT, GREY, 'middle')
+
+    # ---------- 方式 A：正面就近 ----------
+    ox, oy = 40, 150
+    panel(ox, '方式 A · 正面就近（左右两侧用）', '引脚 → 短线 → 电容 → 地过孔', ACCENT)
+    d.add(Rect(ox, oy - 0.14 * S, 0.85 * S, 0.28 * S, fillColor=AMBER,
+               strokeColor=AMBER, strokeWidth=0.3))
+    _txt(d, ox + 0.42 * S, oy + 10, 'VDD 引脚焊盘', 5.2, BOLD, AMBER, 'middle')
+    _txt(d, ox + 0.42 * S, oy - 17, '0.28 × 0.85', 4.8, FONT, GREY, 'middle')
+    x0 = ox + 0.85 * S
+    d.add(Rect(x0, oy - 0.075 * S, 0.55 * S, 0.15 * S,
+               fillColor=COPPER, strokeColor=None))
+    x1 = x0 + 0.55 * S
+    for k in (0, 1):
+        d.add(Rect(x1 + k * 0.96 * S, oy - 0.31 * S, 0.56 * S, 0.62 * S,
+                   fillColor=colors.HexColor('#8a99a6'),
+                   strokeColor=colors.HexColor('#5c7080'), strokeWidth=0.4))
+    d.add(Rect(x1 + 0.56 * S, oy - 0.25 * S, 0.4 * S, 0.5 * S,
+               fillColor=colors.HexColor('#3a3a3a'), strokeColor=None))
+    _txt(d, x1 + 0.76 * S, oy + 24, '100 nF  0402', 5.6, BOLD, ACCENT, 'middle')
+    _txt(d, x1 + 0.76 * S, oy - 28, 'X7R  16 V', 4.8, FONT, GREY, 'middle')
+    x2 = x1 + 1.92 * S
+    d.add(Rect(x1 + 1.52 * S, oy - 0.075 * S, 0.4 * S, 0.15 * S,
+               fillColor=COPPER, strokeColor=None))
+    d.add(Circle(x2, oy, 0.3 * S, fillColor=colors.HexColor('#dfe7ee'),
+                 strokeColor=colors.HexColor('#5c7080'), strokeWidth=0.6))
+    d.add(Circle(x2, oy, 0.15 * S, fillColor=colors.white,
+                 strokeColor=colors.HexColor('#5c7080'), strokeWidth=0.4))
+    _txt(d, x2, oy + 24, 'GND 过孔', 5.4, BOLD, DARK, 'middle')
+    _txt(d, x2, oy - 28, '0.6 / 0.3', 4.8, FONT, GREY, 'middle')
+    _dim(d, x0, oy - 44, x1, oy - 44, '0.55', ACCENT, 5.0)
+    _dim(d, x1 + 1.52 * S, oy - 44, x2, oy - 44, '0.40', ACCENT, 5.0)
+    _dim(d, x0, oy - 62, x2, oy - 62, '引脚外沿 → 地过孔 = 2.47 mm', RED, 5.4)
+    _txt(d, ox - 16, 66, '回路：引脚 → 0.55 → 电容 1.52 → 0.40 → 地过孔，合计 2.47 mm', 5.4, FONT, DARK)
+    _txt(d, ox - 16, 54, '走线宽 ≥ 0.3 mm；GND 侧最好左右各打一个过孔', 5.4, FONT, GREY)
+
+    # ---------- 方式 B：背面正对 ----------
+    ox = 268
+    panel(ox, '方式 B · 背面正对（顶底两边用）', '引脚 → 过孔 → 背面电容', PUR)
+    stack = [('L1 F.Cu', 3, COPPER), ('', 17, DIEL), ('L2 GND', 3, COPPER),
+             ('', 48, CORE_C), ('L3 PWR', 3, COPPER), ('', 17, DIEL),
+             ('L4 B.Cu', 3, COPPER)]
+    top = 196
+    ly = top
+    ycu = {}
+    for name, h, col in stack:
+        d.add(Rect(ox, ly - h, 172, h, fillColor=col,
+                   strokeColor=colors.HexColor('#b0b0aa'), strokeWidth=0.25))
+        if name:
+            _txt(d, ox + 176, ly - h + 0.5, name, 4.8, FONT, GREY)
+            ycu[name[:2]] = ly - h / 2
+        ly -= h
+    bot = ly
+
+    vx = ox + 58                                     # 电源过孔
+    d.add(Rect(ox + 14, top, 0.85 * S, 4, fillColor=AMBER, strokeColor=AMBER))
+    _txt(d, ox + 14 + 0.42 * S, top + 8, 'VDD 引脚', 5.2, BOLD, AMBER, 'middle')
+    d.add(Rect(vx - 1.5, bot, 3, top - bot, fillColor=COPPER, strokeColor=COPPER))
+    _txt(d, vx + 7, top - 16, '电源过孔  0.6 / 0.3', 5.2, BOLD, DARK)
+    _txt(d, vx + 7, top - 25, '穿 L2 处开 antipad，在 L3 接入本域铜皮', 4.8, FONT, RED)
+    _dim(d, ox + 14 + 0.85 * S, top + 4, vx, top + 4, '0.35', PUR, 5.0)
+
+    # 背面电容：pad1 对准电源过孔
+    cx0 = vx - 0.28 * S
+    for k in (0, 1):
+        d.add(Rect(cx0 + k * 0.96 * S, bot - 6, 0.56 * S, 6,
+                   fillColor=colors.HexColor('#8a99a6'),
+                   strokeColor=colors.HexColor('#5c7080'), strokeWidth=0.4))
+    d.add(Rect(cx0 + 0.56 * S, bot - 5, 0.4 * S, 4,
+               fillColor=colors.HexColor('#3a3a3a'), strokeColor=None))
+    _txt(d, cx0 + 0.76 * S, bot - 16, '100 nF  0402（背面）', 5.4, BOLD, PUR, 'middle')
+
+    gx = cx0 + 1.52 * S + 0.4 * S                    # 地过孔：L4 → L2
+    d.add(Rect(gx - 1.5, bot, 3, ycu['L2'] - bot,
+               fillColor=colors.HexColor('#5c7080'),
+               strokeColor=colors.HexColor('#5c7080')))
+    d.add(Rect(cx0 + 1.52 * S, bot - 3.5, 0.4 * S, 2.5,
+               fillColor=COPPER, strokeColor=None))
+    _txt(d, gx + 6, bot + 10, 'GND 过孔直落 L2', 5.2, BOLD, DARK)
+    _txt(d, ox - 16, 66, '回路：引脚 → 0.35 → 过孔（板厚 1.6）→ 电容 → 地过孔', 5.4, FONT, DARK)
+    _txt(d, ox - 16, 54, '过孔电感约 1.2 nH，与正面 2.9 mm 走线的量级相当', 5.4, FONT, GREY)
+
+    _txt(d, 14, 26, 'TI 手册允许两种做法：同面就近、或背面正对引脚。'
+                    '本板顶底两边的正面被 8 对差分输出占满，只能选背面。',
+         6.2, BOLD, DARK)
+    _txt(d, 14, 14, '两种方式都必须做到：电容的 GND 侧焊盘外 0.4 mm 内有地过孔，'
+                    '否则省下的回路电感全部还回给地回路。', 6.2, FONT, DARK)
+    return d
+
+
+def lmk_gap():
+    """当前 PCB 实测的去耦距离与目标值的差距。"""
+    d = Drawing(W, 300)
+    X0, SC = 118, 13.0                        # SC: pt per mm
+
+    rows = [
+        ('CAP_DIG', 'C23 10µF', 1.86, True), ('CAP_PLL1', 'C24 10µF', 1.88, True),
+        ('LF2', 'C27 100nF', 1.89, True), ('LF1', 'C26 470nF', 1.93, True),
+        ('CAP_PLL2', 'C25 10µF', 2.01, True), ('VDDO_3', 'C36 100nF', 2.03, True),
+        ('VDDO_2', 'C35 100nF', 2.11, True), ('VDDO_2', 'C34 100nF', 2.14, True),
+        ('VDDO_3', 'C37 100nF', 4.65, False), ('VDD_PLL2', 'C31 100nF', 7.73, False),
+        ('VDDO_0', 'C33 100nF', 9.91, False), ('VDDO_1', 'C32 100nF', 12.52, False),
+        ('VDD_PLL1', 'C30 100nF', 14.18, False), ('VDD_DIG', 'C28 100nF', 16.88, False),
+        ('VDD_IN', 'C29 100nF', 21.10, False), ('VDD_XO', '缺件', None, False),
+    ]
+
+    _txt(d, 14, 288, '八个节点已经到位，八个还差一个数量级——'
+                     '最远的 VDD_IN 是目标值的十倍', 6.6, BOLD, DARK)
+    _txt(d, 14, 272, '电源节点', 6.2, BOLD, ACCENT)
+    _txt(d, 66, 272, '当前器件', 6.2, BOLD, ACCENT)
+    _txt(d, X0, 272, '焊盘到引脚的距离（mm）', 6.2, BOLD, ACCENT)
+    d.add(Line(14, 267, 468, 267, strokeColor=ACCENT, strokeWidth=0.7))
+
+    tx = X0 + 2.0 * SC
+    d.add(Line(tx, 22, tx, 262, strokeColor=GREEN, strokeWidth=0.9,
+               strokeDashArray=[3, 2]))
+    _txt(d, tx + 4, 256, '目标 ≤ 2.0 mm', 5.6, BOLD, GREEN)
+
+    y = 262
+    for net, ref, val, ok in rows:
+        y -= 15
+        col = GREEN if ok else RED
+        _txt(d, 14, y, net, 5.8, BOLD, DARK)
+        _txt(d, 66, y, ref, 5.6, FONT, GREY)
+        if val is None:
+            _txt(d, X0, y, '该域没有 100 nF——必须新增 C64', 5.8, BOLD, RED)
+            continue
+        w = val * SC
+        d.add(Rect(X0, y - 1, w, 7, fillColor=col, strokeColor=col))
+        _txt(d, X0 + w + 4, y, '%.2f' % val, 5.6, BOLD, col)
+
+    for v in (0, 5, 10, 15, 20):
+        x = X0 + v * SC
+        d.add(Line(x, 16, x, 20, strokeColor=GREY, strokeWidth=0.4))
+        _txt(d, x, 8, str(v), 5.2, FONT, GREY, 'middle')
+    _txt(d, X0 + 22.5 * SC, 8, 'mm', 5.2, FONT, GREY, 'middle')
+    return d
+
 FIGURES = {
     'flow': flow,
     'stackup': stackup,
@@ -1408,6 +1859,10 @@ FIGURES = {
     'clk_layout': clk_layout,
     'pcb_netclass': pcb_netclass,
     'pcb_output': pcb_output,
+    'lmk_pinmap': lmk_pinmap,
+    'lmk_decap': lmk_decap,
+    'lmk_fanout': lmk_fanout,
+    'lmk_gap': lmk_gap,
 }
 
 

@@ -650,17 +650,25 @@
     "top_level_sheets": [
       {
         "filename": "CLOCK.kicad_sch",
-        "name": "根目录",
-        "uuid": "a8714d66-6565-4fb4-a698-a884e68083d2"
+        "name": "CLOCK",
+        "uuid": "e8d80103-6a56-4030-bccc-c2b7ae1d549d"
       }
     ],
-    "used_designators": "#FLG1-5,#FLG7,R1-34,J1-14,U1-7,D1-2,#PWR1-138,C1-52,C56,C59-63,FB1-7,FB9-10,H1-5,TP1-2,USB1,L1",
+    "used_designators": "#FLG1-5,#FLG7,R1-36,R39-72,J1-28,U1-14,D1-4,#PWR1-138,C1-126,FB1-20,H1-10,TP1-4,USB1-2,L1-2",
     "variants": []
   },
   "sheets": [
     [
-      "a8714d66-6565-4fb4-a698-a884e68083d2",
-      "根目录"
+      "e8d80103-6a56-4030-bccc-c2b7ae1d549d",
+      "CLOCK"
+    ],
+    [
+      "ad7e8003-daaa-4c55-9ec1-92ad34af2e50",
+      "CLOCK_GEN"
+    ],
+    [
+      "dc044937-6056-4220-ad80-6587bb362b58",
+      "MAIN_CTRL"
     ]
   ],
   "text_variables": {},

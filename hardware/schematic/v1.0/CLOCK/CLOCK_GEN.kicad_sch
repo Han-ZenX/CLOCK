@@ -1384,6 +1384,24 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 7.62 -15.24 90)
+					(length 2.54)
+					(name "EP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 			(embedded_fonts no)
 		)
@@ -14407,106 +14425,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Counter:LMK1C1102")
-		(at 111.76 200.66 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "15611d7b-23b3-4153-8a28-d938c003b62b")
-		(property "Reference" "U3"
-			(at 112.522 199.644 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LMK1C1102"
-			(at 120.396 199.644 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm"
-			(at 111.76 200.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 111.76 200.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 111.76 200.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "5"
-			(uuid "844721b6-96a4-493b-aef9-75be49c8bd5a")
-		)
-		(pin "8"
-			(uuid "873b13d3-9708-461a-91ec-8fa6714dc395")
-		)
-		(pin "7"
-			(uuid "67fbba39-5d30-4e55-8842-7a946e3b2fb7")
-		)
-		(pin "6"
-			(uuid "358dc41c-8163-4308-a8d8-30c8122ffbc9")
-		)
-		(pin "3"
-			(uuid "cddba60e-0546-4dee-888c-c5b0dca21ce3")
-		)
-		(pin "9"
-			(uuid "f7025166-578a-4d5d-a34b-ddf96f25d748")
-		)
-		(pin "1"
-			(uuid "848da0d6-cdbf-4600-b970-e706590d58b8")
-		)
-		(pin "2"
-			(uuid "39a16690-507f-4867-a281-04ccb3b35c94")
-		)
-		(pin "4"
-			(uuid "49d89e49-e6c6-4c87-89b6-f4a047ca5774")
-		)
-		(instances
-			(project "CLOCK"
-				(path "/e8d80103-6a56-4030-bccc-c2b7ae1d549d/ad7e8003-daaa-4c55-9ec1-92ad34af2e50"
-					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 119.38 215.9 0)
 		(unit 1)
@@ -18129,6 +18047,107 @@
 			(project "CLOCK"
 				(path "/e8d80103-6a56-4030-bccc-c2b7ae1d549d/ad7e8003-daaa-4c55-9ec1-92ad34af2e50"
 					(reference "#PWR0104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Counter:LMK1C1102")
+		(at 111.76 200.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3ea32b0d-90d5-4ef3-9996-7065b39f2b44")
+		(property "Reference" "U3"
+			(at 118.745 195.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LMK1C1102"
+			(at 118.745 198.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm"
+			(at 111.76 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 111.76 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "6d8322dd-b5e2-474a-9e44-248bf7086daa")
+		)
+		(pin "6"
+			(uuid "0e35a933-2b3a-47a7-9bd4-c1736ddcc7e1")
+		)
+		(pin "4"
+			(uuid "d6c0662a-c5fe-459d-a400-6d835ff87d92")
+		)
+		(pin "1"
+			(uuid "894e753d-088d-4e6d-9114-e6b51a662345")
+		)
+		(pin "5"
+			(uuid "8f7a5bdb-2e5f-4269-8805-82f253161762")
+		)
+		(pin "8"
+			(uuid "af7554b2-a867-4ff8-81c0-6277405f23b9")
+		)
+		(pin "2"
+			(uuid "9265a997-7ca6-47ac-89d1-39f3dfb81fa7")
+		)
+		(pin "7"
+			(uuid "64a7a6a3-a5e9-4c0b-86c5-a0e0bebbb68c")
+		)
+		(pin "9"
+			(uuid "c9b08af3-e266-4d40-9c7c-e71712d89c3f")
+		)
+		(instances
+			(project "CLOCK"
+				(path "/e8d80103-6a56-4030-bccc-c2b7ae1d549d/ad7e8003-daaa-4c55-9ec1-92ad34af2e50"
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -24464,7 +24483,7 @@
 				)
 			)
 		)
-		(property "Description" "Ferrite bead"
+		(property "Description" "Ferrite bead, small symbol"
 			(at 364.49 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -25435,106 +25454,6 @@
 			(project "CLOCK"
 				(path "/e8d80103-6a56-4030-bccc-c2b7ae1d549d/ad7e8003-daaa-4c55-9ec1-92ad34af2e50"
 					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Counter:LMK1C1102")
-		(at 74.93 200.66 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8a1c4278-2ebb-4944-8869-813f81994c41")
-		(property "Reference" "U2"
-			(at 75.692 199.644 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LMK1C1102"
-			(at 83.566 199.644 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm"
-			(at 74.93 200.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 74.93 200.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 74.93 200.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "599d30c1-8a66-4ec2-b68c-7e794156fe46")
-		)
-		(pin "1"
-			(uuid "5cb03565-0d39-4ae6-a238-b6d30a06df88")
-		)
-		(pin "5"
-			(uuid "db2eccfa-ab26-40cf-a135-ae22cf52f1a2")
-		)
-		(pin "2"
-			(uuid "d28de3fc-faf4-47d5-a58c-2a95414aa3c8")
-		)
-		(pin "6"
-			(uuid "2b3b2b23-5dc5-4b7a-b944-ad0445d7b5b2")
-		)
-		(pin "8"
-			(uuid "8e778331-d0d2-48e5-8d50-454b7a418d8c")
-		)
-		(pin "7"
-			(uuid "356f6ec5-837e-4b4b-83ed-b4b560df387a")
-		)
-		(pin "4"
-			(uuid "0d273623-b03f-434d-95b9-65b416d99d0a")
-		)
-		(pin "9"
-			(uuid "52aa6173-b351-44e3-b7c8-1108d3485f6f")
-		)
-		(instances
-			(project "CLOCK"
-				(path "/e8d80103-6a56-4030-bccc-c2b7ae1d549d/ad7e8003-daaa-4c55-9ec1-92ad34af2e50"
-					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -27310,6 +27229,107 @@
 			(project "CLOCK"
 				(path "/e8d80103-6a56-4030-bccc-c2b7ae1d549d/ad7e8003-daaa-4c55-9ec1-92ad34af2e50"
 					(reference "#FLG07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Counter:LMK1C1102")
+		(at 74.93 200.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9bff900c-3de9-4089-9c01-585bf3144574")
+		(property "Reference" "U2"
+			(at 81.915 195.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LMK1C1102"
+			(at 81.915 198.12 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm"
+			(at 74.93 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 74.93 200.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9d7047e4-9b54-44ed-8bcb-67068fec35c2")
+		)
+		(pin "4"
+			(uuid "ddaf4816-6102-401b-bf9d-69d94cc62d0e")
+		)
+		(pin "5"
+			(uuid "77d7b296-a9ce-4017-92d4-0c004284c376")
+		)
+		(pin "8"
+			(uuid "ae50cd76-d9e1-4dd2-a5ae-317ab677c86f")
+		)
+		(pin "3"
+			(uuid "408701ea-6616-46c5-9cc3-b9dc710aff4b")
+		)
+		(pin "2"
+			(uuid "7991fe8d-fa28-4e99-a6f2-c17946cdce87")
+		)
+		(pin "6"
+			(uuid "608f6abb-ee1b-47b3-8874-d5ff69fe7203")
+		)
+		(pin "7"
+			(uuid "ddeec059-b33f-49ed-8882-09f44bde0cb3")
+		)
+		(pin "9"
+			(uuid "8ea0a660-8512-4da3-998b-be6eabcd4e83")
+		)
+		(instances
+			(project "CLOCK"
+				(path "/e8d80103-6a56-4030-bccc-c2b7ae1d549d/ad7e8003-daaa-4c55-9ec1-92ad34af2e50"
+					(reference "U2")
 					(unit 1)
 				)
 			)

@@ -3,7 +3,7 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(general
-		(thickness 1.6)
+		(thickness 1.6062)
 		(legacy_teardrops no)
 	)
 	(paper "A4")
@@ -53,31 +53,31 @@
 			)
 			(layer "dielectric 1"
 				(type "prepreg")
-				(thickness 0.1)
+				(thickness 0.2104)
 				(material "FR4")
-				(epsilon_r 4.5)
+				(epsilon_r 4.4)
 				(loss_tangent 0.02)
 			)
 			(layer "In1.Cu"
 				(type "copper")
-				(thickness 0.035)
+				(thickness 0.0152)
 			)
 			(layer "dielectric 2"
 				(type "core")
-				(thickness 1.24)
+				(thickness 1.065)
 				(material "FR4")
-				(epsilon_r 4.5)
+				(epsilon_r 4.2)
 				(loss_tangent 0.02)
 			)
 			(layer "In2.Cu"
 				(type "copper")
-				(thickness 0.035)
+				(thickness 0.0152)
 			)
 			(layer "dielectric 3"
 				(type "prepreg")
-				(thickness 0.1)
+				(thickness 0.2104)
 				(material "FR4")
-				(epsilon_r 4.5)
+				(epsilon_r 4.4)
 				(loss_tangent 0.02)
 			)
 			(layer "B.Cu"
@@ -113,6 +113,7 @@
 		)
 		(capping no)
 		(filling no)
+		(zone_defaults)
 		(aux_axis_origin 95.75 52.85)
 		(grid_origin 95.75 52.85)
 		(pcbplotparams
@@ -216,9 +217,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/6d9c3a1a-c2b1-4d33-b598-54ec8802369f")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/6d9c3a1a-c2b1-4d33-b598-54ec8802369f")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -375,9 +376,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/037845fd-43af-4db4-a625-9f2aae208132")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/037845fd-43af-4db4-a625-9f2aae208132")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -534,9 +535,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/53b87e31-e3fd-41df-a809-e27810b8e01b")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/53b87e31-e3fd-41df-a809-e27810b8e01b")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -693,9 +694,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/2802c28b-0c98-4ee8-99ca-1d10b0c180af")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/2802c28b-0c98-4ee8-99ca-1d10b0c180af")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -852,9 +853,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/1eaa4302-947d-4137-85d7-fe1b660cb9dc")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/1eaa4302-947d-4137-85d7-fe1b660cb9dc")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1013,9 +1014,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/2e67ad01-2b93-494d-87e9-4b8c072d2dfb")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/2e67ad01-2b93-494d-87e9-4b8c072d2dfb")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1172,9 +1173,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/1e87999b-b9be-4848-ae10-02de89c0ab50")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/1e87999b-b9be-4848-ae10-02de89c0ab50")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1333,9 +1334,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/3ac84f63-0bc3-4bbc-8e95-da53f1e14321")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/3ac84f63-0bc3-4bbc-8e95-da53f1e14321")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1494,9 +1495,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/4205b2dd-8502-4578-a8a5-f52a25966ef1")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/4205b2dd-8502-4578-a8a5-f52a25966ef1")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1655,9 +1656,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/076921e6-04b3-4a56-a090-f0dbefffd979")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/076921e6-04b3-4a56-a090-f0dbefffd979")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1814,9 +1815,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/318c48f1-c146-4b9a-8810-716ae555663c")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/318c48f1-c146-4b9a-8810-716ae555663c")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -1975,9 +1976,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/feb38e3a-37b6-491d-bf23-2f1dca26260c")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/feb38e3a-37b6-491d-bf23-2f1dca26260c")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2134,9 +2135,9 @@
 			)
 		)
 		(property ki_fp_filters "Inductor_* L_* *Ferrite*")
-		(path "/271a45e6-57be-45ef-b3d3-50ff5c1f74b5")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/271a45e6-57be-45ef-b3d3-50ff5c1f74b5")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2295,9 +2296,9 @@
 			)
 		)
 		(property ki_fp_filters "Inductor_* L_* *Ferrite*")
-		(path "/5f0a50f7-6048-4049-a543-833cd9369a72")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/5f0a50f7-6048-4049-a543-833cd9369a72")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2454,9 +2455,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/41dba721-b388-49c7-9ef4-52bc2cf3cd54")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/41dba721-b388-49c7-9ef4-52bc2cf3cd54")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2615,9 +2616,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/9b3fa97b-8c82-4fb4-9e91-04220f2ccb03")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/9b3fa97b-8c82-4fb4-9e91-04220f2ccb03")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2776,9 +2777,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/d750cf57-e893-440b-8a6b-df3f5944c794")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/d750cf57-e893-440b-8a6b-df3f5944c794")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -2964,9 +2965,9 @@
 				)
 			)
 		)
-		(path "/340f5b88-c41c-4ce7-9945-4944b77532b4")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/340f5b88-c41c-4ce7-9945-4944b77532b4")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3266,9 +3267,9 @@
 			)
 		)
 		(property ki_fp_filters "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*")
-		(path "/02ddf84c-0a53-4f59-9507-3dbf5aa44d42")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/02ddf84c-0a53-4f59-9507-3dbf5aa44d42")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -3652,9 +3653,9 @@
 			)
 		)
 		(property ki_fp_filters "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*")
-		(path "/f1e31d57-0baa-4b7c-b5f1-99d7e215430d")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/f1e31d57-0baa-4b7c-b5f1-99d7e215430d")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -4046,9 +4047,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/a690b79c-56fe-4dd9-8e0f-9d8fefc59894")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/a690b79c-56fe-4dd9-8e0f-9d8fefc59894")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -4205,9 +4206,9 @@
 			)
 		)
 		(property ki_fp_filters "Inductor_* L_* *Ferrite*")
-		(path "/ebd7be3d-6fb4-4c48-8852-79bffe9a5c59")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/ebd7be3d-6fb4-4c48-8852-79bffe9a5c59")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -4364,9 +4365,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/0ec3641a-5cab-4d17-8954-fecd8b95fe71")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/0ec3641a-5cab-4d17-8954-fecd8b95fe71")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -4523,9 +4524,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/c75da977-ead3-4176-b5ad-e5ed304c9c78")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/c75da977-ead3-4176-b5ad-e5ed304c9c78")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -4684,9 +4685,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/0ee7a731-e3a7-4f0d-86d6-b06ef2369121")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/0ee7a731-e3a7-4f0d-86d6-b06ef2369121")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -4843,9 +4844,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/11778dee-4e83-4d3f-9192-1b3bf369c682")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/11778dee-4e83-4d3f-9192-1b3bf369c682")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -5004,9 +5005,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/67b5ebd3-a22b-466a-ab8d-a2eaa901906a")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/67b5ebd3-a22b-466a-ab8d-a2eaa901906a")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -5163,9 +5164,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/52697a6c-6615-4d76-97a8-8061a773adcc")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/52697a6c-6615-4d76-97a8-8061a773adcc")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -5316,9 +5317,9 @@
 			)
 		)
 		(property ki_fp_filters "Pin* Test*")
-		(path "/7f26082c-df41-4f04-b945-d8cff998b3a7")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/7f26082c-df41-4f04-b945-d8cff998b3a7")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -5499,9 +5500,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/492f29b9-8509-4e7b-9e73-de98491d8918")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/492f29b9-8509-4e7b-9e73-de98491d8918")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -5658,9 +5659,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/7467db63-6977-4c99-94df-93bc4b974750")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/7467db63-6977-4c99-94df-93bc4b974750")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -5817,9 +5818,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/fe4896d0-e0c1-4c2d-adea-9350a5bafddd")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/fe4896d0-e0c1-4c2d-adea-9350a5bafddd")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -5976,9 +5977,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/c7b220a8-97ad-4d40-a65c-5cda292b2e7e")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/c7b220a8-97ad-4d40-a65c-5cda292b2e7e")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -6135,9 +6136,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/a07281d8-66fb-4b8c-914c-f28f14d6b763")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/a07281d8-66fb-4b8c-914c-f28f14d6b763")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -6297,9 +6298,9 @@
 				)
 			)
 		)
-		(path "/e90d87f3-5a1d-4529-bb22-710a3731d8a8")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/e90d87f3-5a1d-4529-bb22-710a3731d8a8")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -6528,9 +6529,9 @@
 				)
 			)
 		)
-		(path "/e03a1ca1-e547-4b95-bf46-c745b67dcba2")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/e03a1ca1-e547-4b95-bf46-c745b67dcba2")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -6700,9 +6701,9 @@
 			)
 		)
 		(property ki_fp_filters "MountingHole*Pad*")
-		(path "/e16aa1b7-17c5-4bf1-89b9-c289a741631e")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/e16aa1b7-17c5-4bf1-89b9-c289a741631e")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -6822,9 +6823,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/5d1b79d4-1245-4139-b572-3afef1be2ae8")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/5d1b79d4-1245-4139-b572-3afef1be2ae8")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -6983,9 +6984,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/f36f8447-6fdc-43ba-8c0f-03c985cb61b2")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/f36f8447-6fdc-43ba-8c0f-03c985cb61b2")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -7144,9 +7145,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/7bdaa328-8cbe-44e3-8cd4-5bba9c45a3a1")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/7bdaa328-8cbe-44e3-8cd4-5bba9c45a3a1")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -7297,9 +7298,9 @@
 			)
 		)
 		(property ki_fp_filters "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*")
-		(path "/0f5d1921-ae7c-49c7-b0c6-81c38e2f5f07")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/0f5d1921-ae7c-49c7-b0c6-81c38e2f5f07")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -7691,9 +7692,9 @@
 			)
 		)
 		(property ki_fp_filters "Inductor_* L_* *Ferrite*")
-		(path "/c560894f-0a07-423b-bed5-b2252328368f")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/c560894f-0a07-423b-bed5-b2252328368f")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -7852,9 +7853,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/6e3b3915-743b-42ec-b0de-4e77df4ac5b0")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/6e3b3915-743b-42ec-b0de-4e77df4ac5b0")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -8011,9 +8012,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/ab892922-4c83-4b07-a6ef-2bdeb8bbdda0")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/ab892922-4c83-4b07-a6ef-2bdeb8bbdda0")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -8108,316 +8109,6 @@
 			)
 		)
 	)
-	(footprint "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm"
-		(layer "F.Cu")
-		(uuid "552775f4-0420-4b6c-b318-3cc939646552")
-		(at 110.9 76.6)
-		(descr "8-Lead Plastic WSON, 2x2mm Body, 0.5mm Pitch, WSON-8, http://www.ti.com/lit/ds/symlink/lm27761.pdf")
-		(tags "WSON 8 1EP")
-		(property "Reference" "U2"
-			(at 0.38 -1.9 0)
-			(layer "F.SilkS")
-			(uuid "c524b12e-89e7-430a-bdec-2228cb3f8d00")
-			(effects
-				(font
-					(size 0.5 0.5)
-					(thickness 0.1)
-				)
-			)
-		)
-		(property "Value" "LMK1C1102"
-			(at 0.01 2.14 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1b9fb570-fc2a-4963-8792-bf00bf5630b5")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "396398cf-b596-4406-b20f-3a617a48b9f3")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4995812b-5634-48c2-a4d4-d19d4d81a960")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(path "/4f4dde39-3c88-4af2-b008-7534012d8660")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2" "3" "4" "8" "7" "6" "5")
-			)
-		)
-		(attr smd)
-		(duplicate_pad_numbers_are_jumpers no)
-		(fp_line
-			(start -1.01 -1.14)
-			(end 0.99 -1.14)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "0b9317cf-c9bb-4de0-a1f9-92f1d47c46c5")
-		)
-		(fp_line
-			(start -1 1.14)
-			(end 1 1.14)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "47819566-fdb6-4419-aebd-04ef84605558")
-		)
-		(fp_poly
-			(pts
-				(xy -1.37 -1.07) (xy -1.65 -1.07) (xy -1.37 -1.35) (xy -1.37 -1.07)
-			)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill yes)
-			(layer "F.SilkS")
-			(uuid "9e87ea91-6352-462c-88e1-5663f849bd41")
-		)
-		(fp_line
-			(start -1.6 -1.25)
-			(end -1.6 1.25)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "2ae929d4-a80a-4489-828d-f30c1c6209e1")
-		)
-		(fp_line
-			(start -1.6 -1.25)
-			(end 1.6 -1.25)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "7a9c19ec-efc3-4e81-82a6-27939b10e081")
-		)
-		(fp_line
-			(start -1.6 1.25)
-			(end 1.6 1.25)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "6da7a7be-8498-40d3-ae76-91dffb3f150e")
-		)
-		(fp_line
-			(start 1.6 -1.25)
-			(end 1.6 1.25)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(layer "F.CrtYd")
-			(uuid "3e5c1c2b-ed27-4d44-9f80-35d859dc19b5")
-		)
-		(fp_line
-			(start -1 1)
-			(end -1 -0.5)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "15e2ec96-4039-4949-871f-66add5ed9544")
-		)
-		(fp_line
-			(start -0.5 -1)
-			(end -1 -0.5)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "af81c330-e2b2-4d97-b790-dc2687605d2c")
-		)
-		(fp_line
-			(start -0.5 -1)
-			(end 1 -1)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "36ad7ce0-11f1-41dc-a51e-f278f0906883")
-		)
-		(fp_line
-			(start 1 -1)
-			(end 1 1)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "8d776182-8fa9-4170-a568-296d9d706571")
-		)
-		(fp_line
-			(start 1 1)
-			(end -1 1)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "c5367598-871e-475c-8368-ecc109f9da35")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "ac038f6f-8dc2-42d3-a28a-ccc1c0b7a651")
-			(effects
-				(font
-					(size 0.5 0.5)
-					(thickness 0.1)
-				)
-			)
-		)
-		(pad "" smd rect
-			(at 0 -0.4)
-			(size 0.75 0.65)
-			(layers "F.Paste")
-			(uuid "de1da03a-d1df-4671-a532-67118992311a")
-		)
-		(pad "" smd rect
-			(at 0 0.4)
-			(size 0.75 0.65)
-			(layers "F.Paste")
-			(uuid "1d411f1e-4d62-40c0-be5d-46f7f3490f2e")
-		)
-		(pad "1" smd roundrect
-			(at -0.95 -0.75)
-			(size 0.5 0.25)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net "Net-(U2-CLKIN)")
-			(pinfunction "CLKIN_1")
-			(pintype "input")
-			(uuid "38beb41f-1a1a-4a5a-b672-0c05b6da9e3b")
-		)
-		(pad "2" smd roundrect
-			(at -0.95 -0.25)
-			(size 0.5 0.25)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net "SIG_1")
-			(pinfunction "1G_2")
-			(pintype "input")
-			(uuid "9b5dff5a-218b-488d-9505-c3a1110086ad")
-		)
-		(pad "3" smd roundrect
-			(at -0.95 0.25)
-			(size 0.5 0.25)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net "Net-(U2-Y0)")
-			(pinfunction "Y0_3")
-			(pintype "input")
-			(uuid "84b48af3-a4e7-42a3-845d-231e2e479a47")
-		)
-		(pad "4" smd roundrect
-			(at -0.95 0.75)
-			(size 0.5 0.25)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net "GND")
-			(pinfunction "GND_4")
-			(pintype "input")
-			(uuid "5520b539-a1b7-46d4-8628-59e75f453371")
-		)
-		(pad "5" smd roundrect
-			(at 0.95 0.75)
-			(size 0.5 0.25)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net "unconnected-(U2-NC-Pad5)")
-			(pinfunction "NC_5")
-			(pintype "input+no_connect")
-			(uuid "c76145ac-fac3-403d-b9e9-ebcfeb502a3c")
-		)
-		(pad "6" smd roundrect
-			(at 0.95 0.25)
-			(size 0.5 0.25)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net "Net-(U2-VDD)")
-			(pinfunction "VDD_6")
-			(pintype "input")
-			(uuid "f6213ce4-ba64-4478-bc9e-a83451012dde")
-		)
-		(pad "7" smd roundrect
-			(at 0.95 -0.25)
-			(size 0.5 0.25)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net "unconnected-(U2-NC-Pad7)")
-			(pinfunction "NC_7")
-			(pintype "input+no_connect")
-			(uuid "0a061802-856f-4922-a358-1f66374cac69")
-		)
-		(pad "8" smd roundrect
-			(at 0.95 -0.75)
-			(size 0.5 0.25)
-			(layers "F.Cu" "F.Mask" "F.Paste")
-			(roundrect_rratio 0.25)
-			(net "Net-(U2-Y1)")
-			(pinfunction "Y1_8")
-			(pintype "input")
-			(uuid "216f4266-f445-412c-808e-ac1eec8e4e52")
-		)
-		(pad "9" smd rect
-			(at 0 0)
-			(size 0.9 1.6)
-			(layers "F.Cu" "F.Mask")
-			(uuid "202a9023-0741-491f-b8ab-2994d4a44264")
-		)
-		(embedded_fonts no)
-		(model "${KICAD10_3DMODEL_DIR}/Package_SON.3dshapes/WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "5737d205-6082-4a0e-8c95-284b0c11040a")
@@ -8482,9 +8173,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/d125d41f-b70d-4006-9c9e-4e6ac532146d")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/d125d41f-b70d-4006-9c9e-4e6ac532146d")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -8641,9 +8332,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/77257d8b-3400-43e3-90da-5827e494b243")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/77257d8b-3400-43e3-90da-5827e494b243")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -8800,9 +8491,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/cd14e8e4-33ef-49e0-a2f6-c678ceeb52a8")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/cd14e8e4-33ef-49e0-a2f6-c678ceeb52a8")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -8959,9 +8650,9 @@
 			)
 		)
 		(property ki_fp_filters "Inductor_* L_* *Ferrite*")
-		(path "/c5336516-0457-4604-a0a1-e213a4ce1e80")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/c5336516-0457-4604-a0a1-e213a4ce1e80")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -9054,6 +8745,167 @@
 			)
 		)
 	)
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "5b8fd989-3712-42d8-b429-e128ab9f8ba9")
+		(at 196.05 93.2 180)
+		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+		(tags "capacitor")
+		(property "Reference" "C70"
+			(at 0 -1.16 0)
+			(layer "F.SilkS")
+			(uuid "072c5760-7f5c-4b6e-b39a-bccc3c9617b5")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "20pF"
+			(at 0 1.16 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4da9de5d-6e2c-4148-9b42-0aab41d7a544")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "75849646-ac45-4320-a93f-b4cdd4260682")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d489987d-4e87-426a-8eb1-8518877d4d11")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d63c4de8-4f44-470f-9d54-2ba011d2fa01")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/dc044937-6056-4220-ad80-6587bb362b58/7bd98f0e-58be-4265-8492-85c372e42156")
+		(sheetname "/MAIN_CTRL/")
+		(sheetfile "MAIN_CTRL.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -0.107836 0.36)
+			(end 0.107836 0.36)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5bac8458-68ca-4fef-b4b7-3f3a4a57a123")
+		)
+		(fp_line
+			(start -0.107836 -0.36)
+			(end 0.107836 -0.36)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "bd208951-3f1e-4171-9223-1fcb437455ca")
+		)
+		(fp_poly
+			(pts
+				(xy -0.91 -0.46) (xy 0.91 -0.46) (xy 0.91 0.46) (xy -0.91 0.46)
+			)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "348b44d6-31a7-4dba-9ef4-9cba2630b30c")
+		)
+		(fp_poly
+			(pts
+				(xy -0.5 -0.25) (xy 0.5 -0.25) (xy 0.5 0.25) (xy -0.5 0.25)
+			)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "ba589c73-98c7-4ee3-b001-0a442dbb24ec")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "5a6c3356-9b82-4704-acb9-f5f1bc7f6849")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.48 0 180)
+			(size 0.56 0.62)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(U8-PD1)")
+			(pintype "passive")
+			(uuid "1d5e9e3f-0291-4877-a46a-6a9cd54d2bc4")
+		)
+		(pad "2" smd roundrect
+			(at 0.48 0 180)
+			(size 0.56 0.62)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "GND")
+			(pintype "passive")
+			(uuid "8c5e8352-497f-4419-bf0c-c894b8d72103")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Inductor_SMD:L_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "5c25172c-6e09-4fa1-8dca-42b6299f8c82")
@@ -9118,9 +8970,9 @@
 			)
 		)
 		(property ki_fp_filters "Inductor_* L_* *Ferrite*")
-		(path "/5cbc5953-97ca-43e3-9f7b-93eba6a088eb")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/5cbc5953-97ca-43e3-9f7b-93eba6a088eb")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -9277,9 +9129,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/3ce89a34-7cf6-4ba9-9206-9fa58c3a5684")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/3ce89a34-7cf6-4ba9-9206-9fa58c3a5684")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -9438,9 +9290,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/28546740-89c1-4643-8cea-b3ee888c745e")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/28546740-89c1-4643-8cea-b3ee888c745e")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -9599,9 +9451,9 @@
 			)
 		)
 		(property ki_fp_filters "Inductor_* L_* *Ferrite*")
-		(path "/80c54732-aa63-402a-a4fa-8f0c00963e08")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/80c54732-aa63-402a-a4fa-8f0c00963e08")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -9705,7 +9557,7 @@
 		(property "Reference" "U1"
 			(at 0 -4.83 0)
 			(layer "F.SilkS")
-			(uuid "d92a15bf-5f4d-46fc-9628-7642a6daeb5c")
+			(uuid "6b9300f9-8561-408b-859e-1c72240a2518")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -9717,7 +9569,7 @@
 			(at 0 4.83 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "681480f0-1c70-494f-9322-b7d019975389")
+			(uuid "e50438fc-9bb6-4302-80b4-aa6837a7bf3a")
 			(effects
 				(font
 					(size 1 1)
@@ -9729,7 +9581,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "bacbe7f7-8780-4c85-a877-5a3905c6a30f")
+			(uuid "bd8638a1-0d23-43f9-b198-5380b4c09d17")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9740,7 +9592,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c55364c1-f712-431a-910d-0284aff4f54e")
+			(uuid "b6971151-5d66-4a93-b926-a6c4c113152a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9759,9 +9611,9 @@
 				)
 			)
 		)
-		(path "/d1dfb341-4c0d-4a44-ba6e-e5fb36cf8f3f")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/d1dfb341-4c0d-4a44-ba6e-e5fb36cf8f3f")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -10996,9 +10848,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/2966a12c-f4ae-4518-963a-506926fe9890")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/2966a12c-f4ae-4518-963a-506926fe9890")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -11155,9 +11007,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/92150dd5-b685-4c3a-9a1d-313536df2cc6")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/92150dd5-b685-4c3a-9a1d-313536df2cc6")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -11314,9 +11166,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/b04ad794-704f-47d9-9229-78c6132bb829")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/b04ad794-704f-47d9-9229-78c6132bb829")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -11486,9 +11338,9 @@
 			)
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
-		(path "/fe628051-d67c-495e-8baa-20633fa3a888")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/fe628051-d67c-495e-8baa-20633fa3a888")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -11696,9 +11548,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/782af79f-cdd6-4b0a-ac0a-1bf2afef7e77")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/782af79f-cdd6-4b0a-ac0a-1bf2afef7e77")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -11855,9 +11707,9 @@
 			)
 		)
 		(property ki_fp_filters "Inductor_* L_* *Ferrite*")
-		(path "/7a0a0e61-4f02-4b6b-82a2-c7cf8239430e")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/7a0a0e61-4f02-4b6b-82a2-c7cf8239430e")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -12014,9 +11866,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/7e073fdc-75a7-4c19-b6e2-09fb9e041621")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/7e073fdc-75a7-4c19-b6e2-09fb9e041621")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -12175,9 +12027,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/3eb5492b-01e3-44da-a2d0-096561464ed1")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/3eb5492b-01e3-44da-a2d0-096561464ed1")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -12336,9 +12188,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/94a6caaf-7156-4e3b-9f81-cf0a9147883b")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/94a6caaf-7156-4e3b-9f81-cf0a9147883b")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -12435,6 +12287,167 @@
 	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
+		(uuid "7717ad95-1b17-43f5-ac0e-e9d2ec512d99")
+		(at 212.22 95.55 180)
+		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+		(tags "capacitor")
+		(property "Reference" "C67"
+			(at 0 -1.16 0)
+			(layer "F.SilkS")
+			(uuid "3b607691-77d2-4530-9b00-d481ac53fb6e")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 0 1.16 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "21251d20-b8a7-451e-af21-a860f3e5d7e0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a4e5913c-9a8e-445f-a057-9fd46c2f1c18")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "374f2bf7-8502-4316-9fc2-0159300a6971")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "8b653c9b-6704-4ca7-b7fd-6099336a82ba")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/dc044937-6056-4220-ad80-6587bb362b58/eff2a84b-8825-46fc-be84-3cb1c3b527ce")
+		(sheetname "/MAIN_CTRL/")
+		(sheetfile "MAIN_CTRL.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -0.107836 0.36)
+			(end 0.107836 0.36)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "0435305b-799a-42a2-8a9e-186e6f38c95a")
+		)
+		(fp_line
+			(start -0.107836 -0.36)
+			(end 0.107836 -0.36)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f3c79da9-d3fd-44b5-a8f8-ec48f216e51a")
+		)
+		(fp_poly
+			(pts
+				(xy -0.91 -0.46) (xy 0.91 -0.46) (xy 0.91 0.46) (xy -0.91 0.46)
+			)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "17564851-9140-4efa-b9fa-b6b1fbd869c1")
+		)
+		(fp_poly
+			(pts
+				(xy -0.5 -0.25) (xy 0.5 -0.25) (xy 0.5 0.25) (xy -0.5 0.25)
+			)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "2887030d-06d5-447e-bc74-6f58be870c91")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "879105a3-da23-4da6-b38f-9edb22793994")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.48 0 180)
+			(size 0.56 0.62)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "GND")
+			(pintype "passive")
+			(uuid "45b1b603-4da8-4446-9493-822b11aa46ee")
+		)
+		(pad "2" smd roundrect
+			(at 0.48 0 180)
+			(size 0.56 0.62)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "+3.3V")
+			(pintype "passive")
+			(uuid "55c9c279-5782-40e9-8b24-7cc35c3f4a99")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
+		(layer "F.Cu")
 		(uuid "78ac0a27-ff11-470b-88a2-3659fd076ad8")
 		(at 44.6075 44.0075)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
@@ -12497,9 +12510,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/db1d0bde-bab9-4ffb-8e0a-3f2985b6425c")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/db1d0bde-bab9-4ffb-8e0a-3f2985b6425c")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -12657,9 +12670,9 @@
 			)
 		)
 		(property ki_fp_filters "MountingHole*Pad*")
-		(path "/69a6c6d9-87f0-4060-9104-591da0c1345c")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/69a6c6d9-87f0-4060-9104-591da0c1345c")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -12724,7 +12737,7 @@
 		(property "Reference" "U3"
 			(at 0.38 -1.9 0)
 			(layer "F.SilkS")
-			(uuid "75a3a29f-ac9a-49f8-8390-843e7a964762")
+			(uuid "38f61d0d-9e4d-41ee-89c8-e8d8f37a84d1")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -12736,7 +12749,7 @@
 			(at 0.01 2.14 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d465feb5-0c82-4902-8160-730f8046d3a2")
+			(uuid "faf9125c-e353-4e7c-8a88-007cb2a569be")
 			(effects
 				(font
 					(size 1 1)
@@ -12749,7 +12762,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "dcafe838-e9d1-4d0a-a8db-3eb3293e8b3c")
+			(uuid "85a14909-549b-4392-9ba2-6fc2d28df61c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12762,7 +12775,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "eaec549b-ca05-43de-a03b-55557f2255cc")
+			(uuid "02ac7060-6907-48c6-be5c-404fe2b73a7d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12770,13 +12783,13 @@
 				)
 			)
 		)
-		(path "/4a64edaa-5367-4cca-ad63-b1c8158c3423")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/15611d7b-23b3-4153-8a28-d938c003b62b")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
-				(pins "1" "2" "3" "4" "8" "7" "6" "5")
+				(pins "1" "2" "3" "4" "9" "8" "7" "6" "5")
 			)
 		)
 		(attr smd)
@@ -13010,6 +13023,9 @@
 			(at 0 0)
 			(size 0.9 1.6)
 			(layers "F.Cu" "F.Mask")
+			(net "GND")
+			(pinfunction "EP_9")
+			(pintype "passive")
 			(uuid "6a9056b2-d0f2-4db5-beb0-9df50dfc5f6e")
 		)
 		(embedded_fonts no)
@@ -13090,9 +13106,9 @@
 				)
 			)
 		)
-		(path "/61ea4682-4000-447b-98bd-52cd1977b3a0")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/61ea4682-4000-447b-98bd-52cd1977b3a0")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -13231,6 +13247,167 @@
 			)
 		)
 	)
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "8182a6ba-3176-4c8d-8a8c-e2321ccad30a")
+		(at 204.3 84.5 180)
+		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+		(tags "capacitor")
+		(property "Reference" "C64"
+			(at 0 1.05 0)
+			(layer "F.SilkS")
+			(uuid "e0808005-1e98-4f6a-8159-ed3b054d9cc3")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 0 1.16 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b8ec260d-868f-45f0-98e0-19afbddacc3b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "28b8d3ee-d34e-49fc-85a4-8270880b417f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a64d2990-cc40-4cc6-a705-d846638b8662")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "1001fa27-89db-4e07-ae51-1c1d7b687e84")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/dc044937-6056-4220-ad80-6587bb362b58/49af0a3a-9331-4c77-8206-4d5f16b26f71")
+		(sheetname "/MAIN_CTRL/")
+		(sheetfile "MAIN_CTRL.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -0.107836 0.36)
+			(end 0.107836 0.36)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "8831a755-045a-4b28-b4a0-02730e096891")
+		)
+		(fp_line
+			(start -0.107836 -0.36)
+			(end 0.107836 -0.36)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5d811eac-0914-4afc-ba22-b180d2d23caa")
+		)
+		(fp_poly
+			(pts
+				(xy -0.91 -0.46) (xy 0.91 -0.46) (xy 0.91 0.46) (xy -0.91 0.46)
+			)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "4bd05b7b-4cc9-4b9e-9d05-2ef5e12e4b35")
+		)
+		(fp_poly
+			(pts
+				(xy -0.5 -0.25) (xy 0.5 -0.25) (xy 0.5 0.25) (xy -0.5 0.25)
+			)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "6c4279b9-f3dd-4f0d-93cd-b6d2a2bd1bc0")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "bf388cdd-945c-4f16-9715-735ba3e4a6ac")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.48 0 180)
+			(size 0.56 0.62)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "GND")
+			(pintype "passive")
+			(uuid "ce9b4e17-81ef-4dd0-bab2-e0088bfec159")
+		)
+		(pad "2" smd roundrect
+			(at 0.48 0 180)
+			(size 0.56 0.62)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "+3.3V")
+			(pintype "passive")
+			(uuid "d5b4d536-bd8e-4e18-88dd-782c64817c6f")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "JLCImport:FNR4030S2R2MT"
 		(layer "F.Cu")
 		(uuid "866aae47-c8e9-428c-a7d3-97f45fc29f69")
@@ -13322,9 +13499,9 @@
 				)
 			)
 		)
-		(path "/07159153-daff-4510-b5e8-ebb442568def")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/07159153-daff-4510-b5e8-ebb442568def")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -13440,9 +13617,9 @@
 			)
 		)
 		(property ki_fp_filters "Pin* Test*")
-		(path "/411ca437-e1b0-4f2b-aad1-52373aa7b160")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/411ca437-e1b0-4f2b-aad1-52373aa7b160")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -13558,9 +13735,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/848e3c4a-1213-408a-8a11-78dd69cb430a")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/848e3c4a-1213-408a-8a11-78dd69cb430a")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -13719,9 +13896,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/3069c4d8-c183-4715-8619-d19cb610652f")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/3069c4d8-c183-4715-8619-d19cb610652f")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -13880,9 +14057,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/f75f5859-a592-4513-a6bb-e3be4e0bf196")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/f75f5859-a592-4513-a6bb-e3be4e0bf196")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -13975,6 +14152,165 @@
 			)
 		)
 	)
+	(footprint "Resistor_SMD:R_0603_1608Metric"
+		(layer "F.Cu")
+		(uuid "8eaf93fa-40a3-47da-a241-c8c889341aa0")
+		(at 209.31 97.6175)
+		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+		(tags "resistor")
+		(property "Reference" "R39"
+			(at -0.01 1.3825 0)
+			(layer "F.SilkS")
+			(uuid "3bccf376-6671-4ed6-9101-a9f5595efa77")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "10K"
+			(at 0 1.43 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ee594f2a-bdc0-400d-9f89-8cec1a0ae6b8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9d41614b-f09c-48ca-8523-2505e27df5cf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7024ede4-b66d-4e1b-8490-74b61c882e70")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "4301d802-e585-4758-ac8e-cb52e605a6ef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "R_*")
+		(path "/dc044937-6056-4220-ad80-6587bb362b58/b188b837-eab1-4ef6-aba9-9c6fcae3bad6")
+		(sheetname "/MAIN_CTRL/")
+		(sheetfile "MAIN_CTRL.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -0.237258 -0.5225)
+			(end 0.237258 -0.5225)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "dc95dd13-dc29-438d-91c3-473f439674e4")
+		)
+		(fp_line
+			(start -0.237258 0.5225)
+			(end 0.237258 0.5225)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "0965ed56-411b-491e-ae51-d77ee32d94be")
+		)
+		(fp_rect
+			(start -1.48 -0.73)
+			(end 1.48 0.73)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "31faceb4-b8a7-4e31-a9f2-6e15a792d97f")
+		)
+		(fp_rect
+			(start -0.8 -0.4125)
+			(end 0.8 0.4125)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "5c1a7c29-5467-4e9a-b136-12c2dee678f7")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "8aeb86b2-7f9b-436d-9a2c-dafa06ec4f57")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.825 0)
+			(size 0.8 0.95)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(U8-BOOT0)")
+			(pintype "passive")
+			(uuid "50e0b24a-a7d9-4f93-84c0-eacbba76b5d4")
+		)
+		(pad "2" smd roundrect
+			(at 0.825 0)
+			(size 0.8 0.95)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "GND")
+			(pintype "passive")
+			(uuid "58e3c23d-48f1-4a58-a5f6-370cc3eddb27")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "8ebd2729-b79a-4427-bbbb-c89fae9e5052")
@@ -14039,9 +14375,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/1bf0768d-360b-4413-bae0-a86bd7236107")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/1bf0768d-360b-4413-bae0-a86bd7236107")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -14198,9 +14534,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/4cb5d179-7c0e-4af4-8fe3-f2ea231e2b34")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/4cb5d179-7c0e-4af4-8fe3-f2ea231e2b34")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -14359,9 +14695,9 @@
 			)
 		)
 		(property ki_fp_filters "Inductor_* L_* *Ferrite*")
-		(path "/8b9aded6-c186-4f1c-bc74-3e55d8cd52c4")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/8b9aded6-c186-4f1c-bc74-3e55d8cd52c4")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -14518,9 +14854,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/c6607e50-0031-4e74-a204-eb18f7f5288a")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/c6607e50-0031-4e74-a204-eb18f7f5288a")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -14677,9 +15013,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/00a33a42-acfa-47f7-a78e-3e02d773d874")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/00a33a42-acfa-47f7-a78e-3e02d773d874")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -14838,9 +15174,9 @@
 			)
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
-		(path "/5b4df27a-4607-421d-9efa-c45ce4791da4")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/5b4df27a-4607-421d-9efa-c45ce4791da4")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -15109,9 +15445,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/b7806cc8-1aeb-44db-ba59-93dd79cab221")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/b7806cc8-1aeb-44db-ba59-93dd79cab221")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -15270,9 +15606,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/ae483736-c8a7-472b-9087-23eda46c4c22")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/ae483736-c8a7-472b-9087-23eda46c4c22")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -15429,9 +15765,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/be55df20-3cac-478e-ad12-7325d022431b")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/be55df20-3cac-478e-ad12-7325d022431b")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -15588,9 +15924,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/c56967a7-b6f1-4041-a886-55300bb6f186")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/c56967a7-b6f1-4041-a886-55300bb6f186")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -15747,9 +16083,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/bab7f68c-743c-4b57-9316-97ec75fcccc1")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/bab7f68c-743c-4b57-9316-97ec75fcccc1")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -15906,9 +16242,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/9a43fe09-f76a-46c2-a702-079b56904595")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/9a43fe09-f76a-46c2-a702-079b56904595")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -16065,9 +16401,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/7ee6c11a-3c56-44b8-a76c-058b1fa4fd34")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/7ee6c11a-3c56-44b8-a76c-058b1fa4fd34")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -16226,9 +16562,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/f7b92517-5bcb-4a53-9b0f-dd9982b7f22f")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/f7b92517-5bcb-4a53-9b0f-dd9982b7f22f")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -16387,9 +16723,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/feeec294-f78a-45fc-9789-1caa59707a28")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/feeec294-f78a-45fc-9789-1caa59707a28")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -16549,9 +16885,9 @@
 			)
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
-		(path "/479cb53b-0746-4610-ad2b-41afe6fc2d51")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/479cb53b-0746-4610-ad2b-41afe6fc2d51")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -16864,9 +17200,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/d1107664-ea3e-4ebb-8c4f-c0ad3baae18d")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/d1107664-ea3e-4ebb-8c4f-c0ad3baae18d")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -17025,9 +17361,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/39f553c7-76c5-409b-90e8-b7adda074baa")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/39f553c7-76c5-409b-90e8-b7adda074baa")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -17186,9 +17522,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/91ec1ba3-26d0-487f-853f-d8e49810d82c")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/91ec1ba3-26d0-487f-853f-d8e49810d82c")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -17339,9 +17675,9 @@
 			)
 		)
 		(property ki_fp_filters "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*")
-		(path "/9e2be375-9930-4a91-a4f3-d352fee226a6")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/9e2be375-9930-4a91-a4f3-d352fee226a6")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -17733,9 +18069,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/66114af9-4a80-4517-a466-3412105a076f")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/66114af9-4a80-4517-a466-3412105a076f")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -17892,9 +18228,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/31bd9bea-f4b1-4bab-8e03-b33ace24a61a")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/31bd9bea-f4b1-4bab-8e03-b33ace24a61a")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -18051,9 +18387,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/0533dce8-9065-4331-af8a-25b85f787273")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/0533dce8-9065-4331-af8a-25b85f787273")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -18146,6 +18482,893 @@
 			)
 		)
 	)
+	(footprint "Package_QFP:LQFP-48_7x7mm_P0.5mm"
+		(layer "F.Cu")
+		(uuid "b7033816-bb4e-414c-a308-0d8aad955d6f")
+		(at 207.55 90.6875)
+		(descr "LQFP, 48 Pin (JEDEC MS-026 variation BBC, 1.40mm body thickness, https://www.jedec.org/document_search?search_api_views_fulltext=MS-026, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-lqfp/05081760_a_lx48.pdf)")
+		(tags "LQFP QFP CASE-932AA CASE-932-03 C48-1 C48-2 C48-3 C48-5 C48-6 C48-6C PT0048A")
+		(property "Reference" "U8"
+			(at 0 -5.85 0)
+			(layer "F.SilkS")
+			(uuid "1c1056ca-2046-48cd-866a-2a57d8d94f43")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "STM32F103CBTx"
+			(at 0 5.85 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ab01b938-487e-40c0-a06a-66a85274ce44")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32f103cb.pdf"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3de17adc-c9ab-4400-8c3d-d6316c46f1db")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "STMicroelectronics Arm Cortex-M3 MCU, 128KB flash, 20KB RAM, 72 MHz, 2.0-3.6V, 37 GPIO, LQFP48"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f2b1af06-a7a0-4d45-8c34-4e0679e93e73")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "package/gullwing"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a91d35e1-3948-4dff-a8cb-981b26fb3a4e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "LQFP*7x7mm*P0.5mm*")
+		(path "/dc044937-6056-4220-ad80-6587bb362b58/f964c552-e8c0-4d4a-b6db-0b55500d7dee")
+		(sheetname "/MAIN_CTRL/")
+		(sheetfile "MAIN_CTRL.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "7" "44" "5" "6" "2" "3" "4" "18" "19" "20" "39" "40" "41" "42"
+					"43" "45" "46" "21" "22" "25" "26" "27" "28" "1" "24" "36" "23" "35"
+					"47" "48" "8" "9" "10" "11" "12" "13" "14" "15" "16" "17" "29" "30"
+					"31" "32" "33" "34" "37" "38"
+				)
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -3.61 -3.61)
+			(end -3.16 -3.61)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a151610a-bb94-427a-85d6-dfa177b012d2")
+		)
+		(fp_line
+			(start -3.61 -3.16)
+			(end -3.61 -3.61)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "af3bdc62-98d7-4cb1-84d0-18e5b2f9f0de")
+		)
+		(fp_line
+			(start -3.61 3.61)
+			(end -3.61 3.16)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "04a903f0-dbe1-4379-a64a-d32893b6ef5f")
+		)
+		(fp_line
+			(start -3.16 3.61)
+			(end -3.61 3.61)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6301b886-c6b5-4aad-89ad-a18b34d1a0cf")
+		)
+		(fp_line
+			(start 3.16 -3.61)
+			(end 3.61 -3.61)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "389d2bad-3794-4a8b-b24c-cc74473e867b")
+		)
+		(fp_line
+			(start 3.61 -3.61)
+			(end 3.61 -3.16)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "61f8bb3c-70af-46bd-ab6d-9c1b1dd3c349")
+		)
+		(fp_line
+			(start 3.61 3.16)
+			(end 3.61 3.61)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9e3997fc-dd1b-4c79-939d-fb394ab9e9b6")
+		)
+		(fp_line
+			(start 3.61 3.61)
+			(end 3.16 3.61)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "fabe3c9e-1a25-4ac8-b824-cf2ab4dd75e7")
+		)
+		(fp_poly
+			(pts
+				(xy -4.25 -3.16) (xy -4.59 -3.63) (xy -3.91 -3.63)
+			)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill yes)
+			(layer "F.SilkS")
+			(uuid "68b87037-6392-4c9f-85b3-4de6f43dde8c")
+		)
+		(fp_line
+			(start -5.15 -3.15)
+			(end -3.75 -3.15)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "a6e404e9-c9cd-47f1-bf74-7537e2db455b")
+		)
+		(fp_line
+			(start -5.15 3.15)
+			(end -5.15 -3.15)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "b401ba52-0689-43f4-8334-de7d1b2f1289")
+		)
+		(fp_line
+			(start -3.75 -3.75)
+			(end -3.15 -3.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "618d5a2f-733f-41ee-932e-afa265f3de8a")
+		)
+		(fp_line
+			(start -3.75 -3.15)
+			(end -3.75 -3.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "6a7e091e-6d67-458e-9026-8553c9fe23ea")
+		)
+		(fp_line
+			(start -3.75 3.15)
+			(end -5.15 3.15)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "c7886066-fcce-47df-83f1-b66fd6bf4eb4")
+		)
+		(fp_line
+			(start -3.75 3.75)
+			(end -3.75 3.15)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "e8667e2c-280e-46e6-9988-738553a00645")
+		)
+		(fp_line
+			(start -3.15 -5.15)
+			(end 3.15 -5.15)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "dfda4e14-8b13-49f1-930b-6090cf51b287")
+		)
+		(fp_line
+			(start -3.15 -3.75)
+			(end -3.15 -5.15)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "8b6a86ec-93cd-438d-ae24-ea826477ba8b")
+		)
+		(fp_line
+			(start -3.15 3.75)
+			(end -3.75 3.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "d832a644-5520-4f75-afb4-fb5dcbcf6926")
+		)
+		(fp_line
+			(start -3.15 5.15)
+			(end -3.15 3.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "5935864f-cc38-47c2-bc1e-3f502b7ecb96")
+		)
+		(fp_line
+			(start 3.15 -5.15)
+			(end 3.15 -3.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "6d10caf4-d6f3-44ed-96e9-8c59818a6399")
+		)
+		(fp_line
+			(start 3.15 -3.75)
+			(end 3.75 -3.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "7d26f637-13ae-4429-805f-a1b001697ac5")
+		)
+		(fp_line
+			(start 3.15 3.75)
+			(end 3.15 5.15)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "cccdc711-f3b1-4d0c-95f2-e8f63d0f0ef4")
+		)
+		(fp_line
+			(start 3.15 5.15)
+			(end -3.15 5.15)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "9285c1fc-501b-4ac0-bab9-adc1ed892a4a")
+		)
+		(fp_line
+			(start 3.75 -3.75)
+			(end 3.75 -3.15)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "5cb27371-dccc-485e-bd83-0f9ab565f182")
+		)
+		(fp_line
+			(start 3.75 -3.15)
+			(end 5.15 -3.15)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "074bf75c-e837-4fff-a5bc-e34885953fb1")
+		)
+		(fp_line
+			(start 3.75 3.15)
+			(end 3.75 3.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "3e37b7e1-eb04-4a48-9f04-a6dc0fce032f")
+		)
+		(fp_line
+			(start 3.75 3.75)
+			(end 3.15 3.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "a39cd9ce-8741-4b1f-b081-9dad5fca47a1")
+		)
+		(fp_line
+			(start 5.15 -3.15)
+			(end 5.15 3.15)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "20f3f914-f4fa-45fe-8ded-ef63a8706797")
+		)
+		(fp_line
+			(start 5.15 3.15)
+			(end 3.75 3.15)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "01d64435-526e-4c23-b80f-f1f9347218df")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -3.5) (xy 3.5 -3.5) (xy 3.5 3.5) (xy -3.5 3.5) (xy -3.5 -2.5)
+			)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "99af18e5-e35f-4942-8391-e181c1ff5a12")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "b5ffa8bd-a516-4378-adfb-b29ec05be354")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -4.1625 -2.75)
+			(size 1.475 0.3)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "+3.3V")
+			(pinfunction "VBAT_1")
+			(pintype "power_in")
+			(uuid "a8063222-aab3-436b-bc88-1181930bbadf")
+		)
+		(pad "2" smd roundrect
+			(at -4.1625 -2.25)
+			(size 1.475 0.3)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U8-PC13-Pad2)")
+			(pinfunction "PC13_2")
+			(pintype "bidirectional+no_connect")
+			(uuid "50b48be4-f108-4957-af07-f669bdafa38a")
+		)
+		(pad "3" smd roundrect
+			(at -4.1625 -1.75)
+			(size 1.475 0.3)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U8-PC14-Pad3)")
+			(pinfunction "PC14_3")
+			(pintype "bidirectional+no_connect")
+			(uuid "426e7c84-5c3c-4d34-b276-bfedc341effd")
+		)
+		(pad "4" smd roundrect
+			(at -4.1625 -1.25)
+			(size 1.475 0.3)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U8-PC15-Pad4)")
+			(pinfunction "PC15_4")
+			(pintype "bidirectional+no_connect")
+			(uuid "943c37fd-b591-475e-aa92-397ee5672cce")
+		)
+		(pad "5" smd roundrect
+			(at -4.1625 -0.75)
+			(size 1.475 0.3)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(U8-PD0)")
+			(pinfunction "PD0_5")
+			(pintype "bidirectional")
+			(uuid "6b9576f6-0cb3-456e-a18e-d4f6b5632b92")
+		)
+		(pad "6" smd roundrect
+			(at -4.1625 -0.25)
+			(size 1.475 0.3)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(U8-PD1)")
+			(pinfunction "PD1_6")
+			(pintype "bidirectional")
+			(uuid "7f881000-5621-4e0d-be50-dba49e15243a")
+		)
+		(pad "7" smd roundrect
+			(at -4.1625 0.25)
+			(size 1.475 0.3)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(U8-NRST)")
+			(pinfunction "NRST_7")
+			(pintype "input")
+			(uuid "6563b835-7150-433b-bcbd-f61860fab483")
+		)
+		(pad "8" smd roundrect
+			(at -4.1625 0.75)
+			(size 1.475 0.3)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "GND")
+			(pinfunction "VSSA_8")
+			(pintype "power_in")
+			(uuid "a991bdc9-f074-4e29-8766-aa24231a7020")
+		)
+		(pad "9" smd roundrect
+			(at -4.1625 1.25)
+			(size 1.475 0.3)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "+3.3V")
+			(pinfunction "VDDA_9")
+			(pintype "power_in")
+			(uuid "ab3b348a-9c3b-4389-8754-8e0d02bc60cb")
+		)
+		(pad "10" smd roundrect
+			(at -4.1625 1.75)
+			(size 1.475 0.3)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U8-PA0-Pad10)")
+			(pinfunction "PA0_10")
+			(pintype "bidirectional+no_connect")
+			(uuid "ab56ed36-dc61-402e-91cd-9cb2bb08c596")
+		)
+		(pad "11" smd roundrect
+			(at -4.1625 2.25)
+			(size 1.475 0.3)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U8-PA1-Pad11)")
+			(pinfunction "PA1_11")
+			(pintype "bidirectional+no_connect")
+			(uuid "f5be1b22-1f1c-4934-b64b-cf1b37bc7360")
+		)
+		(pad "12" smd roundrect
+			(at -4.1625 2.75)
+			(size 1.475 0.3)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U8-PA2-Pad12)")
+			(pinfunction "PA2_12")
+			(pintype "bidirectional+no_connect")
+			(uuid "7211883f-226b-4e40-8457-d9fb0422c77c")
+		)
+		(pad "13" smd roundrect
+			(at -2.75 4.1625)
+			(size 0.3 1.475)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U8-PA3-Pad13)")
+			(pinfunction "PA3_13")
+			(pintype "bidirectional+no_connect")
+			(uuid "585dd4c7-6f2e-4d29-8fae-348f7ded9ad7")
+		)
+		(pad "14" smd roundrect
+			(at -2.25 4.1625)
+			(size 0.3 1.475)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U8-PA4-Pad14)")
+			(pinfunction "PA4_14")
+			(pintype "bidirectional+no_connect")
+			(uuid "d1c3403d-9efa-435a-aa39-cb1d714f8a9a")
+		)
+		(pad "15" smd roundrect
+			(at -1.75 4.1625)
+			(size 0.3 1.475)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U8-PA5-Pad15)")
+			(pinfunction "PA5_15")
+			(pintype "bidirectional+no_connect")
+			(uuid "22cfa671-e227-4eb1-81f6-b823f9411f35")
+		)
+		(pad "16" smd roundrect
+			(at -1.25 4.1625)
+			(size 0.3 1.475)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U8-PA6-Pad16)")
+			(pinfunction "PA6_16")
+			(pintype "bidirectional+no_connect")
+			(uuid "a8f184ff-3f36-4bc7-ad90-2459655a68fd")
+		)
+		(pad "17" smd roundrect
+			(at -0.75 4.1625)
+			(size 0.3 1.475)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U8-PA7-Pad17)")
+			(pinfunction "PA7_17")
+			(pintype "bidirectional+no_connect")
+			(uuid "231632c8-a7f7-4994-946f-97054fab654f")
+		)
+		(pad "18" smd roundrect
+			(at -0.25 4.1625)
+			(size 0.3 1.475)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U8-PB0-Pad18)")
+			(pinfunction "PB0_18")
+			(pintype "bidirectional+no_connect")
+			(uuid "4c0cc3d9-9e35-46e3-85ad-d3d7775b2e46")
+		)
+		(pad "19" smd roundrect
+			(at 0.25 4.1625)
+			(size 0.3 1.475)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U8-PB1-Pad19)")
+			(pinfunction "PB1_19")
+			(pintype "bidirectional+no_connect")
+			(uuid "385c21e3-77fe-4364-8187-fe99d0e6546a")
+		)
+		(pad "20" smd roundrect
+			(at 0.75 4.1625)
+			(size 0.3 1.475)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U8-PB2-Pad20)")
+			(pinfunction "PB2_20")
+			(pintype "bidirectional+no_connect")
+			(uuid "23ebcce5-29c1-4b82-a372-56c391c61da0")
+		)
+		(pad "21" smd roundrect
+			(at 1.25 4.1625)
+			(size 0.3 1.475)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "SCL")
+			(pinfunction "PB10_21")
+			(pintype "bidirectional")
+			(uuid "59df0999-37de-4339-84f8-cd565d0a9338")
+		)
+		(pad "22" smd roundrect
+			(at 1.75 4.1625)
+			(size 0.3 1.475)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "SDA")
+			(pinfunction "PB11_22")
+			(pintype "bidirectional")
+			(uuid "e2930742-950c-4fc3-8b0f-84c2aede2684")
+		)
+		(pad "23" smd roundrect
+			(at 2.25 4.1625)
+			(size 0.3 1.475)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "GND")
+			(pinfunction "VSS_23")
+			(pintype "power_in")
+			(uuid "e59d29dc-b782-4646-826c-a443a45d3f8e")
+		)
+		(pad "24" smd roundrect
+			(at 2.75 4.1625)
+			(size 0.3 1.475)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "+3.3V")
+			(pinfunction "VDD_24")
+			(pintype "power_in")
+			(uuid "2170f577-91df-48db-892f-b7fdbbf283c2")
+		)
+		(pad "25" smd roundrect
+			(at 4.1625 2.75)
+			(size 1.475 0.3)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "GPIO0")
+			(pinfunction "PB12_25")
+			(pintype "bidirectional")
+			(uuid "91ad1281-1cae-43d2-92ca-039da3dddfb6")
+		)
+		(pad "26" smd roundrect
+			(at 4.1625 2.25)
+			(size 1.475 0.3)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "GPIO1")
+			(pinfunction "PB13_26")
+			(pintype "bidirectional")
+			(uuid "7f1e7a75-baa4-41e5-839b-6f3056c008a4")
+		)
+		(pad "27" smd roundrect
+			(at 4.1625 1.75)
+			(size 1.475 0.3)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "GPIO2")
+			(pinfunction "PB14_27")
+			(pintype "bidirectional")
+			(uuid "db514b0c-a7ae-43af-996c-955884adc760")
+		)
+		(pad "28" smd roundrect
+			(at 4.1625 1.25)
+			(size 1.475 0.3)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "PDN")
+			(pinfunction "PB15_28")
+			(pintype "bidirectional")
+			(uuid "20a5c7f3-e70a-42c9-a99f-d7dc43dcd6e5")
+		)
+		(pad "29" smd roundrect
+			(at 4.1625 0.75)
+			(size 1.475 0.3)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U8-PA8-Pad29)")
+			(pinfunction "PA8_29")
+			(pintype "bidirectional+no_connect")
+			(uuid "9eaae298-95b9-4f4d-8d5f-edd1651653e2")
+		)
+		(pad "30" smd roundrect
+			(at 4.1625 0.25)
+			(size 1.475 0.3)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U8-PA9-Pad30)")
+			(pinfunction "PA9_30")
+			(pintype "bidirectional+no_connect")
+			(uuid "3acb1a4d-c86e-4e20-ab32-699741e4d4fc")
+		)
+		(pad "31" smd roundrect
+			(at 4.1625 -0.25)
+			(size 1.475 0.3)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U8-PA10-Pad31)")
+			(pinfunction "PA10_31")
+			(pintype "bidirectional+no_connect")
+			(uuid "558cba3a-e51a-4929-864e-4ce0233236ac")
+		)
+		(pad "32" smd roundrect
+			(at 4.1625 -0.75)
+			(size 1.475 0.3)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U8-PA11-Pad32)")
+			(pinfunction "PA11_32")
+			(pintype "bidirectional+no_connect")
+			(uuid "07df85e7-aa14-4a81-956e-a82e95ce11d5")
+		)
+		(pad "33" smd roundrect
+			(at 4.1625 -1.25)
+			(size 1.475 0.3)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U8-PA12-Pad33)")
+			(pinfunction "PA12_33")
+			(pintype "bidirectional+no_connect")
+			(uuid "ca4b9d09-6b34-4e09-ae5f-cbacc24d651e")
+		)
+		(pad "34" smd roundrect
+			(at 4.1625 -1.75)
+			(size 1.475 0.3)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "/MAIN_CTRL/SWDIO")
+			(pinfunction "PA13_34")
+			(pintype "bidirectional")
+			(uuid "ce3cbca4-2716-44df-95fa-2ddd32f14670")
+		)
+		(pad "35" smd roundrect
+			(at 4.1625 -2.25)
+			(size 1.475 0.3)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "GND")
+			(pinfunction "VSS_35")
+			(pintype "passive")
+			(uuid "37b2cc93-5b50-4702-a5ca-68f86dd38fa1")
+		)
+		(pad "36" smd roundrect
+			(at 4.1625 -2.75)
+			(size 1.475 0.3)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "+3.3V")
+			(pinfunction "VDD_36")
+			(pintype "power_in")
+			(uuid "ae2fb0de-a5d9-434c-bf7c-29f840b9fc29")
+		)
+		(pad "37" smd roundrect
+			(at 2.75 -4.1625)
+			(size 0.3 1.475)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "/MAIN_CTRL/SWCLK")
+			(pinfunction "PA14_37")
+			(pintype "bidirectional")
+			(uuid "3223491f-e33d-46de-9de6-cea0ef77d2e5")
+		)
+		(pad "38" smd roundrect
+			(at 2.25 -4.1625)
+			(size 0.3 1.475)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U8-PA15-Pad38)")
+			(pinfunction "PA15_38")
+			(pintype "bidirectional+no_connect")
+			(uuid "99041208-a6f6-4967-a818-f40c835f5163")
+		)
+		(pad "39" smd roundrect
+			(at 1.75 -4.1625)
+			(size 0.3 1.475)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U8-PB3-Pad39)")
+			(pinfunction "PB3_39")
+			(pintype "bidirectional+no_connect")
+			(uuid "43e49b62-43b1-4239-835e-572baf590da6")
+		)
+		(pad "40" smd roundrect
+			(at 1.25 -4.1625)
+			(size 0.3 1.475)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U8-PB4-Pad40)")
+			(pinfunction "PB4_40")
+			(pintype "bidirectional+no_connect")
+			(uuid "1ed5bb04-6bb3-4397-9f84-9060c53da967")
+		)
+		(pad "41" smd roundrect
+			(at 0.75 -4.1625)
+			(size 0.3 1.475)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U8-PB5-Pad41)")
+			(pinfunction "PB5_41")
+			(pintype "bidirectional+no_connect")
+			(uuid "7219c4ca-5f9d-4537-a4dc-f065f5f3b50b")
+		)
+		(pad "42" smd roundrect
+			(at 0.25 -4.1625)
+			(size 0.3 1.475)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U8-PB6-Pad42)")
+			(pinfunction "PB6_42")
+			(pintype "bidirectional+no_connect")
+			(uuid "2c021563-019c-44e9-8ca8-d2f519ef087e")
+		)
+		(pad "43" smd roundrect
+			(at -0.25 -4.1625)
+			(size 0.3 1.475)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U8-PB7-Pad43)")
+			(pinfunction "PB7_43")
+			(pintype "bidirectional+no_connect")
+			(uuid "d9960333-818f-4e8e-acaf-4a89ab7a0bee")
+		)
+		(pad "44" smd roundrect
+			(at -0.75 -4.1625)
+			(size 0.3 1.475)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(U8-BOOT0)")
+			(pinfunction "BOOT0_44")
+			(pintype "input")
+			(uuid "a2b47d81-34c5-46a5-8c02-b7338e584430")
+		)
+		(pad "45" smd roundrect
+			(at -1.25 -4.1625)
+			(size 0.3 1.475)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U8-PB8-Pad45)")
+			(pinfunction "PB8_45")
+			(pintype "bidirectional+no_connect")
+			(uuid "7f0c2cc6-ae96-45ed-890d-b0dde374dec1")
+		)
+		(pad "46" smd roundrect
+			(at -1.75 -4.1625)
+			(size 0.3 1.475)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U8-PB9-Pad46)")
+			(pinfunction "PB9_46")
+			(pintype "bidirectional+no_connect")
+			(uuid "b1c7b2b9-17df-4679-bcb0-2cb5dff1ef9d")
+		)
+		(pad "47" smd roundrect
+			(at -2.25 -4.1625)
+			(size 0.3 1.475)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "GND")
+			(pinfunction "VSS_47")
+			(pintype "passive")
+			(uuid "6c034475-dc21-4fd1-ac65-477cf34020ac")
+		)
+		(pad "48" smd roundrect
+			(at -2.75 -4.1625)
+			(size 0.3 1.475)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "+3.3V")
+			(pinfunction "VDD_48")
+			(pintype "power_in")
+			(uuid "a8bd6deb-f3cc-4500-b1c1-136b2648300d")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Package_QFP.3dshapes/LQFP-48_7x7mm_P0.5mm.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "JLCImport:TYPE-C_16PIN_2MD_073"
 		(layer "F.Cu")
 		(uuid "b7c691d7-ec60-4814-895e-c9f052c398a2")
@@ -18155,7 +19378,7 @@
 		(property "Reference" "USB1"
 			(at 5.8 0.8385 180)
 			(layer "F.SilkS")
-			(uuid "946a137c-e653-47d5-9d6a-67fd7f63372f")
+			(uuid "ea876035-0eb1-4b7b-bb89-4dd0d52a3b69")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -18167,7 +19390,7 @@
 			(at 0 5.975 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "027577c7-b48d-44a4-a2eb-9e90320fe1f4")
+			(uuid "53bfc58f-8fa7-4999-bc93-f405a6aedbba")
 			(effects
 				(font
 					(size 1 1)
@@ -18179,7 +19402,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "70578ebb-9655-4422-ae3a-ae8b66e1b27b")
+			(uuid "41475c2b-ae99-4553-b324-9abc222c9441")
 			(effects
 				(font
 					(size 1 1)
@@ -18191,7 +19414,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e872ffa1-bb34-4ce6-9b0a-b333d44eff6f")
+			(uuid "83111268-5c24-493b-9094-da971f3fd33d")
 			(effects
 				(font
 					(size 1 1)
@@ -18237,9 +19460,9 @@
 				)
 			)
 		)
-		(path "/71def2d5-40d9-4643-894e-ac081a9b727d")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/71def2d5-40d9-4643-894e-ac081a9b727d")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -18565,9 +19788,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/bb0171e8-491c-437b-a4b1-e1ad4b01db49")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/bb0171e8-491c-437b-a4b1-e1ad4b01db49")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -18726,9 +19949,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/e070be87-56b5-4379-86d8-181bdd660db7")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/e070be87-56b5-4379-86d8-181bdd660db7")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -18877,9 +20100,9 @@
 			)
 		)
 		(property ki_fp_filters "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*")
-		(path "/ad3ae801-b5cb-4637-a7aa-5436718b20e0")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/ad3ae801-b5cb-4637-a7aa-5436718b20e0")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -19272,9 +20495,9 @@
 				)
 			)
 		)
-		(path "/68447563-3161-4000-99db-51d21d27c948")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/68447563-3161-4000-99db-51d21d27c948")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -19606,9 +20829,9 @@
 			)
 		)
 		(property ki_fp_filters "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*")
-		(path "/1b326de9-b14e-483d-908a-3c28ac0893f5")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/1b326de9-b14e-483d-908a-3c28ac0893f5")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -20001,9 +21224,9 @@
 				)
 			)
 		)
-		(path "/8c41a297-fd72-4792-b9d9-70c4cae150e4")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/8c41a297-fd72-4792-b9d9-70c4cae150e4")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -20141,6 +21364,167 @@
 			)
 		)
 	)
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "c03b051b-9c0e-4c03-aec6-56c94f66b24d")
+		(at 200.95 91.55 180)
+		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+		(tags "capacitor")
+		(property "Reference" "C69"
+			(at 1.9 0 0)
+			(layer "F.SilkS")
+			(uuid "73ed17f2-cea0-402c-9759-47e5d3329551")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 0 1.16 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3d5119ec-d3de-43d0-819b-82c5fc49919c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1748a3de-03c0-4035-b467-97fbfd7d0e9f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b10a1597-8ee5-44bc-b20e-6b68c86b1845")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "b9f05308-dafc-4065-839a-a39d22a087d7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/dc044937-6056-4220-ad80-6587bb362b58/cd4c3d3a-1e81-4107-ac71-9809f18d8ffc")
+		(sheetname "/MAIN_CTRL/")
+		(sheetfile "MAIN_CTRL.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -0.107836 0.36)
+			(end 0.107836 0.36)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "51e14c52-0fbe-4123-8bf9-a768fdc1d4c9")
+		)
+		(fp_line
+			(start -0.107836 -0.36)
+			(end 0.107836 -0.36)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "70c3e55a-b444-478d-b690-30d4690f3b78")
+		)
+		(fp_poly
+			(pts
+				(xy -0.91 -0.46) (xy 0.91 -0.46) (xy 0.91 0.46) (xy -0.91 0.46)
+			)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "0ede15a3-e5e5-4240-a015-b05c52e97d66")
+		)
+		(fp_poly
+			(pts
+				(xy -0.5 -0.25) (xy 0.5 -0.25) (xy 0.5 0.25) (xy -0.5 0.25)
+			)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "e9915492-aa84-49cd-a4c7-9df2ce12b672")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "fc16461e-9b4d-4d69-987a-b1ea460cc204")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.48 0 180)
+			(size 0.56 0.62)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(U8-NRST)")
+			(pintype "passive")
+			(uuid "b36be9ac-d73d-4956-b6e0-9470bc37147f")
+		)
+		(pad "2" smd roundrect
+			(at 0.48 0 180)
+			(size 0.56 0.62)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "GND")
+			(pintype "passive")
+			(uuid "c115fc90-b7bb-4d64-a922-74631c22df5a")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "c1237b4d-398f-4e87-b4f9-938364d28dc9")
@@ -20205,9 +21589,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/08fe5d8b-9944-4f3e-ac08-93fbe265a349")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/08fe5d8b-9944-4f3e-ac08-93fbe265a349")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -20364,9 +21748,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/01299d0f-2460-482c-9e83-07fd90c0975b")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/01299d0f-2460-482c-9e83-07fd90c0975b")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -20459,6 +21843,271 @@
 			)
 		)
 	)
+	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+		(layer "F.Cu")
+		(uuid "c39d4204-6bca-4869-a41e-c4e378d23531")
+		(at 225.2 94.35 180)
+		(descr "Through hole straight pin header, 1x04, 2.54mm pitch, single row")
+		(tags "Through hole pin header THT 1x04 2.54mm single row")
+		(property "Reference" "J15"
+			(at 0 -2.38 0)
+			(layer "F.SilkS")
+			(uuid "61ebccef-d138-4b22-b780-e704ae43ab66")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "Conn_01x04_Pin"
+			(at 0 10 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "16b6e3e2-610e-43cb-8ba5-af2f2cf14b81")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a68e6b2d-a811-4752-8236-28613a99a57b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c1899bf5-9d22-4b74-b186-f40520dea2ce")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "connector/pin_header_socket"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "79d49e13-a7de-4b08-bede-79e0ed2c5377")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
+		(path "/dc044937-6056-4220-ad80-6587bb362b58/af16cd76-57e4-4e37-814f-b93b0e7bcce5")
+		(sheetname "/MAIN_CTRL/")
+		(sheetfile "MAIN_CTRL.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4")
+			)
+		)
+		(attr through_hole)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start 1.38 1.27)
+			(end 1.379999 9)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "41538e4f-f5c1-4f6c-95f7-cf944024e58f")
+		)
+		(fp_line
+			(start -1.379999 9)
+			(end 1.379999 9)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f227263a-6694-4cd2-97bb-bf1322e0dd9d")
+		)
+		(fp_line
+			(start -1.379999 0)
+			(end -1.38 -1.38)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "09258097-4a03-4543-9c69-38d8ecd983c9")
+		)
+		(fp_line
+			(start -1.38 1.27)
+			(end 1.38 1.27)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "1b9e86b7-c9c1-439e-922b-831329658cca")
+		)
+		(fp_line
+			(start -1.38 1.27)
+			(end -1.379999 9)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "10ec8a01-582f-4fd2-ab46-5861a49e152d")
+		)
+		(fp_line
+			(start -1.38 -1.38)
+			(end 0 -1.379999)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "c4869835-3272-456f-9e80-44500119169c")
+		)
+		(fp_poly
+			(pts
+				(xy -1.77 -1.77) (xy 1.77 -1.77) (xy 1.77 9.39) (xy -1.77 9.39)
+			)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "6ae05946-2da3-4577-93f7-e574aea27198")
+		)
+		(fp_line
+			(start 1.27 8.89)
+			(end -1.27 8.89)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "6e846464-c113-4823-93b7-8c1ce2002913")
+		)
+		(fp_line
+			(start 1.27 -1.27)
+			(end 1.27 8.89)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "87ed89ef-ae7a-4d28-8278-741e40f717bd")
+		)
+		(fp_line
+			(start -0.635 -1.27)
+			(end 1.27 -1.27)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "312ead30-3127-4b7c-8f27-2dca6017842d")
+		)
+		(fp_line
+			(start -1.27 8.89)
+			(end -1.27 -0.635)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c0551293-a733-494c-a40d-7ef15d46cd0a")
+		)
+		(fp_line
+			(start -1.27 -0.635)
+			(end -0.635 -1.27)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "3c71e4a8-525e-4182-a3b6-85504cec2d86")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 3.81 90)
+			(layer "F.Fab")
+			(uuid "1f8aea4b-db1a-4dec-b369-10e992d3de98")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(pad "1" thru_hole rect
+			(at 0 0 180)
+			(size 1.7 1.7)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "+3.3V")
+			(pinfunction "Pin_1_1")
+			(pintype "passive")
+			(uuid "8e5cdd08-9f96-4057-9ab5-a07264b910a3")
+		)
+		(pad "2" thru_hole circle
+			(at 0 2.54 180)
+			(size 1.7 1.7)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "GND")
+			(pinfunction "Pin_2_2")
+			(pintype "passive")
+			(uuid "50cf9046-0da7-4cc6-82fa-601049f79c70")
+		)
+		(pad "3" thru_hole circle
+			(at 0 5.079999 180)
+			(size 1.7 1.7)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "/MAIN_CTRL/SWDIO")
+			(pinfunction "Pin_3_3")
+			(pintype "passive")
+			(uuid "50111933-707b-4fc4-bff5-e900cb69f72d")
+		)
+		(pad "4" thru_hole circle
+			(at 0 7.62 180)
+			(size 1.7 1.7)
+			(drill 1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net "/MAIN_CTRL/SWCLK")
+			(pinfunction "Pin_4_4")
+			(pintype "passive")
+			(uuid "77ba969b-3060-4e07-923a-74765c71c33a")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "c3a49eb3-d5d5-494c-99d8-afb1a5a37662")
@@ -20523,9 +22172,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/85c5c97e-861b-4d4c-9f31-3f9b37c74650")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/85c5c97e-861b-4d4c-9f31-3f9b37c74650")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -20684,9 +22333,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/8d8a454d-3066-4657-b7b5-93a0ba6f72b5")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/8d8a454d-3066-4657-b7b5-93a0ba6f72b5")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -20845,9 +22494,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/117fc6a3-108a-4e05-99c5-e75c302defc0")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/117fc6a3-108a-4e05-99c5-e75c302defc0")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -21004,9 +22653,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/2834006d-7843-4ac0-9dc1-5f20329cc657")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/2834006d-7843-4ac0-9dc1-5f20329cc657")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -21157,9 +22806,9 @@
 			)
 		)
 		(property ki_fp_filters "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*")
-		(path "/96a91850-045b-40e7-bbe4-80c7ef87a263")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/96a91850-045b-40e7-bbe4-80c7ef87a263")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -21551,9 +23200,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/ad6896da-45eb-4510-8a6d-72e4a6a67dfd")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/ad6896da-45eb-4510-8a6d-72e4a6a67dfd")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -21712,9 +23361,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/90d679ca-be91-4bf5-a04d-28d05d92331e")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/90d679ca-be91-4bf5-a04d-28d05d92331e")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -21812,7 +23461,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "cb0c8785-aee4-462b-8482-c5ff917075d0")
-		(at 62.1675 59.2475 180)
+		(at 65.77 60.1 180)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C27"
@@ -21873,9 +23522,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/5f6d93bc-d786-4908-b227-247017b686a3")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/5f6d93bc-d786-4908-b227-247017b686a3")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -22034,9 +23683,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/54512271-5775-4b15-8e97-d4b077313400")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/54512271-5775-4b15-8e97-d4b077313400")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -22195,9 +23844,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/3581ae89-ef99-4139-b7ef-3c82c8178220")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/3581ae89-ef99-4139-b7ef-3c82c8178220")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -22369,9 +24018,9 @@
 			)
 		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
-		(path "/c8374df1-354b-48d4-a817-ca42dd653cf1")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/c8374df1-354b-48d4-a817-ca42dd653cf1")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -22515,6 +24164,320 @@
 			)
 		)
 	)
+	(footprint "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm"
+		(layer "F.Cu")
+		(uuid "d24c5274-61e9-4b18-814a-c6ebb1a411d9")
+		(at 110.6 76.6)
+		(descr "8-Lead Plastic WSON, 2x2mm Body, 0.5mm Pitch, WSON-8, http://www.ti.com/lit/ds/symlink/lm27761.pdf")
+		(tags "WSON 8 1EP")
+		(property "Reference" "U2"
+			(at 0.38 -1.9 0)
+			(layer "F.SilkS")
+			(uuid "8f6ec4ec-9d85-434a-98b0-fc0dc4af0afe")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+					(bold yes)
+				)
+			)
+		)
+		(property "Value" "LMK1C1102"
+			(at 0.01 2.14 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "edf99e15-1e7c-43f0-a07b-f45e3ed4d247")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3a985f35-5d22-40bf-9b3a-2d66dd684914")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "69ed04dd-72d7-4817-98b8-9d8637a5c1c9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/8a1c4278-2ebb-4944-8869-813f81994c41")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "9" "8" "7" "6" "5")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -1.01 -1.14)
+			(end 0.99 -1.14)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "77a4225d-1d2c-4f40-84ad-620f8284e6bb")
+		)
+		(fp_line
+			(start -1 1.14)
+			(end 1 1.14)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "d76096a0-8efc-4955-9b44-d559b60cb84b")
+		)
+		(fp_poly
+			(pts
+				(xy -1.37 -1.07) (xy -1.65 -1.07) (xy -1.37 -1.35) (xy -1.37 -1.07)
+			)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill yes)
+			(layer "F.SilkS")
+			(uuid "0a16ec7c-68e7-4cb3-9ce4-b0848accdd2b")
+		)
+		(fp_line
+			(start -1.6 -1.25)
+			(end -1.6 1.25)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "2c873f67-4a3b-4f91-88a2-862444115dd2")
+		)
+		(fp_line
+			(start -1.6 -1.25)
+			(end 1.6 -1.25)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "530388c9-47c0-4cee-871f-b0938d8dfdc9")
+		)
+		(fp_line
+			(start -1.6 1.25)
+			(end 1.6 1.25)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "b7a74a31-bf64-4d25-a992-66a1b540548c")
+		)
+		(fp_line
+			(start 1.6 -1.25)
+			(end 1.6 1.25)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "9cbc9a59-2cfd-49e4-a203-60f3a7497f6d")
+		)
+		(fp_line
+			(start -1 1)
+			(end -1 -0.5)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f4399a2d-e6d0-4849-9117-dff5b305ad2a")
+		)
+		(fp_line
+			(start -0.5 -1)
+			(end -1 -0.5)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "3e73ec15-b70e-4b50-b3b6-2ac3f238c80f")
+		)
+		(fp_line
+			(start -0.5 -1)
+			(end 1 -1)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f6ca27c4-9d52-4e1f-8166-63a5f7fc4e42")
+		)
+		(fp_line
+			(start 1 -1)
+			(end 1 1)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a3a09af4-4bd9-4878-8dd2-9561e31cd190")
+		)
+		(fp_line
+			(start 1 1)
+			(end -1 1)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "1205a229-53d8-4c57-9567-d2362481912a")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "f2f685b1-05bb-4749-9e66-e326c0d98b14")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(pad "" smd rect
+			(at 0 -0.4)
+			(size 0.75 0.65)
+			(layers "F.Paste")
+			(uuid "1d60d1e1-3819-4507-acfa-be6db936e592")
+		)
+		(pad "" smd rect
+			(at 0 0.4)
+			(size 0.75 0.65)
+			(layers "F.Paste")
+			(uuid "a00d9b5f-9ed2-4444-b432-d54884a24f40")
+		)
+		(pad "1" smd roundrect
+			(at -0.95 -0.75)
+			(size 0.5 0.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(U2-CLKIN)")
+			(pinfunction "CLKIN_1")
+			(pintype "input")
+			(uuid "38557cb6-dac3-4d95-8015-147b2beb6e7f")
+		)
+		(pad "2" smd roundrect
+			(at -0.95 -0.25)
+			(size 0.5 0.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "SIG_1")
+			(pinfunction "1G_2")
+			(pintype "input")
+			(uuid "a350eb86-25e9-48b6-8a2b-9aa08a5b2d82")
+		)
+		(pad "3" smd roundrect
+			(at -0.95 0.25)
+			(size 0.5 0.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(U2-Y0)")
+			(pinfunction "Y0_3")
+			(pintype "input")
+			(uuid "4485c0bc-c303-4e45-8e6c-bdc43ea4dfdb")
+		)
+		(pad "4" smd roundrect
+			(at -0.95 0.75)
+			(size 0.5 0.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "GND")
+			(pinfunction "GND_4")
+			(pintype "input")
+			(uuid "fe7f0103-e0d8-4c79-8ee8-6a06dd17455a")
+		)
+		(pad "5" smd roundrect
+			(at 0.95 0.75)
+			(size 0.5 0.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U2-NC-Pad5)")
+			(pinfunction "NC_5")
+			(pintype "input+no_connect")
+			(uuid "16042981-fb28-4dd2-9c8c-60453256f59e")
+		)
+		(pad "6" smd roundrect
+			(at 0.95 0.25)
+			(size 0.5 0.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(U2-VDD)")
+			(pinfunction "VDD_6")
+			(pintype "input")
+			(uuid "bd3e9392-2039-4f0e-a74f-d88344333783")
+		)
+		(pad "7" smd roundrect
+			(at 0.95 -0.25)
+			(size 0.5 0.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "unconnected-(U2-NC-Pad7)")
+			(pinfunction "NC_7")
+			(pintype "input+no_connect")
+			(uuid "cd8da5e6-28c3-49b3-93ff-63dbd059581e")
+		)
+		(pad "8" smd roundrect
+			(at 0.95 -0.75)
+			(size 0.5 0.25)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(U2-Y1)")
+			(pinfunction "Y1_8")
+			(pintype "input")
+			(uuid "812a0fa6-f97d-43ea-b87f-d30cc336ecf2")
+		)
+		(pad "9" smd rect
+			(at 0 0)
+			(size 0.9 1.6)
+			(layers "F.Cu" "F.Mask")
+			(net "GND")
+			(pinfunction "EP_9")
+			(pintype "passive")
+			(uuid "42ab5fae-bd1a-415f-b9d0-b096f72b0aaf")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Package_SON.3dshapes/WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Capacitor_SMD:C_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "d363fb31-e29e-4d20-a782-c8ffd3128b5e")
@@ -22579,9 +24542,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/e3e7b7a4-fbe2-4e37-b42c-1d5f0d835054")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/e3e7b7a4-fbe2-4e37-b42c-1d5f0d835054")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -22676,6 +24639,228 @@
 			)
 		)
 	)
+	(footprint "JLCImport:X32258MOB4SI"
+		(layer "F.Cu")
+		(uuid "d3bc7fa6-679e-4cd9-b5eb-a3785f21d80f")
+		(at 196 90.3 -90)
+		(descr "-40℃~+85℃ 12pF 180Ω 8MHz Crystal Oscillator ±10ppm ±20ppm SMD3225-4P Crystals ROHS")
+		(tags "C2682775 CRYSTAL-SMD_4P-L3.2-W2.5-BL X32258MOB4SI YXC Crystal Oscillators")
+		(property "Reference" "X1"
+			(at 0.1 2.4 90)
+			(layer "F.SilkS")
+			(uuid "03635120-1012-4524-adce-ae5a2eb49d71")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "X32258MOB4SI"
+			(at 0 2.906999 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "892d7a17-5e53-49bf-ac58-94b8c9356df7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411121006_YXC-Crystal-Oscillators-X32258MOB4SI_C2682775.pdf"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fe635696-4e11-4cc8-bdc3-f2e87995a471")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "-40℃~+85℃ 12pF 180Ω 8MHz Crystal Oscillator ±10ppm ±20ppm SMD3225-4P Crystals ROHS"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8c7cf4c7-7118-4c17-8fe4-e4034b318e51")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C2682775"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a6c5439a-6435-44be-a7a5-fa0cb873a9aa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "YXC Crystal Oscillators"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4d3ad7c9-2488-47b9-aa26-05aa72995edd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer Part" "X32258MOB4SI"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2d65cb02-d3b5-4ff7-aeaf-599d3d435ec9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/dc044937-6056-4220-ad80-6587bb362b58/71799f7e-d2c2-48ba-8a76-5f01f6b2371f")
+		(sheetname "/MAIN_CTRL/")
+		(sheetfile "MAIN_CTRL.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "4" "1" "3" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -2.257196 1.907)
+			(end -0.4 1.907)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "0416dc2a-8f83-42fa-88eb-4e0631656e58")
+		)
+		(fp_line
+			(start -2.028596 1.678483)
+			(end -2.028596 -1.678737)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9cb58d64-86ad-4466-9c82-7a58662131f9")
+		)
+		(fp_line
+			(start 2.028596 1.678483)
+			(end -2.028596 1.678483)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e0d86a6d-dbc3-419e-a3ef-6bad0f8e01de")
+		)
+		(fp_line
+			(start -2.257196 0.25)
+			(end -2.257196 1.907)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "81dff3d6-5423-4cb3-a519-c2d84970b1a7")
+		)
+		(fp_line
+			(start -2.028596 -1.678737)
+			(end 2.028596 -1.678737)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "786d713c-1f5f-45e0-bb22-aaad242488ad")
+		)
+		(fp_line
+			(start 2.028596 -1.678737)
+			(end 2.028596 1.678483)
+			(stroke
+				(width 0.1524)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "96ba96d4-3add-42e0-a01e-907b06b6e500")
+		)
+		(fp_circle
+			(center -1.27 0.889127)
+			(end -1.143 0.889127)
+			(stroke
+				(width 0.254)
+				(type solid)
+			)
+			(fill yes)
+			(layer "F.Fab")
+			(uuid "9d2586cf-dbe6-4479-a18f-e93c3fbec691")
+		)
+		(pad "1" smd rect
+			(at -1.1 0.85 270)
+			(size 1.4 1.2)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "Net-(U8-PD0)")
+			(pinfunction "1_1")
+			(pintype "input")
+			(uuid "8e639432-4ce1-4892-94c4-bfe3abe9909c")
+		)
+		(pad "2" smd rect
+			(at 1.1 0.85 270)
+			(size 1.4 1.2)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "GND")
+			(pinfunction "GND_2")
+			(pintype "input")
+			(uuid "6c5330c2-adb2-4870-af4a-a09c070278e8")
+		)
+		(pad "3" smd rect
+			(at 1.1 -0.85 270)
+			(size 1.4 1.2)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "Net-(U8-PD1)")
+			(pinfunction "3_3")
+			(pintype "input")
+			(uuid "e2acc6df-9fe8-40a8-b7ec-03e71d5e0041")
+		)
+		(pad "4" smd rect
+			(at -1.1 -0.85 270)
+			(size 1.4 1.2)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net "GND")
+			(pinfunction "GND_4")
+			(pintype "input")
+			(uuid "12f8d533-cec8-4fd5-b391-f9caaa8e8e96")
+		)
+		(embedded_fonts no)
+		(model "F:/KiCad/Libs/footprints/JLCImport.3dshapes/X32258MOB4SI.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "d3d1b9c6-0444-4cf2-b94c-63e2255659a0")
@@ -22740,9 +24925,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/6d55398b-cb47-40ef-ad5e-0e0d197b6195")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/6d55398b-cb47-40ef-ad5e-0e0d197b6195")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -22900,9 +25085,9 @@
 			)
 		)
 		(property ki_fp_filters "MountingHole*Pad*")
-		(path "/885cb149-b7e3-4d75-bcba-9e1d8070fe0e")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/885cb149-b7e3-4d75-bcba-9e1d8070fe0e")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -23022,9 +25207,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/64508fef-b5fd-4be3-b5a9-031aa48855eb")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/64508fef-b5fd-4be3-b5a9-031aa48855eb")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -23182,9 +25367,9 @@
 			)
 		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
-		(path "/5fd4dc9a-7682-4939-8a6d-dffc97eb03ef")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/5fd4dc9a-7682-4939-8a6d-dffc97eb03ef")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -23497,9 +25682,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/a62038a0-057e-4131-9a9e-32ae9d4fd4df")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/a62038a0-057e-4131-9a9e-32ae9d4fd4df")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -23656,9 +25841,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/1a93bc36-64cd-4d8d-946b-21c0b42377d6")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/1a93bc36-64cd-4d8d-946b-21c0b42377d6")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -23818,9 +26003,9 @@
 			)
 		)
 		(property ki_fp_filters "MountingHole*Pad*")
-		(path "/6709c5e3-6cb5-4ce2-bf5e-aed9ab7b472b")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/6709c5e3-6cb5-4ce2-bf5e-aed9ab7b472b")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -23940,9 +26125,9 @@
 			)
 		)
 		(property ki_fp_filters "Inductor_* L_* *Ferrite*")
-		(path "/91b9dda0-67d4-44af-a589-5a131f0eb489")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/91b9dda0-67d4-44af-a589-5a131f0eb489")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -24099,9 +26284,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/6defee9e-bcef-4577-89e5-dc25412dc78a")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/6defee9e-bcef-4577-89e5-dc25412dc78a")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -24198,6 +26383,167 @@
 	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
+		(uuid "e2d3febe-4518-494d-aec7-3bf6197108ad")
+		(at 213.75 87.72 90)
+		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+		(tags "capacitor")
+		(property "Reference" "C68"
+			(at 0.02 1 90)
+			(layer "F.SilkS")
+			(uuid "a8350d19-293e-4bcc-82a0-a33b7ade7d76")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 0 1.16 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "10a591a1-e362-4274-8a6d-65f530157c1e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3925ca0e-fe86-4db9-9e01-8a7a0862e6f6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1d7785a4-7783-4861-88ec-e89538ce0a2d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 0 0 90)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d65e14f9-74ae-422f-996f-3beb4d934499")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/dc044937-6056-4220-ad80-6587bb362b58/416137dd-8d30-414c-83df-57bffa33f5e2")
+		(sheetname "/MAIN_CTRL/")
+		(sheetfile "MAIN_CTRL.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -0.107836 -0.36)
+			(end 0.107836 -0.36)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "fdd39f09-f70d-4f86-8d85-524514021b98")
+		)
+		(fp_line
+			(start -0.107836 0.36)
+			(end 0.107836 0.36)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "db3058e9-ada1-4824-8802-aab5dd00d721")
+		)
+		(fp_poly
+			(pts
+				(xy -0.91 -0.46) (xy 0.91 -0.46) (xy 0.91 0.46) (xy -0.91 0.46)
+			)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "ae9773d5-e2b8-42c0-b613-384f7940288f")
+		)
+		(fp_poly
+			(pts
+				(xy -0.5 -0.25) (xy 0.5 -0.25) (xy 0.5 0.25) (xy -0.5 0.25)
+			)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "83349253-5c72-4faf-9724-616e945b64b3")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(uuid "a514560a-a8e1-439e-887a-738821b3ff03")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.48 0 90)
+			(size 0.56 0.62)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "GND")
+			(pintype "passive")
+			(uuid "46ea088f-bb52-4de4-b061-d97e2929d560")
+		)
+		(pad "2" smd roundrect
+			(at 0.48 0 90)
+			(size 0.56 0.62)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "+3.3V")
+			(pintype "passive")
+			(uuid "b18d29ee-936f-4896-89eb-513c4486c8ab")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
+		(layer "F.Cu")
 		(uuid "e3e4f08d-22d8-4d33-b90a-76ba6f11c310")
 		(at 175.8 115.1 180)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
@@ -24260,9 +26606,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/99034403-3941-4861-8303-31fa3d8fdeab")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/99034403-3941-4861-8303-31fa3d8fdeab")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -24421,9 +26767,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/0ff2d06a-8c5c-485c-9ae0-2491a152e98b")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/0ff2d06a-8c5c-485c-9ae0-2491a152e98b")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -24580,9 +26926,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/28cf9076-6b02-45ee-877f-c3704406b0d3")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/28cf9076-6b02-45ee-877f-c3704406b0d3")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -24675,6 +27021,165 @@
 			)
 		)
 	)
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "e7316562-3f3b-4e51-8ff3-d6b13b0090cd")
+		(at 195.88 87.15)
+		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+		(tags "capacitor")
+		(property "Reference" "C71"
+			(at 0 -1.16 0)
+			(layer "F.SilkS")
+			(uuid "d154ac25-e2db-427c-a553-7936ced353e9")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "20pF"
+			(at 0 1.16 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bde5b3d5-d717-4f07-8b3b-ee33b3f52407")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e8d47047-ba21-4746-b161-73a4413ff6d6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d87adede-d54e-42ac-94b5-7b36487bcae4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "01321a57-4042-44fb-b437-363e7b9064ac")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/dc044937-6056-4220-ad80-6587bb362b58/0af81990-fe92-4dd0-98e4-23da27c90791")
+		(sheetname "/MAIN_CTRL/")
+		(sheetfile "MAIN_CTRL.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -0.107836 -0.36)
+			(end 0.107836 -0.36)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "dd714fbe-caa0-4a56-8de6-77e757141c21")
+		)
+		(fp_line
+			(start -0.107836 0.36)
+			(end 0.107836 0.36)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e2ff6c34-a84b-476f-bef9-283951353b71")
+		)
+		(fp_rect
+			(start -0.91 -0.46)
+			(end 0.91 0.46)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "47edd94c-cd01-4030-99df-9ed6247aced8")
+		)
+		(fp_rect
+			(start -0.5 -0.25)
+			(end 0.5 0.25)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "fb6f4a11-9d90-442a-9abe-915453e918b2")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "61e32c28-6b48-4e2c-9b6e-5655b66eb023")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.48 0)
+			(size 0.56 0.62)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "Net-(U8-PD0)")
+			(pintype "passive")
+			(uuid "e78a0ba1-5849-4add-85ea-d9a711d4c109")
+		)
+		(pad "2" smd roundrect
+			(at 0.48 0)
+			(size 0.56 0.62)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "GND")
+			(pintype "passive")
+			(uuid "74c7896e-a2d6-4c4b-9d36-676af374e3af")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount"
 		(layer "F.Cu")
 		(uuid "e86d654b-aa9f-4567-9110-fb77e28e1674")
@@ -24731,9 +27236,9 @@
 			)
 		)
 		(property ki_fp_filters "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*")
-		(path "/f019479d-37f7-482a-9c5e-e65f6bf31ce7")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/f019479d-37f7-482a-9c5e-e65f6bf31ce7")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -25125,9 +27630,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/22dcd315-0184-4904-9dd9-491c84d5e67a")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/22dcd315-0184-4904-9dd9-491c84d5e67a")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -25225,7 +27730,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "e9cffd78-f1be-4e25-af1c-66497336f31f")
-		(at 35.6375 47.4975)
+		(at 50.3 60.45)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C29"
@@ -25286,9 +27791,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/cbbe5a22-c0ab-4344-83cc-37c99a105f34")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/cbbe5a22-c0ab-4344-83cc-37c99a105f34")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -25445,9 +27950,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/768300be-6632-493c-917f-9e48daf04985")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/768300be-6632-493c-917f-9e48daf04985")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -25542,6 +28047,167 @@
 	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
+		(uuid "eb4ec944-8fc2-450d-bab4-4afb2fcb01ad")
+		(at 201.05 93.3 90)
+		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+		(tags "capacitor")
+		(property "Reference" "C66"
+			(at 0.1 -1 90)
+			(layer "F.SilkS")
+			(uuid "0a5c7e77-1c4e-4dc7-b727-5c6033183fc5")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 0 1.16 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9dfd7930-92fd-4354-89db-9193515eb73c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2945b40f-ffd2-478a-aa82-2c454e155efe")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "78eba7e2-699d-4af0-8c23-6fb0d537f134")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 0 0 90)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "63905d05-5ce5-4246-a4c6-81e0972fe85c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/dc044937-6056-4220-ad80-6587bb362b58/095a4971-6ccf-492a-b729-36fb6d7ab659")
+		(sheetname "/MAIN_CTRL/")
+		(sheetfile "MAIN_CTRL.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -0.107836 -0.36)
+			(end 0.107836 -0.36)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5b794573-c61f-4779-8883-3e6ac8330f40")
+		)
+		(fp_line
+			(start -0.107836 0.36)
+			(end 0.107836 0.36)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "65a0cff6-5b17-498b-b65b-9753f97cf1d2")
+		)
+		(fp_poly
+			(pts
+				(xy -0.91 -0.46) (xy 0.91 -0.46) (xy 0.91 0.46) (xy -0.91 0.46)
+			)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "c860f2cf-2e23-4577-8bf4-e3dac0bc09b5")
+		)
+		(fp_poly
+			(pts
+				(xy -0.5 -0.25) (xy 0.5 -0.25) (xy 0.5 0.25) (xy -0.5 0.25)
+			)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "b01bf175-f979-4e0a-8594-8103672d2c93")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(uuid "17fb3d80-0311-415d-8cf0-77fe7ebc759b")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.48 0 90)
+			(size 0.56 0.62)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "GND")
+			(pintype "passive")
+			(uuid "53cb4357-4edf-41eb-99cd-d239bce930a5")
+		)
+		(pad "2" smd roundrect
+			(at 0.48 0 90)
+			(size 0.56 0.62)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "+3.3V")
+			(pintype "passive")
+			(uuid "294fa4dc-0770-4049-aeca-ed4a4c1cbe4d")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
+		(layer "F.Cu")
 		(uuid "eced3b61-b33c-40b5-a123-6b9064847f01")
 		(at 57.0975 40.6975)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
@@ -25604,9 +28270,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/008dc513-b5a3-4f77-ad6a-c12335516642")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/008dc513-b5a3-4f77-ad6a-c12335516642")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -25755,9 +28421,9 @@
 			)
 		)
 		(property ki_fp_filters "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*")
-		(path "/1d191db2-9b9d-4f64-957a-2b47ea9d4ded")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/1d191db2-9b9d-4f64-957a-2b47ea9d4ded")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -26149,9 +28815,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/8222e7b9-31d3-4df5-8117-ac59175a343c")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/8222e7b9-31d3-4df5-8117-ac59175a343c")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -26308,9 +28974,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/1a643ace-a2e8-4d87-bbad-6fa807ecd252")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/1a643ace-a2e8-4d87-bbad-6fa807ecd252")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -26461,9 +29127,9 @@
 			)
 		)
 		(property ki_fp_filters "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*")
-		(path "/c91e626b-42a0-435f-95a7-f3496cd25bb1")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/c91e626b-42a0-435f-95a7-f3496cd25bb1")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -26847,9 +29513,9 @@
 			)
 		)
 		(property ki_fp_filters "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*")
-		(path "/9a7817b2-b0d9-4180-870d-46ed80c629c4")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/9a7817b2-b0d9-4180-870d-46ed80c629c4")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -27177,6 +29843,167 @@
 			)
 		)
 	)
+	(footprint "Capacitor_SMD:C_0402_1005Metric"
+		(layer "F.Cu")
+		(uuid "f77d7a75-2a76-485d-89db-76b7b1d63cf7")
+		(at 202.25 86 90)
+		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+		(tags "capacitor")
+		(property "Reference" "C65"
+			(at 0 -1.16 90)
+			(layer "F.SilkS")
+			(uuid "eaf67a55-ebca-4777-a73a-64e1c07a3793")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 0 1.16 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "648703a9-adf0-4353-967b-c4dc8481be29")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d6ff5e3e-da8b-4c68-b8c7-06ee7eebe7b5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "23b337c1-29da-4334-80df-d31ba6d4d2e1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 0 0 90)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "3674088f-fcc0-4b63-a69d-8d2345096682")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "C_*")
+		(path "/dc044937-6056-4220-ad80-6587bb362b58/474822f0-8d9e-467a-b20c-db36a87479ea")
+		(sheetname "/MAIN_CTRL/")
+		(sheetfile "MAIN_CTRL.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -0.107836 -0.36)
+			(end 0.107836 -0.36)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a10e6249-c7e9-40e3-b8b9-1b01df4bb1a7")
+		)
+		(fp_line
+			(start -0.107836 0.36)
+			(end 0.107836 0.36)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9a2fcb0f-d9d3-4969-a649-332117eb1363")
+		)
+		(fp_poly
+			(pts
+				(xy -0.91 -0.46) (xy 0.91 -0.46) (xy 0.91 0.46) (xy -0.91 0.46)
+			)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "8bad3810-6e02-40ae-851c-94c93038d7dd")
+		)
+		(fp_poly
+			(pts
+				(xy -0.5 -0.25) (xy 0.5 -0.25) (xy 0.5 0.25) (xy -0.5 0.25)
+			)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "2fc569ed-ebe9-4f54-8274-6849236447e0")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 90)
+			(layer "F.Fab")
+			(uuid "ed1b687f-c00e-40ec-9f06-c8718d6a7fbc")
+			(effects
+				(font
+					(size 0.5 0.5)
+					(thickness 0.1)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -0.48 0 90)
+			(size 0.56 0.62)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "GND")
+			(pintype "passive")
+			(uuid "80060c6a-0b76-405b-a6be-8f534a707ac0")
+		)
+		(pad "2" smd roundrect
+			(at 0.48 0 90)
+			(size 0.56 0.62)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.25)
+			(net "+3.3V")
+			(pintype "passive")
+			(uuid "0e2b0d94-db50-4685-a3d5-b0f7457ba26f")
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "faa281b4-6e2e-487b-be76-c4a2e643fe00")
@@ -27241,9 +30068,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/bf44b404-5aa2-4d1d-b6b1-03955e9808b0")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/bf44b404-5aa2-4d1d-b6b1-03955e9808b0")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -27400,9 +30227,9 @@
 			)
 		)
 		(property ki_fp_filters "C_*")
-		(path "/08f4bbbc-2bdc-4828-aa12-161c1fa0755e")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/08f4bbbc-2bdc-4828-aa12-161c1fa0755e")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -27559,9 +30386,9 @@
 			)
 		)
 		(property ki_fp_filters "R_*")
-		(path "/57cb7f94-3b8b-465f-9837-057ba9e8d633")
-		(sheetname "/")
-		(sheetfile "CLOCK.kicad_sch")
+		(path "/ad7e8003-daaa-4c55-9ec1-92ad34af2e50/57cb7f94-3b8b-465f-9837-057ba9e8d633")
+		(sheetname "/CLOCK_GEN/")
+		(sheetfile "CLOCK_GEN.kicad_sch")
 		(units
 			(unit
 				(name "A")

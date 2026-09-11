@@ -7,16 +7,6 @@
 	(lib_symbols)
 	(wire
 		(pts
-			(xy 128.27 100.33) (xy 158.75 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0b1cff05-c5eb-4987-b197-588750d72dc6")
-	)
-	(wire
-		(pts
 			(xy 128.27 88.9) (xy 158.75 88.9)
 		)
 		(stroke
@@ -27,16 +17,6 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 102.87) (xy 158.75 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58265f06-44cd-4400-8753-414c0a9df891")
-	)
-	(wire
-		(pts
 			(xy 128.27 93.98) (xy 158.75 93.98)
 		)
 		(stroke
@@ -44,16 +24,6 @@
 			(type default)
 		)
 		(uuid "c4925a35-a808-4e82-aa0b-246a9de6f5f2")
-	)
-	(wire
-		(pts
-			(xy 128.27 97.79) (xy 158.75 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca18f079-0bbc-49d2-a4b9-7425faef000f")
 	)
 	(wire
 		(pts
@@ -103,26 +73,6 @@
 				(justify left top)
 			)
 		)
-		(pin "GPIO0" input
-			(at 128.27 102.87 0)
-			(uuid "f791ef35-ffc1-41b6-961f-d44625d9923d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "GPIO2" input
-			(at 128.27 97.79 0)
-			(uuid "a55d829e-7ff5-4f3a-aef7-fa2b502032e6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "SCL" input
 			(at 128.27 91.44 0)
 			(uuid "6a7881ff-0244-4bfe-a153-3e6a380f09fc")
@@ -133,29 +83,19 @@
 				(justify right)
 			)
 		)
-		(pin "PDN" input
-			(at 128.27 93.98 0)
-			(uuid "696281d8-34b8-4f91-9d0c-9a2c5ae075e6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "GPIO1" input
-			(at 128.27 100.33 0)
-			(uuid "fc2927f9-16dd-4295-a87a-ed8021172a11")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "SDA" bidirectional
 			(at 128.27 88.9 0)
 			(uuid "fd7f8276-b7c4-4be5-b0c3-22c1450a36bb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PDN" input
+			(at 128.27 93.98 0)
+			(uuid "2bcdb149-692b-4da7-9cea-9964d23a72e1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -209,26 +149,6 @@
 				(justify left top)
 			)
 		)
-		(pin "GPIO0" output
-			(at 158.75 102.87 180)
-			(uuid "d9e204db-dab4-4981-bd0d-2b2db6a77835")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "GPIO1" output
-			(at 158.75 100.33 180)
-			(uuid "decdc7ca-29bb-4ef7-a3ec-fd740ae51840")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "PDN" output
 			(at 158.75 93.98 180)
 			(uuid "c3e27b77-50c6-489b-8202-9e38a8b07bfa")
@@ -252,16 +172,6 @@
 		(pin "SCL" output
 			(at 158.75 91.44 180)
 			(uuid "ab6202bf-9685-41a0-9352-e5da92507a82")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "GPIO2" output
-			(at 158.75 97.79 180)
-			(uuid "c003cdb1-83d4-4427-b5ec-0c68291c1489")
 			(effects
 				(font
 					(size 1.27 1.27)

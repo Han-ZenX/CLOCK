@@ -36,6 +36,9 @@ VF = r'C:\Windows\Fonts\NotoSansSC-VF.ttf'
 CACHE = os.path.join(os.path.expanduser('~'), '.cache', 'core-docs-fonts')
 
 FONT, BOLD, MONO = 'NotoSC', 'NotoSC-Bold', 'Courier'
+# Courier 没有中文字形，代码块里的中文注释会变成方块。
+# NSimSun 是 simsun.ttc 的第 2 个子字体，ASCII 半角、汉字全角，真等宽。
+MONO_TTC = r'C:\Windows\Fonts\simsun.ttc'
 
 ACCENT = colors.HexColor('#1a5f9c')
 DARK = colors.HexColor('#1a1a1a')
@@ -243,6 +246,11 @@ def main():
     pdfmetrics.registerFont(TTFont(BOLD, bold))
     pdfmetrics.registerFontFamily(FONT, normal=FONT, bold=BOLD,
                                   italic=FONT, boldItalic=BOLD)
+    if os.path.exists(MONO_TTC):
+        global MONO
+        pdfmetrics.registerFont(TTFont('MonoSC', MONO_TTC, subfontIndex=1))
+        MONO = 'MonoSC'
+        S['code'].fontName = MONO
 
     with open(args.input, encoding='utf-8') as f:
         story = parse(f.readlines(), args.subtitle)

@@ -2048,6 +2048,207 @@ def lmk_pwrseq():
     return d
 
 
+# ------------------------------------------------- 图：TICS Pro 到芯片的硬件通路
+
+def tics_hwpath():
+    """三条把 TICS Pro 配置送进 LMK5B12204 的硬件通路。"""
+    d = Drawing(W, 280)
+    wire_c = colors.HexColor('#444444')
+
+    def node(x, y, w, t1, t2, edge):
+        _box(d, x, y, w, 34, colors.white, edge, 0.8, r=3)
+        _txt(d, x + w / 2, y + 20, t1, 7, BOLD, DARK, 'middle')
+        _txt(d, x + w / 2, y + 7, t2, 5.8, FONT, GREY, 'middle')
+
+    def link(x1, x2, y, label):
+        d.add(Line(x1, y, x2 - 6, y, strokeColor=wire_c, strokeWidth=0.9))
+        d.add(Polygon([x2, y, x2 - 6, y - 3.5, x2 - 6, y + 3.5],
+                      fillColor=wire_c, strokeColor=wire_c))
+        _txt(d, (x1 + x2) / 2 - 3, y + 5, label, 5.8, FONT, GREY, 'middle')
+
+    lanes = [
+        (196, '① TI 官方 EVM（手册里的标准做法）', GREY,
+         colors.HexColor('#fafbfc'),
+         ('PC + TICS Pro', 'Windows'),
+         ('EVM 板载 MCU', '固件等效 USB2ANY'),
+         ('EVM 上的芯片', '不是你这块板'),
+         'USB', 'I2C',
+         '本项目没有 EVM，此路仅作参照'),
+        (104, '② 外接 USB2ANY 适配器接 J13', ACCENT,
+         colors.HexColor('#f5f9fd'),
+         ('PC + TICS Pro', 'Windows'),
+         ('USB2ANY 适配器', 'TI 官方，可单独采购'),
+         ('U1 LMK5B12204', '经 J13 接入板内 I2C'),
+         'USB', 'SDA/SCL',
+         '需让 U8 的 PB10/PB11 置高阻；J13 没有 GND 脚，地线要另接 TP2'),
+        (12, '③ 由 U8 STM32 代劳（本项目推荐）', GREEN,
+         colors.HexColor('#f7fbf3'),
+         ('PC + TICS Pro', '只算频率、导出表'),
+         ('U8 STM32F103CBTx', '寄存器表编进固件'),
+         ('U1 LMK5B12204', '板内 I2C，无需改板'),
+         'hex 表', 'SDA/SCL',
+         'TICS Pro 不直接连芯片，烧录时序由 STM32 固件发出'),
+    ]
+    for (y, title, tcol, bg, a, b, c, l1, l2, note) in lanes:
+        _box(d, 24, y, 434, 76, bg, tcol, 0.9, r=4)
+        _txt(d, 36, y + 62, title, 7.5, BOLD, tcol)
+        node(40, y + 20, 104, a[0], a[1], colors.HexColor('#c3ced8'))
+        link(144, 176, y + 37, l1)
+        node(176, y + 20, 132, b[0], b[1], tcol)
+        link(308, 340, y + 37, l2)
+        node(340, y + 20, 110, c[0], c[1], colors.HexColor('#c3ced8'))
+        _txt(d, 40, y + 8, note, 6, FONT, GREY)
+    return d
+
+
+# ------------------------------------------------- 图：TICS Pro 操作流程
+
+def tics_gui():
+    """TICS Pro 从安装到导出配置的操作顺序。"""
+    d = Drawing(W, 300)
+    steps = [
+        ('安装 TICS Pro',
+         'ti.com 搜索 TICSPRO-SW 申请下载；依赖 .NET Framework 4.5 与 IronPython 2.7'),
+        ('选择器件',
+         '菜单 Select Device → 时钟发生器分组 → LMK5B12204；列表里没有时用 Import User Device 导入 zip'),
+        ('填写频率规划',
+         'EVM Quick Start 页按引导走，或 Wizard 页新建设计：XO = 10 MHz OCXO、参考输入、OUT0~OUT3 频率与格式'),
+        ('核对寄存器',
+         'Raw Registers 页可逐条查看 R0 ~ R352 的最终取值，与第 3 节的写入范围对照'),
+        ('连接硬件（有适配器时）',
+         'USB Communications → Interface 选 I2C，用 Identify 确认连上；无硬件时 GUI 停在 Simulation 模式'),
+        ('写入器件',
+         'USB Communications → Program All Register，等同 Raw Registers 页的 Write All'),
+        ('导出配置数据',
+         'File → Export Hex Register Values 得 R0~Rn 十六进制表；EEPROM 页 Export GUI Map 得 SRAM/EEPROM 映射'),
+        ('保存工程',
+         'File → Save 存下设置文件留档，需要时可发给 TI 复核或申请工厂预编程样片'),
+    ]
+    y = 300 - 32
+    for i, (t1, t2) in enumerate(steps):
+        if i:
+            d.add(Line(38, y + 32, 38, y + 28,
+                       strokeColor=colors.HexColor('#c3ced8'), strokeWidth=0.9))
+        _box(d, 52, y, 406, 28, colors.HexColor('#f8fafb'),
+             colors.HexColor('#d5dee7'), 0.7, r=3)
+        d.add(Circle(38, y + 14, 9, fillColor=ACCENT, strokeColor=ACCENT))
+        _txt(d, 38, y + 11.5, str(i + 1), 7.5, BOLD, colors.white, 'middle')
+        _txt(d, 62, y + 17, t1, 7, BOLD, DARK)
+        _txt(d, 62, y + 6, t2, 5.8, FONT, GREY)
+        y -= 36
+    return d
+
+
+# ------------------------------------------------- 图：寄存器写入范围与掩码
+
+def tics_regmap():
+    """主机写寄存器时的地址范围、掩码与收尾动作。"""
+    d = Drawing(W, 196)
+    X0, BW, N = 32, 420, 436
+
+    def xs(reg):
+        return X0 + BW * reg / N
+
+    _box(d, X0, 118, xs(353) - X0, 28, colors.HexColor('#e6f1fb'), ACCENT, 0.9)
+    _txt(d, (X0 + xs(353)) / 2, 128, '按地址从低到高依次写入', 7.5, BOLD, ACCENT,
+         'middle')
+    _box(d, xs(353), 118, X0 + BW - xs(353), 28,
+         colors.HexColor('#fdeaea'), RED, 0.9)
+    _txt(d, (xs(353) + X0 + BW) / 2, 128, '禁止写入', 7.5, BOLD, RED, 'middle')
+
+    for reg, lab, anc in ((0, 'R0', 'start'), (353, 'R353', 'middle'),
+                          (436, 'R435', 'end')):
+        _txt(d, xs(reg), 106, lab, 6.5, BOLD, GREY, anc)
+
+    for reg, lab in ((12, 'R12 掩码 A7h'), (160.5, 'R157 / R164 掩码 FFh')):
+        x = xs(reg)
+        d.add(Line(x, 146, x, 162, strokeColor=AMBER, strokeWidth=0.9))
+        _txt(d, x, 166, lab, 6.5, BOLD, AMBER, 'middle')
+    d.add(Line(xs(157), 150, xs(164), 150, strokeColor=AMBER, strokeWidth=0.9))
+
+    notes = [
+        (AMBER, 'R12 = A7h', '器件复位 / 控制寄存器，掩码位保持原值'),
+        (AMBER, 'R157 = FFh', 'NVM 控制位，整字节跳过——EEPROM 命令按第 4 节单独发'),
+        (AMBER, 'R164 = FFh', 'NVM 解锁位，同上'),
+        (RED, 'R353 ~ R435', 'TI 内部测试 / 诊断寄存器，一律不要写'),
+    ]
+    y = 92
+    for col, k, v in notes:
+        d.add(Circle(34, y + 2.5, 2.6, fillColor=col, strokeColor=col))
+        _txt(d, 42, y, k, 6.5, BOLD, col)
+        _txt(d, 104, y, v, 6.5, FONT, DARK)
+        y -= 13
+
+    _box(d, 24, 4, 434, 34, colors.HexColor('#f7fbf3'), GREEN, 0.8, r=3)
+    _txt(d, 34, 24, '写完之后的收尾（数据手册 9.5.5）', 7, BOLD, GREEN)
+    _txt(d, 34, 11, '向 R12[7] 写 1 进入软复位（寄存器值不会被清掉），再写 0 退出，'
+                    '器件随即开始 PLL 启动序列', 6.5, FONT, DARK)
+    return d
+
+
+# ------------------------------------------------- 图：EEPROM 烧录时序
+
+def tics_eeprom():
+    """EEPROM 烧录的寄存器级操作顺序。"""
+    d = Drawing(W, 372)
+    wire_c = colors.HexColor('#444444')
+
+    def blk(x, y, w, h, t1, t2, fill, edge, tcol=DARK):
+        _box(d, x, y, w, h, fill, edge, 0.9, r=3)
+        _txt(d, x + w / 2, y + h - 14, t1, 7, BOLD, tcol, 'middle')
+        if t2:
+            _txt(d, x + w / 2, y + 7, t2, 5.8, FONT, GREY, 'middle')
+
+    def down(x, y1, y2):
+        d.add(Line(x, y1, x, y2 + 6, strokeColor=wire_c, strokeWidth=0.9))
+        d.add(Polygon([x, y2, x - 3.5, y2 + 6, x + 3.5, y2 + 6],
+                      fillColor=wire_c, strokeColor=wire_c))
+
+    blk(40, 330, 190, 34, '方法 #1：寄存器提交', '要求先把配置写进活动寄存器',
+        colors.HexColor('#e6f1fb'), ACCENT, ACCENT)
+    blk(252, 330, 190, 34, '方法 #2：直接写 SRAM', '不打断器件当前的工作状态',
+        colors.HexColor('#f0f2f4'), GREY, GREY)
+    down(135, 330, 306)
+    down(347, 330, 306)
+    blk(40, 264, 190, 42, 'R157 ← 40h', 'REGCOMMIT：寄存器 → SRAM，自动清零',
+        colors.white, colors.HexColor('#c3ced8'))
+    blk(252, 264, 190, 42, 'R159 / R160 ← 地址，R162 ← 数据',
+        '逐字节写 SRAM 第 0~252 字节，253~255 保留',
+        colors.white, colors.HexColor('#c3ced8'))
+
+    d.add(Line(135, 264, 135, 252, strokeColor=wire_c, strokeWidth=0.9))
+    d.add(Line(347, 264, 347, 252, strokeColor=wire_c, strokeWidth=0.9))
+    d.add(Line(135, 252, 347, 252, strokeColor=wire_c, strokeWidth=0.9))
+    down(241, 252, 232)
+
+    blk(100, 200, 282, 30, 'R164 ← EAh', 'NVMUNLK：写入解锁码',
+        colors.HexColor('#fdeaea'), RED, RED)
+    down(241, 200, 190)
+    blk(100, 160, 282, 30, 'R157 ← 03h',
+        'NVMERASE + NVMPROG：擦除并烧写整片 SRAM 内容',
+        colors.HexColor('#fdeaea'), RED, RED)
+
+    _box(d, 24, 130, 434, 22, colors.HexColor('#fdf6e6'), AMBER, 0.8, r=2)
+    _txt(d, 34, 137, '这两条写必须紧邻：中间插入任何其他寄存器事务，'
+                     '擦写命令都不会被执行', 6.5, BOLD, RED)
+    down(241, 160, 152)
+    down(241, 130, 122)
+
+    blk(100, 92, 282, 30, '等待约 230 ms',
+        '轮询 R157[2] NVMBUSY，读到 0 表示烧录结束',
+        colors.white, colors.HexColor('#c3ced8'))
+    down(241, 92, 82)
+    blk(100, 52, 282, 30, 'R164 ← 00h', '重新上锁，防止误烧（可选）',
+        colors.white, colors.HexColor('#c3ced8'))
+    down(241, 52, 42)
+
+    blk(100, 4, 282, 34, '断电重上电 / 硬复位后校验', '',
+        colors.HexColor('#f7fbf3'), GREEN, GREEN)
+    _txt(d, 241, 11, 'R156 NVMCNT 应 +1　·　R157[5] NVMCRCERR 应为 0',
+         6.2, FONT, DARK, 'middle')
+    return d
+
+
 FIGURES = {
     'flow': flow,
     'stackup': stackup,
@@ -2080,6 +2281,10 @@ FIGURES = {
     'lmk_bootmode': lmk_bootmode,
     'lmk_cfgpath': lmk_cfgpath,
     'lmk_pwrseq': lmk_pwrseq,
+    'tics_hwpath': tics_hwpath,
+    'tics_gui': tics_gui,
+    'tics_regmap': tics_regmap,
+    'tics_eeprom': tics_eeprom,
 }
 
 

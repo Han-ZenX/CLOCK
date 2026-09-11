@@ -2227,8 +2227,16 @@
 		(uuid "016b5381-0ce8-4fd6-a0e5-c2d7af1f6350")
 	)
 	(no_connect
+		(at 87.63 124.46)
+		(uuid "0972a935-dfa2-4fa4-9904-d8563ea2dc02")
+	)
+	(no_connect
 		(at 123.19 60.96)
 		(uuid "0a63d30d-f806-437c-a854-77fdf7c70e33")
+	)
+	(no_connect
+		(at 87.63 119.38)
+		(uuid "0ae68d4a-a831-47e1-87af-2aaa642280d9")
 	)
 	(no_connect
 		(at 123.19 91.44)
@@ -2257,6 +2265,10 @@
 	(no_connect
 		(at 87.63 93.98)
 		(uuid "3a6fbf11-5350-45db-a95d-d89d3fb90eb8")
+	)
+	(no_connect
+		(at 87.63 121.92)
+		(uuid "5a600286-6604-458d-9a0f-ee381c4a5511")
 	)
 	(no_connect
 		(at 87.63 104.14)
@@ -2351,16 +2363,6 @@
 			(type default)
 		)
 		(uuid "05093b89-df97-48ae-ac5f-09567d40ef03")
-	)
-	(wire
-		(pts
-			(xy 83.82 121.92) (xy 87.63 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1131dcd6-23e1-4876-b882-16e69b055b60")
 	)
 	(wire
 		(pts
@@ -2624,16 +2626,6 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 124.46) (xy 87.63 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bccc3cd8-e6cc-4011-84c7-860d89c3f724")
-	)
-	(wire
-		(pts
 			(xy 73.66 73.66) (xy 73.66 91.44)
 		)
 		(stroke
@@ -2711,16 +2703,6 @@
 			(type default)
 		)
 		(uuid "e1f990f4-659d-4136-b901-271a92b20cdd")
-	)
-	(wire
-		(pts
-			(xy 83.82 119.38) (xy 87.63 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e46ab37e-bc6d-4f08-8db8-a0b3c76cc49c")
 	)
 	(wire
 		(pts
@@ -2862,17 +2844,6 @@
 		)
 		(uuid "f4ace818-9851-4800-bcaf-b14097873b73")
 	)
-	(hierarchical_label "GPIO2"
-		(shape output)
-		(at 83.82 124.46 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3bd75a2e-f43f-47da-9aa1-433eee7bffa8")
-	)
 	(hierarchical_label "SCL"
 		(shape output)
 		(at 83.82 114.3 180)
@@ -2883,28 +2854,6 @@
 			(justify right)
 		)
 		(uuid "4c18440b-829f-4e13-b1b6-f5451f49b364")
-	)
-	(hierarchical_label "GPIO1"
-		(shape output)
-		(at 83.82 121.92 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "50e3d2ad-063f-4754-ba1a-8fff024484ca")
-	)
-	(hierarchical_label "GPIO0"
-		(shape output)
-		(at 83.82 119.38 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6bddf8b2-76d4-4d7c-b4ca-142e00ec3ef0")
 	)
 	(hierarchical_label "SDA"
 		(shape bidirectional)

@@ -1641,6 +1641,17 @@
 		)
 		(uuid "3b46cfb2-0f8e-499e-b3ef-667dbaad4c81")
 	)
+	(hierarchical_label "PRIREF_P"
+		(shape output)
+		(at 127 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5d61e03e-db0c-4f99-9378-7d3ad91de1cd")
+	)
 	(hierarchical_label "OUT2_P"
 		(shape input)
 		(at 241.3 69.85 0)
@@ -1651,17 +1662,6 @@
 			(justify left)
 		)
 		(uuid "6c25a315-7765-4fc7-9c74-47f07acf72bc")
-	)
-	(hierarchical_label "REF_IN"
-		(shape output)
-		(at 127 177.8 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "6c9fbe0f-34b1-4827-9c43-d78372975df1")
 	)
 	(hierarchical_label "OUT2_N"
 		(shape input)

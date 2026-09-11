@@ -2213,29 +2213,16 @@
 		)
 		(uuid "fe320313-a80b-4e26-9afb-e700a1069534")
 	)
-	(global_label "XO_P"
+	(hierarchical_label "XO_P"
 		(shape output)
 		(at 101.6 91.44 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "dbce7977-4616-4c71-91e9-8bf1f2bd353e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 93.8372 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
+		(uuid "75c1dcf4-61e7-406b-9a9d-f0f55cec28fc")
 	)
 	(symbol
 		(lib_id "power:GND")

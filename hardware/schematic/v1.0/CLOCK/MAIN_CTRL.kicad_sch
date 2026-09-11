@@ -2406,6 +2406,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 114.3) (xy 76.2 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2efab58f-b7c0-4688-b335-b7ef9bba9136")
+	)
+	(wire
+		(pts
 			(xy 105.41 134.62) (xy 107.95 134.62)
 		)
 		(stroke
@@ -2533,6 +2543,16 @@
 			(type default)
 		)
 		(uuid "801acd0e-f437-47a6-98aa-ebab444a983d")
+	)
+	(wire
+		(pts
+			(xy 73.66 116.84) (xy 76.2 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8156ea83-9c1d-46c8-865f-6380116aec38")
 	)
 	(wire
 		(pts
@@ -2716,6 +2736,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 127) (xy 76.2 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e604a8e7-c0c4-4a36-9d73-3e788039e10b")
+	)
+	(wire
+		(pts
 			(xy 170.18 97.79) (xy 179.07 97.79)
 		)
 		(stroke
@@ -2844,38 +2874,38 @@
 		)
 		(uuid "f4ace818-9851-4800-bcaf-b14097873b73")
 	)
-	(hierarchical_label "SCL"
-		(shape output)
-		(at 83.82 114.3 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4c18440b-829f-4e13-b1b6-f5451f49b364")
-	)
 	(hierarchical_label "SDA"
 		(shape bidirectional)
-		(at 83.82 116.84 180)
+		(at 73.66 116.84 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "9367077f-860f-42a0-b9c2-835b7aba0214")
+		(uuid "28b15c4e-1cd2-40ad-ba2c-f7fbb3c6e773")
+	)
+	(hierarchical_label "SCL"
+		(shape output)
+		(at 73.66 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2c8e5808-ad6d-41ac-8b1e-a9f164694be8")
 	)
 	(hierarchical_label "PDN"
 		(shape output)
-		(at 83.82 127 180)
+		(at 73.66 127 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "a7adc497-5c7b-4ede-a94e-0b30d3e74d67")
+		(uuid "b7fe10b8-807a-4815-ad8e-39bdd9e547ae")
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -3035,6 +3065,87 @@
 			(project "CLOCK"
 				(path "/e8d80103-6a56-4030-bccc-c2b7ae1d549d/dc044937-6056-4220-ad80-6587bb362b58"
 					(reference "C71")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 80.01 116.84 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0e6c7951-b3de-41e9-a460-bdb257d75185")
+		(property "Reference" "R35"
+			(at 75.692 119.126 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 81.788 119.38 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 80.01 115.062 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 80.01 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "55d7b0bd-60b9-4447-bd3d-b6137127834c")
+		)
+		(pin "1"
+			(uuid "52594c80-72df-46a1-916d-0ecb745a480e")
+		)
+		(instances
+			(project "CLOCK"
+				(path "/e8d80103-6a56-4030-bccc-c2b7ae1d549d/dc044937-6056-4220-ad80-6587bb362b58"
+					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -4601,6 +4712,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 80.01 127 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e9dd9c5d-7105-493e-a8ea-d34935b31f07")
+		(property "Reference" "R40"
+			(at 79.248 129.54 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 83.566 129.54 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 80.01 128.778 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 80.01 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "69165f50-0eb6-464e-9543-a0db2b97b63d")
+		)
+		(pin "1"
+			(uuid "efcf5aac-d241-40ba-9c38-3ed8c080db8b")
+		)
+		(instances
+			(project "CLOCK"
+				(path "/e8d80103-6a56-4030-bccc-c2b7ae1d549d/dc044937-6056-4220-ad80-6587bb362b58"
+					(reference "R40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 156.21 46.99 180)
 		(unit 1)
@@ -4677,6 +4869,87 @@
 			(project "CLOCK"
 				(path "/e8d80103-6a56-4030-bccc-c2b7ae1d549d/dc044937-6056-4220-ad80-6587bb362b58"
 					(reference "C67")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 80.01 114.3 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f8e8c019-a0a4-4567-8717-ff62621a0ef5")
+		(property "Reference" "R42"
+			(at 79.248 112.268 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 83.566 112.268 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 80.01 116.078 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 80.01 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "be25d852-dfc4-47aa-937c-1dc0fa61f87b")
+		)
+		(pin "1"
+			(uuid "2c3c4386-a3dc-4c58-be18-1aa91d0d0dd9")
+		)
+		(instances
+			(project "CLOCK"
+				(path "/e8d80103-6a56-4030-bccc-c2b7ae1d549d/dc044937-6056-4220-ad80-6587bb362b58"
+					(reference "R42")
 					(unit 1)
 				)
 			)

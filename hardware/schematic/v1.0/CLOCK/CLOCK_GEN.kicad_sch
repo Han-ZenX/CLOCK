@@ -5795,7 +5795,7 @@
 		(uuid "d7531586-b888-4682-bdc7-655365d0a1ec")
 	)
 	(junction
-		(at 196.85 195.58)
+		(at 196.85 189.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dd36f1f0-6558-486c-b9dd-5b8795bede73")
@@ -5813,7 +5813,7 @@
 		(uuid "e77d1826-026a-4095-91ba-7aa38f23ee82")
 	)
 	(junction
-		(at 196.85 190.5)
+		(at 196.85 184.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e87a9af1-ace5-4adb-abf1-742cd4c46c74")
@@ -5855,7 +5855,7 @@
 		(uuid "f22e1ee6-2657-41d9-b3e9-c1c85913e811")
 	)
 	(junction
-		(at 196.85 185.42)
+		(at 196.85 179.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f241aaea-e52d-4e97-b6ff-aaae42957033")
@@ -6134,7 +6134,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 195.58) (xy 196.85 196.85)
+			(xy 196.85 189.23) (xy 196.85 190.5)
 		)
 		(stroke
 			(width 0)
@@ -6904,7 +6904,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 194.31) (xy 196.85 195.58)
+			(xy 196.85 187.96) (xy 196.85 189.23)
 		)
 		(stroke
 			(width 0)
@@ -7194,7 +7194,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 185.42) (xy 196.85 186.69)
+			(xy 196.85 179.07) (xy 196.85 180.34)
 		)
 		(stroke
 			(width 0)
@@ -7284,7 +7284,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 190.5) (xy 196.85 191.77)
+			(xy 196.85 184.15) (xy 196.85 185.42)
 		)
 		(stroke
 			(width 0)
@@ -8344,7 +8344,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 184.15) (xy 196.85 185.42)
+			(xy 196.85 177.8) (xy 196.85 179.07)
 		)
 		(stroke
 			(width 0)
@@ -9634,7 +9634,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 189.23) (xy 196.85 190.5)
+			(xy 196.85 182.88) (xy 196.85 184.15)
 		)
 		(stroke
 			(width 0)
@@ -10950,7 +10950,7 @@
 	)
 	(global_label "STATUS0"
 		(shape input)
-		(at 196.85 201.93 180)
+		(at 196.85 195.58 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10960,7 +10960,7 @@
 		)
 		(uuid "5639bc74-8fa5-476a-832b-af2e9b83bdaf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 185.882 201.93 0)
+			(at 185.882 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11094,7 +11094,7 @@
 	)
 	(global_label "STATUS1"
 		(shape input)
-		(at 196.85 204.47 180)
+		(at 196.85 198.12 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11104,7 +11104,7 @@
 		)
 		(uuid "760c175b-2443-46b1-9b26-d19275c27c21")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 185.882 204.47 0)
+			(at 185.882 198.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17068,7 +17068,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 196.85 185.42 90)
+		(at 196.85 179.07 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17078,7 +17078,7 @@
 		(dnp no)
 		(uuid "32619d93-c5ca-4802-9339-359850688a6d")
 		(property "Reference" "#PWR020"
-			(at 200.66 185.42 0)
+			(at 200.66 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17089,7 +17089,7 @@
 			)
 		)
 		(property "Value" "+5V_OCXO"
-			(at 188.976 185.42 90)
+			(at 188.976 179.07 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17099,7 +17099,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 196.85 185.42 0)
+			(at 196.85 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17110,7 +17110,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 196.85 185.42 0)
+			(at 196.85 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17121,7 +17121,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 196.85 185.42 0)
+			(at 196.85 179.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18235,7 +18235,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 196.85 195.58 270)
+		(at 196.85 189.23 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18246,7 +18246,7 @@
 		(fields_autoplaced yes)
 		(uuid "3efca4d8-64d4-455c-b4f8-625aaeab7576")
 		(property "Reference" "#PWR0133"
-			(at 190.5 195.58 0)
+			(at 190.5 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18257,7 +18257,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 191.77 195.58 0)
+			(at 191.77 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18268,7 +18268,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 196.85 195.58 0)
+			(at 196.85 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18279,7 +18279,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 196.85 195.58 0)
+			(at 196.85 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18290,7 +18290,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 196.85 195.58 0)
+			(at 196.85 189.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18948,7 +18948,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x06_Socket")
-		(at 201.93 189.23 0)
+		(at 201.93 182.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18959,7 +18959,7 @@
 		(fields_autoplaced yes)
 		(uuid "479cb53b-0746-4610-ad2b-41afe6fc2d51")
 		(property "Reference" "J11"
-			(at 203.2 189.2299 0)
+			(at 203.2 182.8799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18970,7 +18970,7 @@
 			)
 		)
 		(property "Value" "Conn_01x06_Socket"
-			(at 203.2 191.7699 0)
+			(at 203.2 185.4199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18981,7 +18981,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical"
-			(at 201.93 189.23 0)
+			(at 201.93 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18992,7 +18992,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 201.93 189.23 0)
+			(at 201.93 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19003,7 +19003,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated"
-			(at 201.93 189.23 0)
+			(at 201.93 182.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19282,7 +19282,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 196.85 190.5 90)
+		(at 196.85 184.15 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19293,7 +19293,7 @@
 		(fields_autoplaced yes)
 		(uuid "4c235268-16dd-4d19-a3aa-b1276c282bcd")
 		(property "Reference" "#PWR049"
-			(at 200.66 190.5 0)
+			(at 200.66 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19304,7 +19304,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 193.04 190.4999 90)
+			(at 193.04 184.1499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19315,7 +19315,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 196.85 190.5 0)
+			(at 196.85 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19326,7 +19326,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 196.85 190.5 0)
+			(at 196.85 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19337,7 +19337,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 196.85 190.5 0)
+			(at 196.85 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20553,7 +20553,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
-		(at 201.93 201.93 0)
+		(at 201.93 195.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20564,7 +20564,7 @@
 		(fields_autoplaced yes)
 		(uuid "5b4df27a-4607-421d-9efa-c45ce4791da4")
 		(property "Reference" "J14"
-			(at 203.2 201.9299 0)
+			(at 203.2 195.5799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20575,7 +20575,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02_Socket"
-			(at 203.2 204.4699 0)
+			(at 203.2 198.1199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20586,7 +20586,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
-			(at 201.93 201.93 0)
+			(at 201.93 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20597,7 +20597,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 201.93 201.93 0)
+			(at 201.93 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20608,7 +20608,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 201.93 201.93 0)
+			(at 201.93 195.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

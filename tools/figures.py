@@ -1835,6 +1835,219 @@ def lmk_gap():
     _txt(d, X0 + 22.5 * SC, 8, 'mm', 5.2, FONT, GREY, 'middle')
     return d
 
+# ------------------------------------------------- 图：两颗时钟芯片架构对比
+
+def clk_ic_cmp():
+    """LMK5B12204 与 Si5381A 的架构、输入输出与参考要求对比。"""
+    d = Drawing(W, 300)
+    wire_c = colors.HexColor('#444444')
+
+    def chip(x0, title, sub, plls, ins, outs, xo, xo_hi, tcol):
+        _box(d, x0, 70, 175, 190, colors.white,
+             colors.HexColor('#d5dee7'), 0.7, r=3)
+        _txt(d, x0 + 87, 246, title, 8.5, BOLD, tcol, 'middle')
+        _txt(d, x0 + 87, 234, sub, 6.5, FONT, GREY, 'middle')
+
+        # 芯片本体
+        _box(d, x0 + 46, 118, 84, 104, colors.HexColor('#f0f2f4'), GREY, 0.8, r=3)
+        for i, p in enumerate(plls):
+            yy = 206 - i * 21
+            _box(d, x0 + 54, yy - 14, 68, 17, colors.white, tcol, 0.7, r=2)
+            _txt(d, x0 + 88, yy - 9, p, 6.5, BOLD, tcol, 'middle')
+
+        # 输入
+        for i in range(ins[0]):
+            yy = 210 - i * 15
+            d.add(Polygon([x0 + 46, yy, x0 + 39, yy - 3.5, x0 + 39, yy + 3.5],
+                          fillColor=wire_c, strokeColor=wire_c))
+            d.add(Line(x0 + 16, yy, x0 + 39, yy, strokeColor=wire_c, strokeWidth=0.8))
+        _txt(d, x0 + 16, 218, ins[1], 6.5, BOLD, DARK)
+
+        # 输出
+        d.add(Line(x0 + 130, 170, x0 + 150, 170, strokeColor=GREEN, strokeWidth=1.6))
+        d.add(Polygon([x0 + 157, 170, x0 + 150, 166.5, x0 + 150, 173.5],
+                      fillColor=GREEN, strokeColor=GREEN))
+        _txt(d, x0 + 132, 178, outs[0], 7, BOLD, GREEN)
+        _txt(d, x0 + 132, 158, outs[1], 6, FONT, GREY)
+
+        # 参考振荡器
+        _box(d, x0 + 46, 84, 84, 24, colors.HexColor('#fdeaea') if xo_hi
+             else colors.HexColor('#eaf3de'), RED if xo_hi else GREEN, 0.8, r=2)
+        _txt(d, x0 + 88, 98, xo[0], 7, BOLD, RED if xo_hi else GREEN, 'middle')
+        _txt(d, x0 + 88, 88, xo[1], 6, FONT, DARK, 'middle')
+        d.add(Line(x0 + 88, 108, x0 + 88, 118, strokeColor=wire_c, strokeWidth=0.8))
+
+    chip(22, 'LMK5B12204', '（当前方案）',
+         ['DPLL', 'APLL1', 'APLL2'], (2, '2 路参考'),
+         ['4 对差分', '最高 1250 MHz'],
+         ['XO 10 ~ 100 MHz', '现有 10 MHz OCXO 可用'], False, ACCENT)
+
+    chip(285, 'Si5381A', '（4 × DSPLL 无线基站级）',
+         ['DSPLL A', 'DSPLL B', 'DSPLL C/D'], (4, '4 路参考'),
+         ['12 路输出', '最高 2.95 GHz'],
+         ['XO 只能 54 MHz', '现有 OCXO 不可用'], True, colors.HexColor('#8e44ad'))
+
+    _txt(d, W / 2, 276, 'LMK5B12204   vs   Si5381A', 9, BOLD, DARK, 'middle')
+
+    # 中间差异标注
+    for i, (t, c) in enumerate([
+            ('抖动 @156 MHz', DARK), ('60 fs  ←→  88 fs', ACCENT),
+            ('', DARK), ('电源', DARK), ('3.3 V  ←→  1.8+3.3 V', DARK),
+            ('', DARK), ('封装', DARK), ('7×7  ←→  9×9 mm', DARK),
+            ('', DARK), ('配置存储', DARK), ('EEPROM ←→ OTP', RED)]):
+        if t:
+            _txt(d, W / 2, 222 - i * 13, t, 6.5,
+                 BOLD if c is not DARK or i % 3 == 0 else FONT, c, 'middle')
+
+    _box(d, 22, 14, 438, 44, colors.HexColor('#fdeaea'), RED, 0.7, r=3)
+    _txt(d, 32, 44, '决定性差异：Si5381A 的参考只能是 54 MHz，且必须选用手册推荐的特定型号',
+         7, BOLD, RED)
+    _txt(d, 32, 30, '本项目的 10 MHz OCXO 及其压控、校准电路将全部作废；'
+                    '而抖动指标反而不如现方案', 6.5, FONT, DARK)
+    _txt(d, 32, 19, 'Si5381A 的价值在 4 个独立 DSPLL、12 路输出与 CPRI 高频，'
+                    '本项目都用不到', 6.5, FONT, DARK)
+    return d
+
+
+# ------------------------------------------------- 图：LMK5B12204 启动模式
+
+def lmk_bootmode():
+    """POR 配置序列与 HW_SW_CTRL 三种启动模式。"""
+    d = Drawing(W, 300)
+    wire_c = colors.HexColor('#444444')
+
+    def blk(x, y, w, h, t1, t2, fill, edge, tcol=DARK):
+        _box(d, x, y, w, h, fill, edge, 0.8, r=3)
+        _txt(d, x + w / 2, y + h - 13, t1, 7, BOLD, tcol, 'middle')
+        if t2:
+            _txt(d, x + w / 2, y + 6, t2, 6, FONT, GREY, 'middle')
+
+    def arrow(x, y1, y2):
+        d.add(Line(x, y1, x, y2 + 6, strokeColor=wire_c, strokeWidth=0.9))
+        d.add(Polygon([x, y2, x - 3.5, y2 + 6, x + 3.5, y2 + 6],
+                      fillColor=wire_c, strokeColor=wire_c))
+
+    CX = W / 2
+    blk(CX - 55, 266, 110, 26, '上电 (POR)', '', colors.HexColor('#f0f2f4'), GREY)
+    arrow(CX, 266, 246)
+    blk(CX - 70, 220, 140, 26, 'PDN  0 → 1（硬复位）', '',
+        colors.HexColor('#f0f2f4'), GREY)
+    arrow(CX, 220, 200)
+    blk(CX - 80, 174, 160, 26, '采样 HW_SW_CTRL 电平', '仅此一次，运行中改无效',
+        colors.HexColor('#fdf6e6'), AMBER)
+
+    # 三分支
+    d.add(Line(78, 160, 404, 160, strokeColor=wire_c, strokeWidth=0.9))
+    d.add(Line(CX, 174, CX, 160, strokeColor=wire_c, strokeWidth=0.9))
+    for x in (78, CX, 404):
+        arrow(x, 160, 132)
+
+    blk(24, 100, 108, 32, 'HW_SW_CTRL = 0', 'EEPROM + I2C',
+        colors.HexColor('#eaf3de'), GREEN, GREEN)
+    _txt(d, 78, 90, '★ 本项目（R9 接地）', 6, BOLD, GREEN, 'middle')
+    blk(187, 100, 108, 32, '= Float', 'EEPROM + SPI',
+        colors.HexColor('#e6f1fb'), ACCENT, ACCENT)
+    blk(350, 100, 108, 32, 'HW_SW_CTRL = 1', 'TI 内部测试专用',
+        colors.HexColor('#fdeaea'), RED, RED)
+    _txt(d, 404, 90, '禁用：输出静音', 6, BOLD, RED, 'middle')
+
+    # 汇合
+    d.add(Line(78, 76, 78, 68, strokeColor=wire_c, strokeWidth=0.9))
+    d.add(Line(CX, 76, CX, 68, strokeColor=wire_c, strokeWidth=0.9))
+    d.add(Line(78, 68, CX, 68, strokeColor=wire_c, strokeWidth=0.9))
+    arrow(CX - 78, 68, 52)
+
+    blk(120, 20, 250, 32, '寄存器从 EEPROM 初始化，串口激活',
+        '此后可通过 I2C/SPI 读写寄存器，也可烧录 EEPROM',
+        colors.HexColor('#f8fafb'), colors.HexColor('#d5dee7'))
+    return d
+
+
+# ------------------------------------------------- 图：两条配置路径
+
+def lmk_cfgpath():
+    """烧 EEPROM 与 MCU 运行时配置的对比。"""
+    d = Drawing(W, 250)
+
+    def col(x0, title, tcol, fill, steps, pros, cons):
+        _box(d, x0, 40, 210, 190, colors.white,
+             colors.HexColor('#d5dee7'), 0.7, r=3)
+        _box(d, x0 + 8, 198, 194, 26, fill, tcol, 0.8, r=2)
+        _txt(d, x0 + 105, 206, title, 7.5, BOLD, tcol, 'middle')
+        y = 180
+        for s in steps:
+            _txt(d, x0 + 16, y, s, 6.5, FONT, DARK)
+            y -= 13
+        y -= 6
+        for p in pros:
+            _txt(d, x0 + 16, y, '＋ ' + p, 6.5, BOLD, GREEN)
+            y -= 12
+        for c in cons:
+            _txt(d, x0 + 16, y, '－ ' + c, 6.5, BOLD, RED)
+            y -= 12
+
+    col(24, '路径 A：烧录 EEPROM', RED, colors.HexColor('#fdeaea'),
+        ['1. TICS Pro 生成配置',
+         '2. 通过 I2C 写入寄存器',
+         '3. 发 EEPROM 烧录命令',
+         '4. 配置固化到片内 EEPROM',
+         '5. 此后每次上电自动加载'],
+        ['芯片可脱离 MCU 独立启动'],
+        ['每次烧录消耗一次配额', '手册上限仅 100 次', '烧错需再烧一次修正'])
+
+    col(248, '路径 B：MCU 运行时配置', GREEN, colors.HexColor('#eaf3de'),
+        ['1. TICS Pro 生成配置',
+         '2. 转成 I2C 写入序列',
+         '3. STM32 每次上电后下发',
+         '4. 立即生效，掉电丢失',
+         '5. 改配置只需改 MCU 固件'],
+        ['不消耗 EEPROM 配额', '迭代次数不限', '板上已有 U8 STM32'],
+        ['依赖 MCU 正常启动'])
+
+    _box(d, 24, 8, 434, 24, colors.HexColor('#fdf6e6'), AMBER, 0.7, r=3)
+    _txt(d, 34, 17, '建议：调试期全程走路径 B，配置定型后再用路径 A 烧一次，'
+                    '把 100 次配额留给真正的版本固化', 6.5, BOLD, DARK)
+    return d
+
+
+# ------------------------------------------------- 图：上电时序
+
+def lmk_pwrseq():
+    """OCXO 预热与 VCO 校准的时序约束。"""
+    d = Drawing(W, 240)
+    wire_c = colors.HexColor('#444444')
+    X0, X1 = 96, 452
+
+    rows = [
+        ('VDD 3.3 V', 200, GREEN, 0.04, '上电即有效'),
+        ('OCXO 输出', 168, AMBER, 0.34, '冷启动数分钟才稳定'),
+        ('PDN（STM32 控制）', 136, ACCENT, 0.40, '等 XO 稳定后再拉高'),
+        ('寄存器配置', 104, ACCENT, 0.46, 'EEPROM 加载或 MCU 下发'),
+        ('VCO 校准', 72, RED, 0.52, '★ 此刻 XO 必须已稳定'),
+        ('输出时钟', 40, GREEN, 0.62, 'APLL 锁定 1~2.5 ms'),
+    ]
+    for name, y, c, frac, note in rows:
+        _txt(d, X0 - 8, y + 3, name, 6.5, BOLD, DARK, 'end')
+        d.add(Line(X0, y, X1, y, strokeColor=colors.HexColor('#d5dee7'),
+                   strokeWidth=0.6))
+        xs = X0 + (X1 - X0) * frac
+        d.add(Rect(xs, y - 5, X1 - xs, 10, fillColor=c,
+                   strokeColor=c, strokeWidth=0))
+        _txt(d, xs + 6, y - 2.5, note, 6, BOLD, colors.white)
+
+    # 关键时刻标注
+    xw = X0 + (X1 - X0) * 0.34
+    d.add(Line(xw, 30, xw, 214, strokeColor=RED, strokeWidth=0.9,
+               strokeDashArray=[3, 2]))
+    _txt(d, xw, 220, 'OCXO 稳定点', 6.5, BOLD, RED, 'middle')
+
+    _txt(d, X0, 18, '时间 →', 6.5, FONT, GREY)
+    _box(d, 24, -2, 434, 16, colors.HexColor('#fdeaea'), RED, 0.7, r=2)
+    _txt(d, 34, 3, 'VCO 校准若在 XO 稳定之前启动会失败，PLL 与所有输出都起不来——'
+                   '必须用 PDN 把启动推迟到 OCXO 预热完成之后', 6.5, BOLD, RED)
+    return d
+
+
 FIGURES = {
     'flow': flow,
     'stackup': stackup,
@@ -1863,6 +2076,10 @@ FIGURES = {
     'lmk_decap': lmk_decap,
     'lmk_fanout': lmk_fanout,
     'lmk_gap': lmk_gap,
+    'clk_ic_cmp': clk_ic_cmp,
+    'lmk_bootmode': lmk_bootmode,
+    'lmk_cfgpath': lmk_cfgpath,
+    'lmk_pwrseq': lmk_pwrseq,
 }
 
 

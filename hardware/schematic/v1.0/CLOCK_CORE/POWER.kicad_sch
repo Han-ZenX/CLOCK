@@ -300,6 +300,178 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "JLCImport:BSMD1206C-1300T"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "F"
+				(at 0 3.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "BSMD1206C-1300T"
+				(at 0 -3.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "JLCImport:BSMD1206C-1300T"
+				(at -1.016 8.128 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2412171635_BHFUSE-BSMD1206C-1300T_C41367225.pdf"
+				(at -1.016 8.128 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "-55℃~+150℃ 1.52 1.6mm 3.2mm 3A 50A 72V Surface Mount Fuse 1206 Disposable fuses ROHS"
+				(at -1.016 8.128 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C41367225"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "BHFUSE"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part" "BSMD1206C-1300T"
+				(at 0.508 6.096 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "BHFUSE BSMD1206C-1300T C41367225 F1206"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "BSMD1206C-1300T_0_1"
+				(rectangle
+					(start -2.54 1.016)
+					(end 2.54 -1.016)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "BSMD1206C-1300T_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "JLCImport:LAIL-PHC2_54-2P-01-XH-L"
 			(pin_names
 				(offset 1.016)
@@ -1613,12 +1785,6 @@
 		(uuid "014fa568-a2fa-4dcf-b35d-60aa90b195e7")
 	)
 	(junction
-		(at 215.9 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "11d7152a-eed7-44aa-8e73-e12c0f87ff8a")
-	)
-	(junction
 		(at 88.9 127)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1649,10 +1815,10 @@
 		(uuid "4bc00225-5181-4689-8e16-0aafd172ce33")
 	)
 	(junction
-		(at 215.9 55.88)
+		(at 55.88 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "547ad025-55da-4183-a7cb-b2001da09d55")
+		(uuid "5948b9c8-7995-4361-aace-84b18ab53d60")
 	)
 	(junction
 		(at 104.14 127)
@@ -1661,16 +1827,16 @@
 		(uuid "5ff11d6d-83d2-4447-bcf9-6b2634ceade8")
 	)
 	(junction
+		(at 245.11 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "665a0a87-e3a0-4244-bc85-d5772426c32c")
+	)
+	(junction
 		(at 160.02 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6e7ebade-e11d-4f45-875a-44f13f9d15c2")
-	)
-	(junction
-		(at 55.88 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "71e3b295-4fc2-45e4-ba93-a827aebc18a4")
 	)
 	(junction
 		(at 137.16 55.88)
@@ -1713,6 +1879,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9a96dbf7-753f-41ec-a837-37641c57a0ce")
+	)
+	(junction
+		(at 238.76 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a29334de-d219-4f4d-b582-4a5716c55495")
 	)
 	(junction
 		(at 106.68 66.04)
@@ -1776,16 +1948,6 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 82.55) (xy 233.68 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "00691c24-465b-442d-a3c0-25cf8970f5d8")
-	)
-	(wire
-		(pts
 			(xy 152.4 139.7) (xy 157.48 139.7)
 		)
 		(stroke
@@ -1793,16 +1955,6 @@
 			(type default)
 		)
 		(uuid "01d3136d-a414-435d-b588-f4da9f49f6c7")
-	)
-	(wire
-		(pts
-			(xy 215.9 82.55) (xy 215.9 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0297dc9f-346f-4dea-b4e5-930338678ded")
 	)
 	(wire
 		(pts
@@ -1823,6 +1975,16 @@
 			(type default)
 		)
 		(uuid "0b9a146a-8ab1-4600-b8b9-1cf16281106b")
+	)
+	(wire
+		(pts
+			(xy 256.54 86.36) (xy 262.89 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c5250bc-d429-4ffd-8a4d-6b839e5053a4")
 	)
 	(wire
 		(pts
@@ -1886,7 +2048,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 54.61) (xy 45.72 57.15)
+			(xy 34.29 54.61) (xy 34.29 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1896,13 +2058,13 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 55.88) (xy 231.14 55.88)
+			(xy 245.11 86.36) (xy 248.92 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1f8a2034-08f0-4200-9ee5-64afb530f761")
+		(uuid "20623af3-3a67-476a-9985-8efd4c849e5a")
 	)
 	(wire
 		(pts
@@ -1933,6 +2095,16 @@
 			(type default)
 		)
 		(uuid "26831ff6-3981-4064-a10d-737900afc208")
+	)
+	(wire
+		(pts
+			(xy 245.11 77.47) (xy 245.11 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a09c0b0-e4fa-4df4-9144-6db1361d2f11")
 	)
 	(wire
 		(pts
@@ -2076,6 +2248,16 @@
 	)
 	(wire
 		(pts
+			(xy 245.11 86.36) (xy 245.11 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40cf8c21-b0b2-4b59-be43-5c9520be4c85")
+	)
+	(wire
+		(pts
 			(xy 134.62 66.04) (xy 134.62 69.85)
 		)
 		(stroke
@@ -2136,6 +2318,16 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 86.36) (xy 245.11 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5af78363-6182-4e55-8208-49ff073351bd")
+	)
+	(wire
+		(pts
 			(xy 160.02 55.88) (xy 160.02 57.15)
 		)
 		(stroke
@@ -2163,6 +2355,16 @@
 			(type default)
 		)
 		(uuid "60d44e62-0f7b-4fc3-a1b0-d35d58f32e20")
+	)
+	(wire
+		(pts
+			(xy 237.49 86.36) (xy 237.49 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67f05af4-574e-4c9b-b480-95f2bea87c70")
 	)
 	(wire
 		(pts
@@ -2196,16 +2398,6 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 55.88) (xy 215.9 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ca5cce2-6d60-40b2-b4d5-49e61da1a6c0")
-	)
-	(wire
-		(pts
 			(xy 106.68 63.5) (xy 106.68 69.85)
 		)
 		(stroke
@@ -2213,6 +2405,16 @@
 			(type default)
 		)
 		(uuid "6d70f69b-5503-4388-83c5-79e7a9a9389e")
+	)
+	(wire
+		(pts
+			(xy 46.99 52.07) (xy 55.88 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e3879de-afdd-4684-856b-4406a1424f19")
 	)
 	(wire
 		(pts
@@ -2326,23 +2528,13 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 54.61) (xy 45.72 54.61)
+			(xy 31.75 54.61) (xy 34.29 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "8a349888-1016-4bc9-abc5-29e5adbcdf03")
-	)
-	(wire
-		(pts
-			(xy 215.9 82.55) (xy 219.71 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8b669140-4aad-4c9c-94da-df80de1a5a53")
 	)
 	(wire
 		(pts
@@ -2383,6 +2575,16 @@
 			(type default)
 		)
 		(uuid "913e1fe0-329c-41fd-b0da-8123272f50a4")
+	)
+	(wire
+		(pts
+			(xy 245.11 55.88) (xy 245.11 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "937f0e0b-4010-47b3-bb4e-6890c1393135")
 	)
 	(wire
 		(pts
@@ -2456,16 +2658,6 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 73.66) (xy 215.9 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae0cea11-2a32-4ac0-a0b1-77f929de5ec6")
-	)
-	(wire
-		(pts
 			(xy 104.14 129.54) (xy 104.14 132.08)
 		)
 		(stroke
@@ -2496,7 +2688,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 54.61) (xy 215.9 55.88)
+			(xy 231.14 54.61) (xy 231.14 55.88)
 		)
 		(stroke
 			(width 0)
@@ -2546,6 +2738,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 55.88) (xy 245.11 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c91a4172-ef23-4f45-8af9-6ede8a8ec964")
+	)
+	(wire
+		(pts
 			(xy 154.94 66.04) (xy 160.02 66.04)
 		)
 		(stroke
@@ -2573,16 +2775,6 @@
 			(type default)
 		)
 		(uuid "cdb240d0-1803-4f71-a4d3-77b0f9c20700")
-	)
-	(wire
-		(pts
-			(xy 43.18 52.07) (xy 55.88 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d33d71e3-ed15-46f2-8f1f-9405f278488c")
 	)
 	(wire
 		(pts
@@ -2616,16 +2808,6 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 82.55) (xy 215.9 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de4f76b3-2d4b-426b-ae88-21d72589bc63")
-	)
-	(wire
-		(pts
 			(xy 95.25 134.62) (xy 106.68 134.62)
 		)
 		(stroke
@@ -2643,16 +2825,6 @@
 			(type default)
 		)
 		(uuid "e18d448d-1a75-4295-82ef-3883dc5e6021")
-	)
-	(wire
-		(pts
-			(xy 208.28 82.55) (xy 208.28 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1abd37f-69b2-4b4d-a431-e5d412eab364")
 	)
 	(wire
 		(pts
@@ -2696,6 +2868,16 @@
 	)
 	(wire
 		(pts
+			(xy 31.75 52.07) (xy 36.83 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed3d70cc-3720-4f24-ac66-f1961e3bc8c1")
+	)
+	(wire
+		(pts
 			(xy 146.05 138.43) (xy 146.05 139.7)
 		)
 		(stroke
@@ -2734,16 +2916,6 @@
 		)
 		(uuid "ff2d6884-7dd8-4bc8-99b0-44965c2b744e")
 	)
-	(label "OCXO_5V"
-		(at 238.76 55.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "232e3351-2f5a-4aec-8e0d-567909c6854b")
-	)
 	(hierarchical_label "PLL_PG"
 		(shape output)
 		(at 134.62 81.28 180)
@@ -2757,14 +2929,14 @@
 	)
 	(hierarchical_label "OCXO_VCC"
 		(shape output)
-		(at 215.9 87.63 270)
+		(at 245.11 91.44 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "46ab44c8-861c-4b80-98d4-f4aeb1f4472c")
+		(uuid "58080b18-5b11-4283-80b6-687d6f16f95b")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -3330,7 +3502,7 @@
 	)
 	(symbol
 		(lib_id "JLCImport:LAIL-PHC2_54-2P-01-XH-L")
-		(at 38.1 53.34 0)
+		(at 26.67 53.34 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -3342,7 +3514,7 @@
 		(fields_autoplaced yes)
 		(uuid "1676cb4b-23ac-4fc7-ab91-28af0d458f2e")
 		(property "Reference" "CN1"
-			(at 38.1 46.99 0)
+			(at 26.67 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3352,7 +3524,7 @@
 			)
 		)
 		(property "Value" "LAIL-PHC2_54-2P-01-XH-L"
-			(at 38.1 46.99 0)
+			(at 26.67 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3363,7 +3535,7 @@
 			)
 		)
 		(property "Footprint" "JLCImport:LAIL-PHC2_54-2P-01-XH-L"
-			(at 38.1 53.34 0)
+			(at 26.67 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3374,7 +3546,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20230105/4FFD2EFD3DA44AA828171A44400F3EDE.pdf"
-			(at 38.1 53.34 0)
+			(at 26.67 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3385,7 +3557,7 @@
 			)
 		)
 		(property "Description" "-25℃~+85℃ 1 1x2P 2 2.54mm 250V 2P 3A 5.8mm 7.1mm 7.5mm Brass PA66 Through Hole Tin UL94V-0 White XH Plugin,P=2.5mm Wire To Board Connector ROHS"
-			(at 38.1 53.34 0)
+			(at 26.67 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3396,7 +3568,7 @@
 			)
 		)
 		(property "LCSC" "C54905973"
-			(at 38.1 53.34 0)
+			(at 26.67 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3407,7 +3579,7 @@
 			)
 		)
 		(property "Manufacturer" "LAILAN"
-			(at 38.1 53.34 0)
+			(at 26.67 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3418,7 +3590,7 @@
 			)
 		)
 		(property "Manufacturer Part" "LAIL-PHC2.54-2P-01-XH-L"
-			(at 38.1 53.34 0)
+			(at 26.67 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3760,6 +3932,119 @@
 		)
 	)
 	(symbol
+		(lib_id "JLCImport:BSMD1206C-1300T")
+		(at 41.91 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2efdec24-b587-4c69-b6d5-ce519c22c6c5")
+		(property "Reference" "F1"
+			(at 41.91 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BSMD1206C-1300T"
+			(at 41.91 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JLCImport:BSMD1206C-1300T"
+			(at 40.894 43.942 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2412171635_BHFUSE-BSMD1206C-1300T_C41367225.pdf"
+			(at 40.894 43.942 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-55℃~+150℃ 1.52 1.6mm 3.2mm 3A 50A 72V Surface Mount Fuse 1206 Disposable fuses ROHS"
+			(at 40.894 43.942 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C41367225"
+			(at 41.91 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "BHFUSE"
+			(at 41.91 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "BSMD1206C-1300T"
+			(at 42.418 45.974 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d7c83e26-534b-407a-b276-83df8b50a688")
+		)
+		(pin "1"
+			(uuid "a47350d6-0d7a-4435-89c2-69cdd75e1691")
+		)
+		(instances
+			(project "CLOCK_CORE"
+				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
+					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 95.25 139.7 0)
 		(unit 1)
@@ -4080,120 +4365,6 @@
 		)
 	)
 	(symbol
-		(lib_id "JLCImport:TAJB107M010RNJ")
-		(at 208.28 88.9 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "441c1b75-e469-476d-8c58-92e7eb23c3ae")
-		(property "Reference" "C9"
-			(at 201.93 85.852 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "TAJB107M010RNJ"
-			(at 189.992 92.456 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "JLCImport:TAJB107M010RNJ"
-			(at 199.898 89.408 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Kyocera-AVX-TAJB107M010RNJ_C7196.pdf"
-			(at 199.898 89.408 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "-55℃~+125℃ 1.4Ω@100kHz 100uF 10V ±20% CASE-B-3528-21(mm) Tantalum Capacitors ROHS"
-			(at 199.898 89.408 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C7196"
-			(at 208.28 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "--"
-			(at 208.28 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer Part" "TAJB107M010RNJ"
-			(at 203.2 89.154 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "0f0c6392-9d42-46fb-a761-587cb98315c8")
-		)
-		(pin "1"
-			(uuid "aaa3e82d-6915-4313-95f2-248f0891dbd3")
-		)
-		(instances
-			(project "CLOCK_CORE"
-				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
-					(reference "C9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 157.48 134.62 0)
 		(unit 1)
@@ -4504,84 +4675,6 @@
 			(project "CLOCK_CORE"
 				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
 					(reference "#PWR095")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 233.68 82.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "5f50d96d-5f34-44be-9a67-b2129919fd14")
-		(property "Reference" "#PWR0923"
-			(at 233.68 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "3.3V_OCXO"
-			(at 231.902 77.978 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 233.68 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 233.68 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 233.68 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "931b7127-8c1e-4302-b9bd-e247be444581")
-		)
-		(instances
-			(project "CLOCK_CORE"
-				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
-					(reference "#PWR0923")
 					(unit 1)
 				)
 			)
@@ -4970,7 +5063,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 45.72 57.15 0)
+		(at 237.49 96.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4979,9 +5072,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7c995232-59a0-4b44-9bb6-df371cb38aa2")
-		(property "Reference" "#PWR091"
-			(at 45.72 63.5 0)
+		(uuid "7c3ca456-a0e4-41d8-97e6-ee099f99364f")
+		(property "Reference" "#PWR0929"
+			(at 237.49 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4992,7 +5085,86 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 45.72 60.198 90)
+			(at 237.49 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 237.49 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 237.49 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 237.49 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "70159963-3b0f-4de5-8635-0860d4c90594")
+		)
+		(instances
+			(project "CLOCK_CORE"
+				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
+					(reference "#PWR0929")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 34.29 57.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7c995232-59a0-4b44-9bb6-df371cb38aa2")
+		(property "Reference" "#PWR091"
+			(at 34.29 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 34.29 60.198 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5004,7 +5176,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 45.72 57.15 0)
+			(at 34.29 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5015,7 +5187,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 57.15 0)
+			(at 34.29 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5026,7 +5198,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 45.72 57.15 0)
+			(at 34.29 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5043,88 +5215,6 @@
 			(project "CLOCK_CORE"
 				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
 					(reference "#PWR091")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 215.9 69.85 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "80beef3d-a990-47fb-8a9e-92a56b804c14")
-		(property "Reference" "R57"
-			(at 213.36 68.5799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "0"
-			(at 213.36 71.1199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 215.9 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 215.9 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 215.9 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3fc0a19e-0297-4416-ba50-bc7b11c0fdcf")
-		)
-		(pin "2"
-			(uuid "6aad262a-cf27-46f0-8fbd-e7c33472aef7")
-		)
-		(instances
-			(project "CLOCK_CORE"
-				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
-					(reference "R57")
 					(unit 1)
 				)
 			)
@@ -5525,6 +5615,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 262.89 86.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9de64cc1-101e-437e-abbe-ec40fcb8f866")
+		(property "Reference" "#PWR0923"
+			(at 262.89 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.3V_OCXO"
+			(at 261.112 81.788 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 262.89 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 262.89 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 262.89 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d4142052-8eb2-4d91-a1d4-853dcbd493f0")
+		)
+		(instances
+			(project "CLOCK_CORE"
+				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
+					(reference "#PWR0923")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 160.02 60.96 0)
 		(unit 1)
@@ -5687,85 +5855,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 223.52 82.55 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a5d1c228-025e-4d02-a283-33f2c144307f")
-		(property "Reference" "R58"
-			(at 220.726 79.756 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "DNP"
-			(at 225.806 79.756 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 223.52 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 223.52 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 223.52 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "988397ed-774f-4550-ae8c-dd0e1bf89977")
-		)
-		(pin "2"
-			(uuid "76ad5637-94d0-4088-b028-b6ffe294cea8")
-		)
-		(instances
-			(project "CLOCK_CORE"
-				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
-					(reference "R58")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 104.14 143.51 0)
 		(unit 1)
@@ -5840,6 +5929,88 @@
 			(project "CLOCK_CORE"
 				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
 					(reference "#PWR0909")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 245.11 73.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ae08c442-dd6a-4928-97eb-69ec45749327")
+		(property "Reference" "R57"
+			(at 242.57 72.3899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0"
+			(at 242.57 74.9299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 245.11 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 245.11 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 245.11 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "64fb5842-1c99-4ef4-81c5-b392550fbe1b")
+		)
+		(pin "2"
+			(uuid "40dbdeff-5ff1-4ac2-bd0e-94f93ca8a9b1")
+		)
+		(instances
+			(project "CLOCK_CORE"
+				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
+					(reference "R57")
 					(unit 1)
 				)
 			)
@@ -6006,8 +6177,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 208.28 92.71 0)
+		(lib_id "Device:R")
+		(at 252.73 86.36 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6015,10 +6186,29 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b21305f6-145d-493a-a065-92e96b986b8f")
-		(property "Reference" "#PWR0929"
-			(at 208.28 96.52 0)
+		(uuid "b31f983d-b7ef-4a23-b2e3-008597513a73")
+		(property "Reference" "R58"
+			(at 249.936 83.566 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DNP"
+			(at 255.016 83.566 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 252.73 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6028,30 +6218,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 208.28 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 208.28 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 208.28 92.71 0)
+		(property "Datasheet" "~"
+			(at 252.73 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6062,7 +6230,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 208.28 92.71 0)
+			(at 252.73 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6073,12 +6241,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "96d2a2bb-a63d-4199-993a-45bb1f46fd44")
+			(uuid "a5a39d85-87b7-49bb-b31c-33a1feb55d80")
+		)
+		(pin "2"
+			(uuid "729f4911-5f6a-427e-9702-e99bc653005a")
 		)
 		(instances
 			(project "CLOCK_CORE"
 				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
-					(reference "#PWR0929")
+					(reference "R58")
 					(unit 1)
 				)
 			)
@@ -6946,6 +7117,120 @@
 		)
 	)
 	(symbol
+		(lib_id "JLCImport:TAJB107M010RNJ")
+		(at 237.49 92.71 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d7fe4667-9661-4a7c-b0f0-4a3504b9a4e8")
+		(property "Reference" "C9"
+			(at 231.14 89.662 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TAJB107M010RNJ"
+			(at 219.202 96.266 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "JLCImport:TAJB107M010RNJ"
+			(at 229.108 93.218 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Kyocera-AVX-TAJB107M010RNJ_C7196.pdf"
+			(at 229.108 93.218 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-55℃~+125℃ 1.4Ω@100kHz 100uF 10V ±20% CASE-B-3528-21(mm) Tantalum Capacitors ROHS"
+			(at 229.108 93.218 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C7196"
+			(at 237.49 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "--"
+			(at 237.49 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "TAJB107M010RNJ"
+			(at 232.41 92.964 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a5a1241f-6800-4e89-8d13-a44f5b6dc287")
+		)
+		(pin "1"
+			(uuid "d95fc63f-7417-4430-a3dc-67d3baa11ea4")
+		)
+		(instances
+			(project "CLOCK_CORE"
+				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
+					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 154.94 76.2 0)
 		(unit 1)
@@ -7267,7 +7552,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 215.9 54.61 0)
+		(at 231.14 54.61 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7277,7 +7562,7 @@
 		(dnp no)
 		(uuid "ec440e21-45c3-4f6b-b646-90178e02de3f")
 		(property "Reference" "#PWR0928"
-			(at 215.9 58.42 0)
+			(at 231.14 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7288,7 +7573,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 214.122 50.546 0)
+			(at 229.362 50.546 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7299,7 +7584,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 215.9 54.61 0)
+			(at 231.14 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7310,7 +7595,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 215.9 54.61 0)
+			(at 231.14 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7321,7 +7606,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 215.9 54.61 0)
+			(at 231.14 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

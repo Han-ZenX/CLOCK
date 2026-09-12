@@ -7,7 +7,7 @@
 	(lib_symbols)
 	(wire
 		(pts
-			(xy 76.2 92.71) (xy 76.2 119.38)
+			(xy 128.27 109.22) (xy 128.27 135.89)
 		)
 		(stroke
 			(width 0)
@@ -17,7 +17,67 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 92.71) (xy 76.2 92.71)
+			(xy 156.21 73.66) (xy 166.37 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1af9bf33-5f32-4f8f-8eb8-8cdff4bc0739")
+	)
+	(wire
+		(pts
+			(xy 123.19 77.47) (xy 134.62 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a199bfd-7cd2-48ee-b88d-db60e5111fa3")
+	)
+	(wire
+		(pts
+			(xy 156.21 116.84) (xy 166.37 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "310880dc-8868-4296-b479-dfa1fa4c5833")
+	)
+	(wire
+		(pts
+			(xy 156.21 71.12) (xy 166.37 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ae39073-b0c4-48dc-b6ea-d982a0fa9b11")
+	)
+	(wire
+		(pts
+			(xy 156.21 80.01) (xy 166.37 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "514b4501-a29e-4b56-b0bc-db6756aa00ce")
+	)
+	(wire
+		(pts
+			(xy 156.21 83.82) (xy 166.37 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69e68125-21af-4d83-9ab9-8acaeae4d826")
+	)
+	(wire
+		(pts
+			(xy 123.19 109.22) (xy 128.27 109.22)
 		)
 		(stroke
 			(width 0)
@@ -27,7 +87,27 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 119.38) (xy 110.49 119.38)
+			(xy 156.21 96.52) (xy 166.37 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8249d4e8-0118-48d6-bfee-4ca95947d42f")
+	)
+	(wire
+		(pts
+			(xy 123.19 80.01) (xy 134.62 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a77e3b7-fa13-455f-8506-24a8ae3861ca")
+	)
+	(wire
+		(pts
+			(xy 128.27 135.89) (xy 162.56 135.89)
 		)
 		(stroke
 			(width 0)
@@ -37,7 +117,27 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 105.41) (xy 110.49 119.38)
+			(xy 156.21 77.47) (xy 166.37 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7ed6c59-9bc8-4d55-ac18-f894edfa1499")
+	)
+	(wire
+		(pts
+			(xy 156.21 90.17) (xy 166.37 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b62a0d59-934f-4b9a-a0be-81c169214cc7")
+	)
+	(wire
+		(pts
+			(xy 162.56 121.92) (xy 162.56 135.89)
 		)
 		(stroke
 			(width 0)
@@ -47,7 +147,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 105.41) (xy 114.3 105.41)
+			(xy 162.56 121.92) (xy 166.37 121.92)
 		)
 		(stroke
 			(width 0)
@@ -57,7 +157,17 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 86.36) (xy 82.55 86.36)
+			(xy 156.21 86.36) (xy 166.37 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e07c9b7d-dc84-42f5-b226-7c78c5c42531")
+	)
+	(wire
+		(pts
+			(xy 123.19 102.87) (xy 134.62 102.87)
 		)
 		(stroke
 			(width 0)
@@ -65,8 +175,18 @@
 		)
 		(uuid "f979572c-27bd-4fe9-8d7a-d4147581b774")
 	)
+	(wire
+		(pts
+			(xy 156.21 92.71) (xy 166.37 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f99f0d9e-a365-4c12-a148-47dd748fa149")
+	)
 	(sheet
-		(at 114.3 95.25)
+		(at 166.37 111.76)
 		(size 12.7 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -82,7 +202,7 @@
 		)
 		(uuid "645fcd89-025a-4233-88ed-d1f363faa68e")
 		(property "Sheetname" "OCXO"
-			(at 114.3 94.5384 0)
+			(at 166.37 111.0484 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -93,7 +213,7 @@
 			)
 		)
 		(property "Sheetfile" "OCXO.kicad_sch"
-			(at 114.3 113.6146 0)
+			(at 166.37 130.1246 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -104,7 +224,7 @@
 			)
 		)
 		(pin "XO_P" output
-			(at 114.3 100.33 180)
+			(at 166.37 116.84 180)
 			(uuid "9895a4c9-102b-4ac4-bbf4-2cc2b11c3f93")
 			(effects
 				(font
@@ -114,7 +234,7 @@
 			)
 		)
 		(pin "OCXO_VCC" input
-			(at 114.3 105.41 180)
+			(at 166.37 121.92 180)
 			(uuid "0223337f-14e9-4a28-ba8b-d0ef47cc4fc6")
 			(effects
 				(font
@@ -132,8 +252,8 @@
 		)
 	)
 	(sheet
-		(at 58.42 68.58)
-		(size 12.7 33.02)
+		(at 110.49 96.52)
+		(size 12.7 21.59)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -148,7 +268,7 @@
 		)
 		(uuid "6e31b722-7b29-4340-8cba-f8ca04169b2e")
 		(property "Sheetname" "POWER"
-			(at 58.42 67.8684 0)
+			(at 110.49 95.8084 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -159,7 +279,7 @@
 			)
 		)
 		(property "Sheetfile" "POWER.kicad_sch"
-			(at 58.42 102.1846 0)
+			(at 110.49 118.6946 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -170,7 +290,7 @@
 			)
 		)
 		(pin "PLL_PG" output
-			(at 71.12 86.36 0)
+			(at 123.19 102.87 0)
 			(uuid "92dec38a-0336-4d99-a3c4-09336cbf8c6d")
 			(effects
 				(font
@@ -180,7 +300,7 @@
 			)
 		)
 		(pin "OCXO_VCC" output
-			(at 71.12 92.71 0)
+			(at 123.19 109.22 0)
 			(uuid "e53452c8-1707-4e60-bbfc-3e2c8a2f0744")
 			(effects
 				(font
@@ -192,13 +312,13 @@
 		(instances
 			(project "CLOCK_CORE"
 				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96"
-					(page "5")
+					(page "4")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 114.3 50.8)
+		(at 166.37 67.31)
 		(size 16.51 33.02)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -214,7 +334,7 @@
 		)
 		(uuid "8425eddb-ddb8-4331-8a41-5d3766f56cff")
 		(property "Sheetname" "SIGNAL"
-			(at 114.3 50.0884 0)
+			(at 166.37 66.5984 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -225,7 +345,7 @@
 			)
 		)
 		(property "Sheetfile" "SIGNAL.kicad_sch"
-			(at 114.3 84.4046 0)
+			(at 166.37 100.9146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -236,7 +356,7 @@
 			)
 		)
 		(pin "OUT2_P" input
-			(at 114.3 67.31 180)
+			(at 166.37 83.82 180)
 			(uuid "839a984a-96f0-41e9-9a9d-c8da4cc7ee10")
 			(effects
 				(font
@@ -246,7 +366,7 @@
 			)
 		)
 		(pin "OUT2_N" input
-			(at 114.3 69.85 180)
+			(at 166.37 86.36 180)
 			(uuid "9befa00a-eff0-4e22-bf6b-8395bbe320ae")
 			(effects
 				(font
@@ -256,7 +376,7 @@
 			)
 		)
 		(pin "OUT0_P" input
-			(at 114.3 54.61 180)
+			(at 166.37 71.12 180)
 			(uuid "64511e6c-0dc2-4b98-92db-fe550c059522")
 			(effects
 				(font
@@ -266,7 +386,7 @@
 			)
 		)
 		(pin "OUT3_P" input
-			(at 114.3 73.66 180)
+			(at 166.37 90.17 180)
 			(uuid "9355927f-8ad2-437a-ae19-a016da20164b")
 			(effects
 				(font
@@ -276,7 +396,7 @@
 			)
 		)
 		(pin "OUT3_N" input
-			(at 114.3 76.2 180)
+			(at 166.37 92.71 180)
 			(uuid "4a78de14-3338-4645-93b9-3b277661d5a0")
 			(effects
 				(font
@@ -286,7 +406,7 @@
 			)
 		)
 		(pin "OUT1_P" input
-			(at 114.3 60.96 180)
+			(at 166.37 77.47 180)
 			(uuid "0e786d1a-6e67-4724-83d0-220dcea604d7")
 			(effects
 				(font
@@ -296,7 +416,7 @@
 			)
 		)
 		(pin "OUT0_N" input
-			(at 114.3 57.15 180)
+			(at 166.37 73.66 180)
 			(uuid "788777c5-5400-4e91-bf4b-19557dcab8d9")
 			(effects
 				(font
@@ -306,7 +426,7 @@
 			)
 		)
 		(pin "OUT1_N" input
-			(at 114.3 63.5 180)
+			(at 166.37 80.01 180)
 			(uuid "9247a024-c942-40ca-9c45-fe437db6eaaa")
 			(effects
 				(font
@@ -316,7 +436,7 @@
 			)
 		)
 		(pin "PRIREF_P" output
-			(at 114.3 80.01 180)
+			(at 166.37 96.52 180)
 			(uuid "b866a3b0-999e-4276-8773-3cbb0e6d2c11")
 			(effects
 				(font
@@ -328,13 +448,13 @@
 		(instances
 			(project "CLOCK_CORE"
 				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96"
-					(page "4")
+					(page "2")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 82.55 50.8)
+		(at 134.62 67.31)
 		(size 21.59 62.23)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -350,7 +470,7 @@
 		)
 		(uuid "a1122762-ddd2-4d47-8370-0968bbc1155e")
 		(property "Sheetname" "LMK5B12204"
-			(at 82.55 50.0884 0)
+			(at 134.62 66.5984 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -361,7 +481,7 @@
 			)
 		)
 		(property "Sheetfile" "LMK5B12204.kicad_sch"
-			(at 82.55 113.6146 0)
+			(at 134.62 130.1246 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -372,7 +492,7 @@
 			)
 		)
 		(pin "OUT1_N" output
-			(at 104.14 63.5 0)
+			(at 156.21 80.01 0)
 			(uuid "5d344b88-b7ec-4e3d-90fb-dfe1e59b7c73")
 			(effects
 				(font
@@ -382,7 +502,7 @@
 			)
 		)
 		(pin "OUT0_P" output
-			(at 104.14 54.61 0)
+			(at 156.21 71.12 0)
 			(uuid "39d28327-c5a1-4fcb-80e2-691faa13a9b1")
 			(effects
 				(font
@@ -392,7 +512,7 @@
 			)
 		)
 		(pin "OUT2_N" output
-			(at 104.14 69.85 0)
+			(at 156.21 86.36 0)
 			(uuid "e62e533d-c701-4609-ab4c-25ef59594a3c")
 			(effects
 				(font
@@ -402,7 +522,7 @@
 			)
 		)
 		(pin "OUT0_N" output
-			(at 104.14 57.15 0)
+			(at 156.21 73.66 0)
 			(uuid "7af15adb-d571-419c-b8e2-bb1308890222")
 			(effects
 				(font
@@ -412,7 +532,7 @@
 			)
 		)
 		(pin "OUT2_P" output
-			(at 104.14 67.31 0)
+			(at 156.21 83.82 0)
 			(uuid "5b6c1929-28d3-47a4-a31c-7155115ba04b")
 			(effects
 				(font
@@ -422,7 +542,7 @@
 			)
 		)
 		(pin "OUT1_P" output
-			(at 104.14 60.96 0)
+			(at 156.21 77.47 0)
 			(uuid "368b5151-ddb8-4216-b874-180aa553d5f1")
 			(effects
 				(font
@@ -432,7 +552,7 @@
 			)
 		)
 		(pin "OUT3_N" output
-			(at 104.14 76.2 0)
+			(at 156.21 92.71 0)
 			(uuid "f9053825-7e0d-41b2-bf2a-d53436c4d26e")
 			(effects
 				(font
@@ -442,7 +562,7 @@
 			)
 		)
 		(pin "OUT3_P" output
-			(at 104.14 73.66 0)
+			(at 156.21 90.17 0)
 			(uuid "4e660c66-cf35-4eae-b6b3-4128e9bad949")
 			(effects
 				(font
@@ -452,7 +572,7 @@
 			)
 		)
 		(pin "PRIREF_P" input
-			(at 104.14 80.01 0)
+			(at 156.21 96.52 0)
 			(uuid "12428394-659d-480d-91d3-300965428226")
 			(effects
 				(font
@@ -462,7 +582,7 @@
 			)
 		)
 		(pin "XO_P" input
-			(at 104.14 100.33 0)
+			(at 156.21 116.84 0)
 			(uuid "c731ff77-ec51-456d-81ba-e7ca0fe2523c")
 			(effects
 				(font
@@ -472,8 +592,28 @@
 			)
 		)
 		(pin "PLL_PG" input
-			(at 82.55 86.36 180)
+			(at 134.62 102.87 180)
 			(uuid "fb1eede3-441d-4178-83bb-1029f637ecb7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SDA" bidirectional
+			(at 134.62 77.47 180)
+			(uuid "0b0ada8e-7965-4e4f-8abd-84d863247376")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SCL" input
+			(at 134.62 80.01 180)
+			(uuid "a3ba7512-951b-404c-9e92-71535b232570")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -484,7 +624,73 @@
 		(instances
 			(project "CLOCK_CORE"
 				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96"
-					(page "2")
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 110.49 67.31)
+		(size 12.7 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "f12338f9-ac53-439a-b22f-237d5048eb03")
+		(property "Sheetname" "DEBUG"
+			(at 110.49 66.5984 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "DEBUG.kicad_sch"
+			(at 110.49 90.7546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SDA" bidirectional
+			(at 123.19 77.47 0)
+			(uuid "96a20d5f-7484-4831-baf9-d230b6ccd221")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SCL" output
+			(at 123.19 80.01 0)
+			(uuid "8790ae7d-b293-4146-ac9e-d5356c9867e5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "CLOCK_CORE"
+				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96"
+					(page "6")
 				)
 			)
 		)

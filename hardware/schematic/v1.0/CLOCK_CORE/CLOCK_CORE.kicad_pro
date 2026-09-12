@@ -648,7 +648,7 @@
         "uuid": "a25f2a35-4889-4be5-9b80-12803bbbfe96"
       }
     ],
-    "used_designators": "D1-2,#PWR1-4,#PWR12-13,#PWR22-96,#PWR105-106,#PWR113-114,#PWR121-124,#PWR129-132,#PWR138,#PWR150,#PWR905,#PWR914-925,#PWR933-939,C3-9,C14-37,C48-52,C56,C59-63,C72,C75,C79,C81-84,RF1-9,FB1,FB3-5,FB7,FB9-10,H1,H6-7,#FLG4,R1-2,R4-13,R22,R25,R27,R33-34,R41,R56,R59-61,U1-6,J8,J12,CN1,TP1-2",
+    "used_designators": "D1-2,#PWR1-4,#PWR12-13,#PWR22-96,#PWR105-106,#PWR113-114,#PWR121-125,#PWR129-132,#PWR138,#PWR150,#PWR905,#PWR914-925,#PWR929,#PWR933-939,C3-9,C14-37,C48-52,C56,C59-63,C72,C75,C79,C81-84,RF1-9,FB1,FB3-5,FB7,FB9-10,H1,H6-7,#FLG4,R1-2,R4-13,R22,R25,R27,R33-34,R41,R56-61,U1-6,J2,J8,J12,CN1,TP1-2,F1",
     "variants": []
   },
   "sheets": [
@@ -657,20 +657,24 @@
       "CLOCK_CORE"
     ],
     [
-      "a1122762-ddd2-4d47-8370-0968bbc1155e",
-      "LMK5B12204"
+      "8425eddb-ddb8-4331-8a41-5d3766f56cff",
+      "SIGNAL"
     ],
     [
       "645fcd89-025a-4233-88ed-d1f363faa68e",
       "OCXO"
     ],
     [
-      "8425eddb-ddb8-4331-8a41-5d3766f56cff",
-      "SIGNAL"
-    ],
-    [
       "6e31b722-7b29-4340-8cba-f8ca04169b2e",
       "POWER"
+    ],
+    [
+      "a1122762-ddd2-4d47-8370-0968bbc1155e",
+      "LMK5B12204"
+    ],
+    [
+      "f12338f9-ac53-439a-b22f-237d5048eb03",
+      "DEBUG"
     ]
   ],
   "text_variables": {},

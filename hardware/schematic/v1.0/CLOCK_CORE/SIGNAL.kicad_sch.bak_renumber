@@ -1808,7 +1808,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0c03103a-9f4f-4789-bebb-967e8bfd87ad")
-		(property "Reference" "#PWR0124"
+		(property "Reference" "#PWR0934"
 			(at 270.51 160.02 0)
 			(hide yes)
 			(show_name no)
@@ -1869,7 +1869,7 @@
 		(instances
 			(project "CLOCK_CORE"
 				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/8425eddb-ddb8-4331-8a41-5d3766f56cff"
-					(reference "#PWR0124")
+					(reference "#PWR0934")
 					(unit 1)
 				)
 			)
@@ -5220,7 +5220,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "90d2957f-40c6-42b9-8f3c-dffd305ee637")
-		(property "Reference" "#PWR0125"
+		(property "Reference" "#PWR0933"
 			(at 270.51 163.83 0)
 			(hide yes)
 			(show_name no)
@@ -5282,7 +5282,7 @@
 		(instances
 			(project "CLOCK_CORE"
 				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/8425eddb-ddb8-4331-8a41-5d3766f56cff"
-					(reference "#PWR0125")
+					(reference "#PWR0933")
 					(unit 1)
 				)
 			)

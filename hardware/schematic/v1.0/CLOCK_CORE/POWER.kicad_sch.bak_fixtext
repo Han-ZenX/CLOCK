@@ -1734,7 +1734,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "U3  TPS7A52   5V -> 3.3V   给LMK5B12204供电"
+	(text "U2  TPS7A52   5V -> 3.3V   给LMK5B12204供电"
 		(exclude_from_sim no)
 		(at 99.314 41.656 0)
 		(effects
@@ -1756,7 +1756,7 @@
 		)
 		(uuid "69bce573-ee6d-478f-b09d-f03287fbafeb")
 	)
-	(text "装 R19 = 5V OCXO 直供   /   装 R20 = 3.3V OCXO 经 U4 稳压"
+	(text "装 R57 = 5V OCXO 直供   /   装 R58 = 3.3V OCXO 经 U3 稳压"
 		(exclude_from_sim no)
 		(at 209.55 41.28 0)
 		(effects
@@ -1767,7 +1767,7 @@
 		)
 		(uuid "a5fe979b-f3e5-4863-a966-71a239e2be30")
 	)
-	(text "U4  TPS7A52   5V -> 3.3V   仅 3.3V OCXO 时装配"
+	(text "U3  TPS7A52   5V -> 3.3V   仅 3.3V OCXO 时装配"
 		(exclude_from_sim no)
 		(at 96.774 115.316 0)
 		(effects

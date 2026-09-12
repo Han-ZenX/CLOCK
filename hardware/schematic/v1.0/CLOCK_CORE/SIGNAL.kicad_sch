@@ -942,6 +942,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "PRIREF_P"
+		(exclude_from_sim no)
+		(at 118.618 156.718 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+			(justify left bottom)
+		)
+		(uuid "b9d9bb43-ed37-4330-b45c-38d976859163")
+	)
 	(text "OUT0"
 		(exclude_from_sim no)
 		(at 65.786 22.86 0)

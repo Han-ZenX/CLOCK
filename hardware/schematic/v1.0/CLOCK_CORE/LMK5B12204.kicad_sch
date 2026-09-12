@@ -5151,7 +5151,7 @@
 		(uuid "24d9ec3e-8431-4abc-82c7-c5e92e56239d")
 	)
 	(hierarchical_label "OUT1_N"
-		(shape input)
+		(shape output)
 		(at 156.21 121.92 270)
 		(effects
 			(font
@@ -5250,7 +5250,7 @@
 		(uuid "e3802baa-558b-4024-9b6a-da2081c66f21")
 	)
 	(hierarchical_label "OUT3_P"
-		(shape bidirectional)
+		(shape output)
 		(at 144.78 64.77 90)
 		(effects
 			(font

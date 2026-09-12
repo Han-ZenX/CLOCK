@@ -2249,6 +2249,213 @@ def tics_eeprom():
     return d
 
 
+# ------------------------------------------------- 图：OCXO 平台尺寸对比
+
+def ocxo_pkg():
+    """常见方形 OCXO 平台尺寸俯视对比，同一角对齐。"""
+    d = Drawing(W, 232)
+    S = 2.55                      # pt / mm
+    x0, y0 = 30, 22
+    PUR = colors.HexColor('#7d5ba6')
+    TEAL = colors.HexColor('#2a9d8f')
+    ORG = colors.HexColor('#e07a5f')
+    pkgs = [
+        (50.0, 50.0, '50 × 50', '2 × 2 in，双恒温槽 / 最高性能', GREY),
+        (36.0, 27.0, '36 × 27', 'Eurocase，也写作 25 × 37', ACCENT),
+        (25.4, 25.4, '25.4 × 25.4', '1 × 1 in　★ 本项目在用', RED),
+        (20.0, 20.0, '20 × 20', '0.8 × 0.8 in', AMBER),
+        (20.0, 13.0, '20 × 13', '4 脚 DIP', GREEN),
+        (14.0, 9.0, '14 × 9', 'SMD，小型化主力', PUR),
+        (9.7, 7.5, '9.7 × 7.5', 'SMD 迷你', TEAL),
+        (7.0, 5.0, '7 × 5', 'SMD 极小，性能受限', ORG),
+    ]
+    for w, h, lab, note, col in pkgs:
+        d.add(Rect(x0, y0, w * S, h * S, fillColor=None,
+                   strokeColor=col, strokeWidth=1.1))
+    _txt(d, x0, y0 - 11, '同一角对齐 · 按实际比例', 6, FONT, GREY)
+
+    # 图例
+    lx = 200
+    ly = 200
+    for w, h, lab, note, col in pkgs:
+        d.add(Rect(lx, ly - 1, 11, 8, fillColor=col, strokeColor=col))
+        _txt(d, lx + 17, ly, lab + ' mm', 7, BOLD, DARK)
+        _txt(d, lx + 92, ly, note, 6.5, FONT, GREY)
+        ly -= 15
+    _box(d, 196, 42, 262, 26, colors.HexColor('#fdf6e6'), AMBER, 0.7, r=3)
+    _txt(d, 204, 58, '尺寸越大 → 晶体越大、恒温槽热容越大', 6.5, BOLD, DARK)
+    _txt(d, 204, 47, '→ 相噪与老化更好，但预热更慢、功耗更高', 6.5, FONT, GREY)
+    return d
+
+
+# ------------------------------------------------- 图：25.4 mm 焊盘与引脚
+
+def ocxo_p25():
+    """25.4 × 25.4 mm OCXO 的焊盘图与引脚定义。"""
+    d = Drawing(W, 248)
+    S = 5.4                        # pt / mm
+    cx, cy = 118, 130
+    body = 25.4 * S
+    grid = 19.05 * S
+
+    _box(d, cx - body / 2, cy - body / 2, body, body,
+         colors.HexColor('#f2f5f7'), GREY, 1.0)
+    # 引脚 1 倒角标记
+    d.add(Polygon([cx - body / 2, cy + body / 2 - 16,
+                   cx - body / 2 + 16, cy + body / 2,
+                   cx - body / 2, cy + body / 2],
+                  fillColor=colors.HexColor('#dde5ea'), strokeColor=GREY))
+
+    pads = [(-1, 1, '1', 'RF OUT'), (0, 1, '2', 'GND'), (1, 1, '3', 'VCTRL'),
+            (1, -1, '4', 'VREF'), (-1, -1, '5', 'VCC')]
+    for sx, sy, num, fn in pads:
+        px, py = cx + sx * grid / 2, cy + sy * grid / 2
+        d.add(Circle(px, py, 5.4, fillColor=colors.HexColor('#c8801f'),
+                     strokeColor=colors.HexColor('#8a5a12'), strokeWidth=0.8))
+        d.add(Circle(px, py, 2.2, fillColor=colors.white, strokeColor=None))
+        _txt(d, px, py + 8 if sy > 0 else py - 14, num, 7, BOLD, DARK, 'middle')
+
+    # 尺寸标注
+    yb = cy - body / 2 - 14
+    _arrow(d, cx - body / 2, yb, cx + body / 2, yb, DARK, 0.7, 3)
+    _arrow(d, cx + body / 2, yb, cx - body / 2, yb, DARK, 0.7, 3)
+    _txt(d, cx, yb + 4, '25.4', 7, BOLD, DARK, 'middle')
+    yg = cy + body / 2 + 12
+    _arrow(d, cx - grid / 2, yg, cx + grid / 2, yg, ACCENT, 0.7, 3)
+    _arrow(d, cx + grid / 2, yg, cx - grid / 2, yg, ACCENT, 0.7, 3)
+    _txt(d, cx, yg + 4, '19.05 引脚栅格', 7, BOLD, ACCENT, 'middle')
+
+    # 引脚表
+    tx = 250
+    _txt(d, tx, 214, '引脚定义（本项目所用型号）', 7.5, BOLD, DARK)
+    rows = [('1', 'RF OUT', '时钟输出，正弦或方波'),
+            ('2', 'GND', '电路地，通常与外壳相连'),
+            ('3', 'VCTRL', '压控调频，不用时可悬空'),
+            ('4', 'VREF', '基准电压输出，部分型号为 N/C'),
+            ('5', 'VCC', '供电，3.3 / 5 / 12 V 按型号')]
+    y = 196
+    for num, nm, note in rows:
+        d.add(Circle(tx + 6, y + 2.5, 6, fillColor=colors.HexColor('#c8801f'),
+                     strokeColor=None))
+        _txt(d, tx + 6, y, num, 6.5, BOLD, colors.white, 'middle')
+        _txt(d, tx + 20, y, nm, 7, BOLD, DARK)
+        _txt(d, tx + 66, y, note, 6.3, FONT, GREY)
+        y -= 15
+    _box(d, tx - 4, 78, 212, 34, colors.HexColor('#fdeaea'), RED, 0.8, r=3)
+    _txt(d, tx + 4, 100, '引脚定义没有行业标准', 7, BOLD, RED)
+    _txt(d, tx + 4, 88, '同样是 25.4 mm 五脚，各厂家分配可能完全不同，'
+                        '换型号必须重查手册', 6.3, FONT, DARK)
+    return d
+
+
+# ------------------------------------------------- 图：兼容（嵌套）焊盘
+
+def ocxo_nest():
+    """一块 PCB 兼容两种 OCXO 尺寸的叠放焊盘画法。"""
+    d = Drawing(W, 230)
+    S = 4.3
+    cx, cy = 130, 118
+
+    b25, g25 = 25.4 * S, 19.05 * S
+    b20, g20 = 20.0 * S, 12.7 * S
+
+    _box(d, cx - b25 / 2, cy - b25 / 2, b25, b25, None, RED, 1.1)
+    _txt(d, cx - b25 / 2, cy + b25 / 2 + 5, '25.4 × 25.4 外形', 6.5, BOLD, RED)
+    d.add(Rect(cx - b20 / 2, cy - b20 / 2, b20, b20, fillColor=None,
+               strokeColor=ACCENT, strokeWidth=1.1, strokeDashArray=[4, 2]))
+    _txt(d, cx + b20 / 2 + 4, cy - b20 / 2 - 9, '20 × 20 外形', 6.5, BOLD, ACCENT)
+
+    for sx, sy in [(-1, 1), (0, 1), (1, 1), (1, -1), (-1, -1)]:
+        d.add(Circle(cx + sx * g25 / 2, cy + sy * g25 / 2, 4.6,
+                     fillColor=colors.HexColor('#c8801f'), strokeColor=None))
+    for sx, sy in [(-1, 1), (0, 1), (1, 1), (1, -1), (-1, -1)]:
+        d.add(Circle(cx + sx * g20 / 2, cy + sy * g20 / 2, 4.0,
+                     fillColor=colors.HexColor('#e6f1fb'), strokeColor=ACCENT,
+                     strokeWidth=1.0))
+    _txt(d, cx, cy + 3, '两套焊盘', 6.5, BOLD, DARK, 'middle')
+    _txt(d, cx, cy - 7, '同时存在', 6.5, BOLD, DARK, 'middle')
+
+    tx = 250
+    _txt(d, tx, 208, '做法要点', 7.5, BOLD, DARK)
+    pts = [
+        ('两套通孔焊盘按各自栅格并存', '19.05 与 12.7 相差 3.175 mm，互不重叠'),
+        ('同功能引脚连到同一网络', '铜箔在内层或元件面短接即可'),
+        ('丝印画两个外形框', '标注清楚哪个框对应哪个型号'),
+        ('禁布区按大的那个算', '25.4 的外形决定周围留空'),
+        ('只焊其中一套', '另一套空着，不影响电气'),
+    ]
+    y = 190
+    for k, v in pts:
+        d.add(Circle(tx + 3, y + 2.5, 2.4, fillColor=ACCENT, strokeColor=None))
+        _txt(d, tx + 11, y, k, 6.8, BOLD, DARK)
+        _txt(d, tx + 11, y - 10, v, 6.2, FONT, GREY)
+        y -= 24
+    _box(d, tx - 4, 44, 212, 30, colors.HexColor('#fdf6e6'), AMBER, 0.8, r=3)
+    _txt(d, tx + 4, 62, '前提：两种型号的引脚功能顺序一致', 6.8, BOLD, DARK)
+    _txt(d, tx + 4, 51, '不一致时只能各画各的，或用 0Ω 跳接改线',
+         6.2, FONT, GREY)
+    return d
+
+
+# ------------------------------------------------- 图：供电电压与电流
+
+def ocxo_pwr():
+    """同一颗 OCXO 在不同供电电压下的电流与稳压损耗。"""
+    d = Drawing(W, 216)
+    X0, Y0 = 62, 46
+    HMAX, BW = 120, 30
+    IMAX = 1300.0
+
+    groups = [('3.3 V', 1212, 455, RED),
+              ('5 V', 800, 300, GREEN),
+              ('12 V', 333, 125, ACCENT)]
+    gx = X0 + 34
+    for lab, iw, iss, col in groups:
+        hw = iw / IMAX * HMAX
+        hs = iss / IMAX * HMAX
+        d.add(Rect(gx, Y0, BW, hw, fillColor=colors.HexColor('#e9eef2'),
+                   strokeColor=col, strokeWidth=1.0))
+        d.add(Rect(gx, Y0, BW, hs, fillColor=col, strokeColor=col))
+        _txt(d, gx + BW / 2, Y0 + hw + 5, '%d mA' % iw, 6.5, BOLD, col, 'middle')
+        _txt(d, gx + BW / 2, Y0 + hs - 9, '%d' % iss, 6, BOLD,
+             colors.white, 'middle')
+        _txt(d, gx + BW / 2, Y0 - 12, lab, 7.5, BOLD, DARK, 'middle')
+        gx += 62
+
+    d.add(Line(X0, Y0, X0, Y0 + HMAX + 18, strokeColor=GREY, strokeWidth=0.7))
+    d.add(Line(X0, Y0, 250, Y0, strokeColor=GREY, strokeWidth=0.7))
+    _txt(d, X0 - 6, Y0 + HMAX + 14, '电流', 6.5, FONT, GREY, 'end')
+    _txt(d, X0 - 6, Y0 - 12, '供电电压', 6.5, FONT, GREY, 'end')
+
+    # 图例
+    d.add(Rect(X0 + 6, Y0 + HMAX + 34, 11, 8,
+               fillColor=colors.HexColor('#e9eef2'), strokeColor=GREY))
+    _txt(d, X0 + 22, Y0 + HMAX + 35, '预热 4 W', 6.5, FONT, DARK)
+    d.add(Rect(X0 + 86, Y0 + HMAX + 34, 11, 8, fillColor=GREY, strokeColor=GREY))
+    _txt(d, X0 + 102, Y0 + HMAX + 35, '稳态 1.5 W', 6.5, FONT, DARK)
+
+    tx = 268
+    _txt(d, tx, 196, '恒温槽要的是功率，不是电压', 7.5, BOLD, DARK)
+    _txt(d, tx, 183, '同一颗 OCXO 换供电电压，功率不变、电流按反比变',
+         6.3, FONT, GREY)
+    rows = [('供电', '预热电流', '5V→该轨 LDO 损耗'),
+            ('3.3 V', '1212 mA', '1.7 V × 1.21 A = 2.06 W'),
+            ('5 V', '800 mA', '直供，0 W'),
+            ('12 V', '333 mA', '需升压，5 V 输入做不到')]
+    y = 164
+    for i, (a, b, c) in enumerate(rows):
+        f, col = (BOLD, ACCENT) if i == 0 else (FONT, DARK)
+        _txt(d, tx, y, a, 6.6, f, col)
+        _txt(d, tx + 40, y, b, 6.6, f, col)
+        _txt(d, tx + 92, y, c, 6.6, f, col)
+        y -= 14
+    _box(d, tx - 4, 44, 200, 46, colors.HexColor('#f7fbf3'), GREEN, 0.8, r=3)
+    _txt(d, tx + 4, 76, '数据取自 CTS 196（36 × 27 mm）', 6.8, BOLD, GREEN)
+    _txt(d, tx + 4, 65, '预热 4 W、稳态 1.5 W @25 °C，', 6.3, FONT, DARK)
+    _txt(d, tx + 4, 55, '预热 4 min 到 50 ppb 以内', 6.3, FONT, DARK)
+    return d
+
+
 FIGURES = {
     'flow': flow,
     'stackup': stackup,
@@ -2285,6 +2492,10 @@ FIGURES = {
     'tics_gui': tics_gui,
     'tics_regmap': tics_regmap,
     'tics_eeprom': tics_eeprom,
+    'ocxo_pkg': ocxo_pkg,
+    'ocxo_p25': ocxo_p25,
+    'ocxo_nest': ocxo_nest,
+    'ocxo_pwr': ocxo_pwr,
 }
 
 

@@ -5,9 +5,69 @@
 	(uuid "a25f2a35-4889-4be5-9b80-12803bbbfe96")
 	(paper "A4")
 	(lib_symbols)
+	(wire
+		(pts
+			(xy 76.2 92.71) (xy 76.2 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a5a7a8a-44ce-4ea1-854d-cf7ba651cc4a")
+	)
+	(wire
+		(pts
+			(xy 71.12 92.71) (xy 76.2 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e2962d8-ce4e-465e-acd2-041241cb630e")
+	)
+	(wire
+		(pts
+			(xy 76.2 119.38) (xy 110.49 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9314203d-ce2f-4cf0-9a33-05d9a509dc22")
+	)
+	(wire
+		(pts
+			(xy 110.49 105.41) (xy 110.49 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca734ec2-6a29-41ed-b6b3-dd60f076825f")
+	)
+	(wire
+		(pts
+			(xy 110.49 105.41) (xy 114.3 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc1f6cc6-03c9-4fb8-a51f-a94251fbc1cb")
+	)
+	(wire
+		(pts
+			(xy 71.12 86.36) (xy 82.55 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f979572c-27bd-4fe9-8d7a-d4147581b774")
+	)
 	(sheet
-		(at 146.05 85.09)
-		(size 12.7 20.32)
+		(at 114.3 95.25)
+		(size 12.7 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -22,7 +82,7 @@
 		)
 		(uuid "645fcd89-025a-4233-88ed-d1f363faa68e")
 		(property "Sheetname" "OCXO"
-			(at 146.05 84.3784 0)
+			(at 114.3 94.5384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33,7 +93,7 @@
 			)
 		)
 		(property "Sheetfile" "OCXO.kicad_sch"
-			(at 146.05 105.9946 0)
+			(at 114.3 113.6146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -41,6 +101,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "XO_P" output
+			(at 114.3 100.33 180)
+			(uuid "9895a4c9-102b-4ac4-bbf4-2cc2b11c3f93")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OCXO_VCC" input
+			(at 114.3 105.41 180)
+			(uuid "0223337f-14e9-4a28-ba8b-d0ef47cc4fc6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -52,7 +132,7 @@
 		)
 	)
 	(sheet
-		(at 58.42 129.54)
+		(at 58.42 68.58)
 		(size 12.7 33.02)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -68,7 +148,7 @@
 		)
 		(uuid "6e31b722-7b29-4340-8cba-f8ca04169b2e")
 		(property "Sheetname" "POWER"
-			(at 58.42 128.8284 0)
+			(at 58.42 67.8684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -79,7 +159,7 @@
 			)
 		)
 		(property "Sheetfile" "POWER.kicad_sch"
-			(at 58.42 163.1446 0)
+			(at 58.42 102.1846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -87,6 +167,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "PLL_PG" output
+			(at 71.12 86.36 0)
+			(uuid "92dec38a-0336-4d99-a3c4-09336cbf8c6d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OCXO_VCC" output
+			(at 71.12 92.71 0)
+			(uuid "e53452c8-1707-4e60-bbfc-3e2c8a2f0744")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -98,8 +198,8 @@
 		)
 	)
 	(sheet
-		(at 101.6 128.27)
-		(size 12.7 31.75)
+		(at 114.3 50.8)
+		(size 16.51 33.02)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -114,7 +214,7 @@
 		)
 		(uuid "8425eddb-ddb8-4331-8a41-5d3766f56cff")
 		(property "Sheetname" "SIGNAL"
-			(at 101.6 127.5584 0)
+			(at 114.3 50.0884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -125,7 +225,7 @@
 			)
 		)
 		(property "Sheetfile" "SIGNAL.kicad_sch"
-			(at 101.6 160.6046 0)
+			(at 114.3 84.4046 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -133,6 +233,96 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "OUT2_P" input
+			(at 114.3 67.31 180)
+			(uuid "839a984a-96f0-41e9-9a9d-c8da4cc7ee10")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OUT2_N" input
+			(at 114.3 69.85 180)
+			(uuid "9befa00a-eff0-4e22-bf6b-8395bbe320ae")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OUT0_P" input
+			(at 114.3 54.61 180)
+			(uuid "64511e6c-0dc2-4b98-92db-fe550c059522")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OUT3_P" input
+			(at 114.3 73.66 180)
+			(uuid "9355927f-8ad2-437a-ae19-a016da20164b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OUT3_N" input
+			(at 114.3 76.2 180)
+			(uuid "4a78de14-3338-4645-93b9-3b277661d5a0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OUT1_P" input
+			(at 114.3 60.96 180)
+			(uuid "0e786d1a-6e67-4724-83d0-220dcea604d7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OUT0_N" input
+			(at 114.3 57.15 180)
+			(uuid "788777c5-5400-4e91-bf4b-19557dcab8d9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OUT1_N" input
+			(at 114.3 63.5 180)
+			(uuid "9247a024-c942-40ca-9c45-fe437db6eaaa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PRIREF_P" output
+			(at 114.3 80.01 180)
+			(uuid "b866a3b0-999e-4276-8773-3cbb0e6d2c11")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -144,8 +334,8 @@
 		)
 	)
 	(sheet
-		(at 80.01 68.58)
-		(size 21.59 34.29)
+		(at 82.55 50.8)
+		(size 21.59 62.23)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -160,7 +350,7 @@
 		)
 		(uuid "a1122762-ddd2-4d47-8370-0968bbc1155e")
 		(property "Sheetname" "LMK5B12204"
-			(at 80.01 67.8684 0)
+			(at 82.55 50.0884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -171,7 +361,7 @@
 			)
 		)
 		(property "Sheetfile" "LMK5B12204.kicad_sch"
-			(at 80.01 103.4546 0)
+			(at 82.55 113.6146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -179,6 +369,116 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "OUT1_N" output
+			(at 104.14 63.5 0)
+			(uuid "5d344b88-b7ec-4e3d-90fb-dfe1e59b7c73")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT0_P" output
+			(at 104.14 54.61 0)
+			(uuid "39d28327-c5a1-4fcb-80e2-691faa13a9b1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT2_N" output
+			(at 104.14 69.85 0)
+			(uuid "e62e533d-c701-4609-ab4c-25ef59594a3c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT0_N" output
+			(at 104.14 57.15 0)
+			(uuid "7af15adb-d571-419c-b8e2-bb1308890222")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT2_P" output
+			(at 104.14 67.31 0)
+			(uuid "5b6c1929-28d3-47a4-a31c-7155115ba04b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT1_P" output
+			(at 104.14 60.96 0)
+			(uuid "368b5151-ddb8-4216-b874-180aa553d5f1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT3_N" output
+			(at 104.14 76.2 0)
+			(uuid "f9053825-7e0d-41b2-bf2a-d53436c4d26e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT3_P" output
+			(at 104.14 73.66 0)
+			(uuid "4e660c66-cf35-4eae-b6b3-4128e9bad949")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PRIREF_P" input
+			(at 104.14 80.01 0)
+			(uuid "12428394-659d-480d-91d3-300965428226")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "XO_P" input
+			(at 104.14 100.33 0)
+			(uuid "c731ff77-ec51-456d-81ba-e7ca0fe2523c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PLL_PG" input
+			(at 82.55 86.36 180)
+			(uuid "fb1eede3-441d-4178-83bb-1029f637ecb7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

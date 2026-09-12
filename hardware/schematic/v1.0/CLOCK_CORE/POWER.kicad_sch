@@ -160,173 +160,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:FerriteBead_Small"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "FB"
-				(at 1.905 1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "FerriteBead_Small"
-				(at 1.905 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Ferrite bead, small symbol"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "L ferrite bead inductor filter"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "FerriteBead_Small_0_1"
-				(polyline
-					(pts
-						(xy -1.8288 0.2794) (xy -1.1176 1.4986) (xy 1.8288 -0.2032) (xy 1.1176 -1.4224) (xy -1.8288 0.2794)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0.889) (xy 0 1.2954)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 -0.7874)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "FerriteBead_Small_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -625,6 +458,225 @@
 				)
 				(pin input line
 					(at -5.08 -1.27 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "JLCImport:TAJB107M010RNJ"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at -0.254 3.302 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TAJB107M010RNJ"
+				(at 0 -2 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "JLCImport:TAJB107M010RNJ"
+				(at -0.508 8.382 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Kyocera-AVX-TAJB107M010RNJ_C7196.pdf"
+				(at -0.508 8.382 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "-55℃~+125℃ 1.4Ω@100kHz 100uF 10V ±20% CASE-B-3528-21(mm) Tantalum Capacitors ROHS"
+				(at -0.508 8.382 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C7196"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "--"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part" "TAJB107M010RNJ"
+				(at -0.254 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "-- C7196 CASE-B_3528 TAJB107M010RNJ"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TAJB107M010RNJ_0_1"
+				(polyline
+					(pts
+						(xy -0.508 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 -2.032) (xy -0.508 2.032)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.508 -2.032) (xy 0.508 2.032)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.508 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 -1.524) (xy 2.032 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -1.016) (xy 1.524 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin input line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -3.81 0 0)
 					(length 2.54)
 					(name "2"
 						(effects
@@ -1597,10 +1649,10 @@
 		(uuid "4bc00225-5181-4689-8e16-0aafd172ce33")
 	)
 	(junction
-		(at 134.62 154.94)
+		(at 215.9 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "50e6cbc2-0cf7-43ac-bb03-22bdb62a430e")
+		(uuid "547ad025-55da-4183-a7cb-b2001da09d55")
 	)
 	(junction
 		(at 104.14 127)
@@ -1639,12 +1691,6 @@
 		(uuid "7fbdd34c-6456-4a83-85b6-4191252fbff8")
 	)
 	(junction
-		(at 215.9 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "81dd2c51-07a9-4c69-8c64-71ad27018fb8")
-	)
-	(junction
 		(at 106.68 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1667,12 +1713,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9a96dbf7-753f-41ec-a837-37641c57a0ce")
-	)
-	(junction
-		(at 223.52 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a3b382bd-9ca3-4abd-9ad5-dcfbe71e0fda")
 	)
 	(junction
 		(at 106.68 66.04)
@@ -1856,7 +1896,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 55.88) (xy 231.14 55.88)
+			(xy 215.9 55.88) (xy 231.14 55.88)
 		)
 		(stroke
 			(width 0)
@@ -2316,16 +2356,6 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 54.61) (xy 215.9 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8d7bcbd6-4e05-4da7-a52b-e734e797ce89")
-	)
-	(wire
-		(pts
 			(xy 160.02 64.77) (xy 160.02 66.04)
 		)
 		(stroke
@@ -2466,7 +2496,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 48.26) (xy 215.9 49.53)
+			(xy 215.9 54.61) (xy 215.9 55.88)
 		)
 		(stroke
 			(width 0)
@@ -2546,16 +2576,6 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 55.88) (xy 223.52 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce5cdcb6-fb97-4b74-9916-87c35f9f8953")
-	)
-	(wire
-		(pts
 			(xy 43.18 52.07) (xy 55.88 52.07)
 		)
 		(stroke
@@ -2586,16 +2606,6 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 154.94) (xy 134.62 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db42b536-59a3-438a-942b-9a1377d0e18c")
-	)
-	(wire
-		(pts
 			(xy 146.05 129.54) (xy 146.05 130.81)
 		)
 		(stroke
@@ -2603,6 +2613,16 @@
 			(type default)
 		)
 		(uuid "dc9ed2ee-2d4f-4ccf-8afb-6405ef219e89")
+	)
+	(wire
+		(pts
+			(xy 208.28 82.55) (xy 215.9 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de4f76b3-2d4b-426b-ae88-21d72589bc63")
 	)
 	(wire
 		(pts
@@ -2623,6 +2643,16 @@
 			(type default)
 		)
 		(uuid "e18d448d-1a75-4295-82ef-3883dc5e6021")
+	)
+	(wire
+		(pts
+			(xy 208.28 82.55) (xy 208.28 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1abd37f-69b2-4b4d-a431-e5d412eab364")
 	)
 	(wire
 		(pts
@@ -2714,30 +2744,6 @@
 		)
 		(uuid "232e3351-2f5a-4aec-8e0d-567909c6854b")
 	)
-	(global_label "OCXO_VCC"
-		(shape output)
-		(at 215.9 87.63 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "449ea1a2-ac4a-41ab-8835-3b29053a74b3")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 215.9 100.3519 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(hierarchical_label "PLL_PG"
 		(shape output)
 		(at 134.62 81.28 180)
@@ -2749,16 +2755,16 @@
 		)
 		(uuid "236c9b6b-2e5c-47a0-a441-95cc0c936cdf")
 	)
-	(hierarchical_label "OCXO_PG"
+	(hierarchical_label "OCXO_VCC"
 		(shape output)
-		(at 132.08 154.94 180)
+		(at 215.9 87.63 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "70dee81b-3a94-4b9d-a057-c0fa879dbb37")
+		(uuid "46ab44c8-861c-4b80-98d4-f4aeb1f4472c")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -4074,6 +4080,120 @@
 		)
 	)
 	(symbol
+		(lib_id "JLCImport:TAJB107M010RNJ")
+		(at 208.28 88.9 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "441c1b75-e469-476d-8c58-92e7eb23c3ae")
+		(property "Reference" "C9"
+			(at 201.93 85.852 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TAJB107M010RNJ"
+			(at 189.992 92.456 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "JLCImport:TAJB107M010RNJ"
+			(at 199.898 89.408 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Kyocera-AVX-TAJB107M010RNJ_C7196.pdf"
+			(at 199.898 89.408 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-55℃~+125℃ 1.4Ω@100kHz 100uF 10V ±20% CASE-B-3528-21(mm) Tantalum Capacitors ROHS"
+			(at 199.898 89.408 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C7196"
+			(at 208.28 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "--"
+			(at 208.28 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "TAJB107M010RNJ"
+			(at 203.2 89.154 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0f0c6392-9d42-46fb-a761-587cb98315c8")
+		)
+		(pin "1"
+			(uuid "aaa3e82d-6915-4313-95f2-248f0891dbd3")
+		)
+		(instances
+			(project "CLOCK_CORE"
+				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
+					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 157.48 134.62 0)
 		(unit 1)
@@ -4179,6 +4299,7 @@
 		)
 		(property "Value" "GND"
 			(at 231.14 68.58 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4961,7 +5082,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 215.9 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -5034,6 +5155,7 @@
 		)
 		(property "Value" "GND"
 			(at 238.76 68.58 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5585,7 +5707,7 @@
 				)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" "DNP"
 			(at 225.806 79.756 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5595,7 +5717,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 223.52 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -5885,7 +6007,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 223.52 63.5 0)
+		(at 208.28 92.71 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5896,7 +6018,7 @@
 		(fields_autoplaced yes)
 		(uuid "b21305f6-145d-493a-a065-92e96b986b8f")
 		(property "Reference" "#PWR0929"
-			(at 223.52 67.31 0)
+			(at 208.28 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5907,7 +6029,8 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 223.52 68.58 0)
+			(at 208.28 97.79 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5917,7 +6040,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 223.52 63.5 0)
+			(at 208.28 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5928,7 +6051,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 223.52 63.5 0)
+			(at 208.28 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5939,7 +6062,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 223.52 63.5 0)
+			(at 208.28 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6661,88 +6784,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:FerriteBead_Small")
-		(at 215.9 52.07 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c9d250ac-f094-4548-9cd4-d97b9f914ca9")
-		(property "Reference" "FB20"
-			(at 218.44 50.7618 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "220R@100MHz"
-			(at 218.44 53.3018 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
-			(at 215.9 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 215.9 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 215.9 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "29a659b2-ef9e-4057-89b1-3a7fd5584574")
-		)
-		(pin "2"
-			(uuid "a723ded2-bd0a-4500-8475-d9ae4469ec7b")
-		)
-		(instances
-			(project "CLOCK_CORE"
-				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
-					(reference "FB20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 97.79 66.04 0)
 		(unit 1)
@@ -6899,87 +6940,6 @@
 			(project "CLOCK_CORE"
 				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
 					(reference "R54")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 223.52 59.69 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d915537c-482a-4ce3-9063-ab0d547b8a9d")
-		(property "Reference" "C79"
-			(at 218.694 57.404 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100uF"
-			(at 217.424 62.484 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
-			(at 223.52 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 223.52 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 223.52 59.69 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c0b0bd79-ba30-4f32-9a8f-9a4ee9272c94")
-		)
-		(pin "2"
-			(uuid "14f7b9f8-3537-4e70-b48a-50d389812c15")
-		)
-		(instances
-			(project "CLOCK_CORE"
-				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
-					(reference "C79")
 					(unit 1)
 				)
 			)
@@ -7307,7 +7267,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 215.9 48.26 0)
+		(at 215.9 54.61 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7315,10 +7275,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ec440e21-45c3-4f6b-b646-90178e02de3f")
 		(property "Reference" "#PWR0928"
-			(at 215.9 52.07 0)
+			(at 215.9 58.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7329,7 +7288,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 218.44 46.9899 0)
+			(at 214.122 50.546 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7340,7 +7299,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 215.9 48.26 0)
+			(at 215.9 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7351,7 +7310,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 215.9 48.26 0)
+			(at 215.9 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7362,7 +7321,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 215.9 48.26 0)
+			(at 215.9 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

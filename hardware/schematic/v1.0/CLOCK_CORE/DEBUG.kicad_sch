@@ -650,6 +650,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "I2C"
+		(exclude_from_sim no)
+		(at 163.83 107.696 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "a897a913-4252-4531-b690-7898d040b9c4")
+	)
 	(text "HOLE"
 		(exclude_from_sim no)
 		(at 79.756 182.372 0)
@@ -702,6 +712,16 @@
 	)
 	(polyline
 		(pts
+			(xy 105.41 73.66) (xy 105.41 111.76)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "928bc114-9d40-48b5-a0d1-87d97aacca24")
+	)
+	(polyline
+		(pts
 			(xy 20.32 186.69) (xy 88.9 186.69)
 		)
 		(stroke
@@ -719,6 +739,36 @@
 			(type default)
 		)
 		(uuid "bb05e2c8-0da3-40f8-b17d-7d559acc6bce")
+	)
+	(polyline
+		(pts
+			(xy 105.41 111.76) (xy 173.99 111.76)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "bca183c7-827d-4454-ac66-a7b75e8547df")
+	)
+	(polyline
+		(pts
+			(xy 173.99 73.66) (xy 173.99 111.76)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "c76d2e43-ba4f-417b-8c68-216b3579be84")
+	)
+	(polyline
+		(pts
+			(xy 105.41 73.66) (xy 173.99 73.66)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "ce72b277-54f1-4d94-9545-5c54de51f8d0")
 	)
 	(wire
 		(pts

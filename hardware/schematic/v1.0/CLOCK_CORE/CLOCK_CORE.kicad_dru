@@ -1,0 +1,4 @@
+(version 1)
+(rule "CLK_OUT_to_pour"
+  (constraint clearance (min 0.3mm))
+  (condition "A.NetClass == 'CLK_OUT' && B.Type == 'Zone'"))

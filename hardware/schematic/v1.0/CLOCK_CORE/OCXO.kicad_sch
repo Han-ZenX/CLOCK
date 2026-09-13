@@ -1568,6 +1568,12 @@
 		(uuid "2e20461d-52a2-4593-b69e-2e5a321de76b")
 	)
 	(junction
+		(at 156.21 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "32e443f1-48a9-48d8-a2d5-b7e79c15b0a6")
+	)
+	(junction
 		(at 118.11 138.43)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1586,16 +1592,10 @@
 		(uuid "4a700640-8d4c-4eda-98bb-5c7129a3e009")
 	)
 	(junction
-		(at 160.02 116.84)
+		(at 160.02 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4dfc0448-7644-40b0-9819-7f5dc6aa2417")
-	)
-	(junction
-		(at 167.64 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "59d4d7d1-28b1-43e1-b253-eedb8b2dab3a")
+		(uuid "92afa9ea-77b9-4799-b18d-75d17ec21a1d")
 	)
 	(junction
 		(at 140.97 139.7)
@@ -1610,12 +1610,6 @@
 		(uuid "be55ffd7-5f72-45d3-ab7a-1f7693731814")
 	)
 	(junction
-		(at 160.02 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c9c88228-d130-4322-86d8-95134aa5125f")
-	)
-	(junction
 		(at 110.49 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1623,7 +1617,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 124.46) (xy 167.64 125.73)
+			(xy 160.02 124.46) (xy 160.02 125.73)
 		)
 		(stroke
 			(width 0)
@@ -1673,13 +1667,13 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 116.84) (xy 167.64 116.84)
+			(xy 160.02 125.73) (xy 175.26 125.73)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1367d3f9-5dcf-4dd2-9e56-96a9cdeb4e4f")
+		(uuid "1bbeea12-d405-4a5e-b851-ae5be9ac0d52")
 	)
 	(wire
 		(pts
@@ -1704,16 +1698,6 @@
 	(wire
 		(pts
 			(xy 152.4 125.73) (xy 160.02 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27642e98-168b-403a-af5f-d7da1137ab5c")
-	)
-	(wire
-		(pts
-			(xy 160.02 125.73) (xy 167.64 125.73)
 		)
 		(stroke
 			(width 0)
@@ -1883,7 +1867,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 115.57) (xy 160.02 116.84)
+			(xy 156.21 115.57) (xy 156.21 116.84)
 		)
 		(stroke
 			(width 0)
@@ -2033,7 +2017,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 116.84) (xy 160.02 116.84)
+			(xy 152.4 116.84) (xy 156.21 116.84)
 		)
 		(stroke
 			(width 0)
@@ -2093,23 +2077,13 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 125.73) (xy 175.26 125.73)
+			(xy 156.21 116.84) (xy 160.02 116.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f4e6c613-31b3-4150-992a-6c3078e0404d")
-	)
-	(wire
-		(pts
-			(xy 160.02 124.46) (xy 160.02 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe320313-a80b-4e26-9afb-e700a1069534")
+		(uuid "f193112c-c69b-493e-9969-8f5aafeeb6d7")
 	)
 	(label "OCXO_MON_RF"
 		(at 88.9 105.41 0)
@@ -2685,7 +2659,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 167.64 120.65 0)
+		(at 160.02 120.65 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2695,7 +2669,7 @@
 		(dnp no)
 		(uuid "17ab23b2-1685-4790-aaee-0b442128ac9a")
 		(property "Reference" "C12"
-			(at 171.958 118.11 0)
+			(at 164.338 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2706,7 +2680,7 @@
 			)
 		)
 		(property "Value" "10uF"
-			(at 174.244 123.444 0)
+			(at 166.624 123.444 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2717,7 +2691,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 168.6052 124.46 0)
+			(at 160.9852 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2728,7 +2702,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 167.64 120.65 0)
+			(at 160.02 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2739,7 +2713,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 167.64 120.65 0)
+			(at 160.02 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2924,7 +2898,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 160.02 115.57 180)
+		(at 156.21 115.57 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2935,7 +2909,7 @@
 		(fields_autoplaced yes)
 		(uuid "44a4bdda-41ac-425d-9840-fbb27419e00d")
 		(property "Reference" "#PWR03"
-			(at 160.02 109.22 0)
+			(at 156.21 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2946,7 +2920,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 160.02 110.49 0)
+			(at 156.21 110.49 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2957,7 +2931,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 115.57 0)
+			(at 156.21 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2968,7 +2942,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 115.57 0)
+			(at 156.21 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2979,7 +2953,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 160.02 115.57 0)
+			(at 156.21 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3314,87 +3288,6 @@
 			(project "CLOCK_CORE"
 				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/645fcd89-025a-4233-88ed-d1f363faa68e"
 					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 160.02 120.65 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8a1d3fe2-a821-483b-af23-05c30f98b71a")
-		(property "Reference" "C11"
-			(at 164.338 118.11 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1uF"
-			(at 164.846 123.19 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 160.9852 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 160.02 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 160.02 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5b201f51-d87d-4431-a333-b42622d313c2")
-		)
-		(pin "2"
-			(uuid "2816d7d4-081c-4120-a2bf-6f83a068b7be")
-		)
-		(instances
-			(project "CLOCK_CORE"
-				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/645fcd89-025a-4233-88ed-d1f363faa68e"
-					(reference "C11")
 					(unit 1)
 				)
 			)

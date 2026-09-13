@@ -3917,6 +3917,26 @@
 		)
 		(uuid "ff5e4be5-2fcf-4f8a-bd1d-079d3346303b")
 	)
+	(label "HW_SW_CTRL"
+		(at 121.92 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "53386c44-58bd-40ac-bd53-478a6e5ef7a8")
+	)
+	(label "SYNCN"
+		(at 109.22 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f60cf257-120b-4a86-ba46-06a1ab0b5a2b")
+	)
 	(global_label "VDD_PLL1"
 		(shape input)
 		(at 177.8 101.6 0)
@@ -5117,7 +5137,7 @@
 			)
 		)
 	)
-	(hierarchical_label "XO_P"
+	(hierarchical_label "OCXO_OUT"
 		(shape input)
 		(at 179.07 91.44 0)
 		(effects
@@ -5139,7 +5159,7 @@
 		)
 		(uuid "15bcebd0-d27b-4c63-8b12-d442efde455f")
 	)
-	(hierarchical_label "PLL_PG"
+	(hierarchical_label "PDN"
 		(shape input)
 		(at 135.89 129.54 270)
 		(effects

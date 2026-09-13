@@ -511,6 +511,60 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.3,
+        "name": "CLK_OUT",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.15,
+        "tuning_profile": ""
+      },
+      {
+        "clearance": 0.2,
+        "name": "LDO_CAP",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.4,
+        "tuning_profile": ""
+      },
+      {
+        "clearance": 0.3,
+        "name": "LOOP",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.25,
+        "tuning_profile": ""
+      },
+      {
+        "clearance": 0.2,
+        "name": "PWR",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 4,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
+        "tuning_profile": ""
+      },
+      {
+        "clearance": 0.25,
+        "name": "PWR_HI",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 5,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.8,
+        "tuning_profile": ""
+      },
+      {
+        "clearance": 0.3,
+        "name": "REF_IN",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.15,
+        "tuning_profile": ""
       }
     ],
     "meta": {
@@ -518,7 +572,72 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "CLK_OUT",
+        "pattern": "/LMK5B12204/OUT*"
+      },
+      {
+        "netclass": "CLK_OUT",
+        "pattern": "/SIGNAL/OUT*_RF"
+      },
+      {
+        "netclass": "REF_IN",
+        "pattern": "OCXO_OUT"
+      },
+      {
+        "netclass": "REF_IN",
+        "pattern": "/OCXO/OCXO_MON*"
+      },
+      {
+        "netclass": "REF_IN",
+        "pattern": "/LMK5B12204/PRIREF_P"
+      },
+      {
+        "netclass": "LOOP",
+        "pattern": "LF?"
+      },
+      {
+        "netclass": "LOOP",
+        "pattern": "VCTRL"
+      },
+      {
+        "netclass": "LOOP",
+        "pattern": "VREF"
+      },
+      {
+        "netclass": "LOOP",
+        "pattern": "/OCXO/VCTRL_ADJ"
+      },
+      {
+        "netclass": "LDO_CAP",
+        "pattern": "CAP_*"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "VDD*"
+      },
+      {
+        "netclass": "PWR_HI",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "PWR_HI",
+        "pattern": "+3.3V"
+      },
+      {
+        "netclass": "PWR_HI",
+        "pattern": "3.3V_OCXO"
+      },
+      {
+        "netclass": "PWR_HI",
+        "pattern": "OCXO_VCC"
+      },
+      {
+        "netclass": "PWR_HI",
+        "pattern": "/POWER/+5V_IN"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {

@@ -2916,7 +2916,67 @@
 		)
 		(uuid "ff2d6884-7dd8-4bc8-99b0-44965c2b744e")
 	)
-	(hierarchical_label "PLL_PG"
+	(label "LDO_3V3_NR"
+		(at 104.14 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "36139b08-70ab-471d-a14c-d93feeacd8bf")
+	)
+	(label "+5V_IN"
+		(at 34.29 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "472c786c-69e9-4ef0-8ccc-6b2210f97d72")
+	)
+	(label "LDO_OCXO_NR"
+		(at 101.6 134.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "799b5029-54bb-42b6-b3de-453b45cd8c31")
+	)
+	(label "LDO_OCXO_PG"
+		(at 138.43 154.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "90fb5247-d24e-4af5-95d1-18f9a236aa18")
+	)
+	(label "LDO_3V3_FB"
+		(at 144.78 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9639b426-fe41-4f36-bb0f-406819c0ef3d")
+	)
+	(label "LDO_OCXO_FB"
+		(at 142.24 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d57bd593-d388-4e51-baf3-6948c49735db")
+	)
+	(hierarchical_label "PDN"
 		(shape output)
 		(at 134.62 81.28 180)
 		(effects

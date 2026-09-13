@@ -223,7 +223,7 @@
 				(justify left top)
 			)
 		)
-		(pin "XO_P" output
+		(pin "OCXO_OUT" output
 			(at 166.37 116.84 180)
 			(uuid "9895a4c9-102b-4ac4-bbf4-2cc2b11c3f93")
 			(effects
@@ -289,7 +289,7 @@
 				(justify left top)
 			)
 		)
-		(pin "PLL_PG" output
+		(pin "PDN" output
 			(at 123.19 102.87 0)
 			(uuid "92dec38a-0336-4d99-a3c4-09336cbf8c6d")
 			(effects
@@ -581,7 +581,7 @@
 				(justify right)
 			)
 		)
-		(pin "XO_P" input
+		(pin "OCXO_OUT" input
 			(at 156.21 116.84 0)
 			(uuid "c731ff77-ec51-456d-81ba-e7ca0fe2523c")
 			(effects
@@ -591,7 +591,7 @@
 				(justify right)
 			)
 		)
-		(pin "PLL_PG" input
+		(pin "PDN" input
 			(at 134.62 102.87 180)
 			(uuid "fb1eede3-441d-4178-83bb-1029f637ecb7")
 			(effects

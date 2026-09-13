@@ -1619,6 +1619,86 @@
 		)
 		(uuid "ff677df2-a792-4b0c-85f4-85cbd0b2638a")
 	)
+	(label "OUT0_P_RF"
+		(at 76.2 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6e6225e7-0c7c-4d6e-ba93-d72ce0acc3d8")
+	)
+	(label "OUT3_N_RF"
+		(at 207.01 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7523b1b7-49c2-44d9-8228-96007777370f")
+	)
+	(label "OUT3_P_RF"
+		(at 215.9 143.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "76bbecf5-4633-420a-b929-0651909f1c0c")
+	)
+	(label "OUT2_N_RF"
+		(at 207.01 34.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7a1d6e4d-920d-4565-a550-df03b2b257c3")
+	)
+	(label "OUT1_P_RF"
+		(at 67.31 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8dbfd33c-1fdb-4963-9877-28e192ea73f1")
+	)
+	(label "OUT0_N_RF"
+		(at 67.31 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aa92cc67-8946-436d-b12f-ea580304e61a")
+	)
+	(label "OUT2_P_RF"
+		(at 215.9 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "af8d3b45-e216-4827-8a1d-f3e327d8794a")
+	)
+	(label "OUT1_N_RF"
+		(at 76.2 143.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e5f5024a-c383-411e-9956-57650517974f")
+	)
 	(hierarchical_label "OUT3_N"
 		(shape input)
 		(at 241.3 107.95 0)

@@ -2164,6 +2164,12 @@
 		(uuid "4a09ce70-7351-43bc-b51a-6833d3247883")
 	)
 	(junction
+		(at 85.09 20.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4aa6331d-4d90-4641-9a26-0e4df15ced83")
+	)
+	(junction
 		(at 113.03 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2479,6 +2485,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 20.32) (xy 85.09 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16e3375a-f643-49a3-9326-84ad5fb0b2d7")
+	)
+	(wire
+		(pts
 			(xy 195.58 151.13) (xy 195.58 153.67)
 		)
 		(stroke
@@ -2566,6 +2582,16 @@
 			(type default)
 		)
 		(uuid "22a4d286-d2d4-4d72-a121-c1481d597dfe")
+	)
+	(wire
+		(pts
+			(xy 85.09 30.48) (xy 85.09 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "238168b1-65f7-4183-9981-38f824b8a051")
 	)
 	(wire
 		(pts
@@ -3909,6 +3935,26 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 20.32) (xy 85.09 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdeacbc6-7f9c-4f96-b2ee-58ab921edc00")
+	)
+	(wire
+		(pts
+			(xy 85.09 20.32) (xy 87.63 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdf2657a-0a6b-4dfb-a147-8633a9ce2bad")
+	)
+	(wire
+		(pts
 			(xy 153.67 120.65) (xy 153.67 121.92)
 		)
 		(stroke
@@ -4214,6 +4260,30 @@
 		(uuid "3693869d-9e24-4fe1-b1af-39e095429ba7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 242.5314 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "VDD_XO"
+		(shape input)
+		(at 177.8 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3f8e4c1b-fb9d-4b6f-96dd-80731a13194e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 187.9214 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4561,6 +4631,30 @@
 			)
 		)
 	)
+	(global_label "VDDXO"
+		(shape input)
+		(at 82.55 20.32 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "99c8b329-c932-4e6d-987c-0b554969c000")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 73.3962 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "VDDPLL2"
 		(shape output)
 		(at 57.15 83.82 0)
@@ -4678,6 +4772,30 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "VDD_XO"
+		(shape output)
+		(at 87.63 20.32 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b896152f-5f9b-4072-81f7-4981ec081776")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 97.7514 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -4814,30 +4932,6 @@
 		(uuid "d1e06226-a95d-4633-aedc-2ee3fc5c8dd2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 149.86 54.6486 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "VDDXO"
-		(shape input)
-		(at 177.8 86.36 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d4cdf1ff-1307-4ef6-b91b-5ac401dd7970")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 186.9538 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11492,6 +11586,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 85.09 26.67 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ca43b088-d26a-41b5-ab89-0d7c6178daae")
+		(property "Reference" "C59"
+			(at 88.9 25.3999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "100nF"
+			(at 88.9 27.9399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 84.1248 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 85.09 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "96cde658-65cd-4a07-9693-9af56bcc6b14")
+		)
+		(pin "2"
+			(uuid "693c572f-1b16-4127-a314-98b59aacce47")
+		)
+		(instances
+			(project "CLOCK_CORE"
+				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/a1122762-ddd2-4d47-8370-0968bbc1155e"
+					(reference "C59")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 49.53 33.02 0)
 		(unit 1)
@@ -11887,6 +12063,85 @@
 			(project "CLOCK_CORE"
 				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/a1122762-ddd2-4d47-8370-0968bbc1155e"
 					(reference "C33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 85.09 31.75 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dd3776a6-7520-4afa-87f2-d2a4f0ea882d")
+		(property "Reference" "#PWR0138"
+			(at 85.09 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 85.09 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 85.09 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "273e7b62-9807-4c1c-8b0e-9654d3c994d0")
+		)
+		(instances
+			(project "CLOCK_CORE"
+				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/a1122762-ddd2-4d47-8370-0968bbc1155e"
+					(reference "#PWR0138")
 					(unit 1)
 				)
 			)

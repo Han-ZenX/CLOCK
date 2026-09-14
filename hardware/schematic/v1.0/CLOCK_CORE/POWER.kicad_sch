@@ -160,6 +160,207 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -1815,12 +2016,6 @@
 		(uuid "4bc00225-5181-4689-8e16-0aafd172ce33")
 	)
 	(junction
-		(at 55.88 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5948b9c8-7995-4361-aace-84b18ab53d60")
-	)
-	(junction
 		(at 104.14 127)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1831,6 +2026,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "665a0a87-e3a0-4244-bc85-d5772426c32c")
+	)
+	(junction
+		(at 245.11 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "67fab874-0cb2-443b-adb4-39ace9fe698a")
 	)
 	(junction
 		(at 160.02 55.88)
@@ -1899,10 +2100,22 @@
 		(uuid "b54ec31b-0866-4d4c-a5f4-7a0e52a3d53c")
 	)
 	(junction
+		(at 55.88 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b798e499-a4e4-4789-8073-24bbdac52791")
+	)
+	(junction
 		(at 231.14 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b8a50022-6cd8-463d-b6ed-8893ce7e3b3e")
+	)
+	(junction
+		(at 48.26 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "be2db162-22e2-41f6-ac2e-2f4a5c0613cb")
 	)
 	(junction
 		(at 148.59 55.88)
@@ -2015,6 +2228,16 @@
 			(type default)
 		)
 		(uuid "11b04edc-b62c-4d23-8b43-04ec708efbe9")
+	)
+	(wire
+		(pts
+			(xy 48.26 52.07) (xy 55.88 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "147e981a-f946-4b14-94fd-71394a2337b2")
 	)
 	(wire
 		(pts
@@ -2148,6 +2371,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 52.07) (xy 48.26 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "305667a8-d15f-4d8a-a5de-dda07e92eae9")
+	)
+	(wire
+		(pts
 			(xy 97.79 62.23) (xy 97.79 60.96)
 		)
 		(stroke
@@ -2175,6 +2408,16 @@
 			(type default)
 		)
 		(uuid "34a1a960-a99b-4aa2-9bb7-25ca3496e9bf")
+	)
+	(wire
+		(pts
+			(xy 48.26 68.58) (xy 48.26 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36fff0a6-2a15-4434-aacd-fe125f1aedf7")
 	)
 	(wire
 		(pts
@@ -2248,7 +2491,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 86.36) (xy 245.11 91.44)
+			(xy 245.11 86.36) (xy 245.11 95.25)
 		)
 		(stroke
 			(width 0)
@@ -2265,6 +2508,16 @@
 			(type default)
 		)
 		(uuid "45d4f988-58ec-45ce-a92d-dc989592a942")
+	)
+	(wire
+		(pts
+			(xy 245.11 95.25) (xy 245.11 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48430736-6c9b-42c4-97f2-bf3be9f335ac")
 	)
 	(wire
 		(pts
@@ -2408,7 +2661,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 52.07) (xy 55.88 52.07)
+			(xy 45.72 52.07) (xy 48.26 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2578,6 +2831,16 @@
 	)
 	(wire
 		(pts
+			(xy 256.54 95.25) (xy 261.62 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9318d853-6acf-41c9-b470-e79a4c63589a")
+	)
+	(wire
+		(pts
 			(xy 245.11 55.88) (xy 245.11 69.85)
 		)
 		(stroke
@@ -2585,6 +2848,26 @@
 			(type default)
 		)
 		(uuid "937f0e0b-4010-47b3-bb4e-6890c1393135")
+	)
+	(wire
+		(pts
+			(xy 181.61 129.54) (xy 166.37 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96020c7c-065b-436e-9ff2-eadc66bc6fbc")
+	)
+	(wire
+		(pts
+			(xy 181.61 132.08) (xy 181.61 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96579975-98f5-49a3-a980-beb8ae47d612")
 	)
 	(wire
 		(pts
@@ -2778,6 +3061,16 @@
 	)
 	(wire
 		(pts
+			(xy 245.11 95.25) (xy 248.92 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1fdb83f-5c84-42fe-87da-c2f17616ed92")
+	)
+	(wire
+		(pts
 			(xy 134.62 81.28) (xy 137.16 81.28)
 		)
 		(stroke
@@ -2868,13 +3161,23 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 52.07) (xy 36.83 52.07)
+			(xy 31.75 52.07) (xy 35.56 52.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ed3d70cc-3720-4f24-ac66-f1961e3bc8c1")
+	)
+	(wire
+		(pts
+			(xy 181.61 139.7) (xy 181.61 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edaf70b1-fd2a-41da-8288-fdf291f779ec")
 	)
 	(wire
 		(pts
@@ -2927,7 +3230,7 @@
 		(uuid "36139b08-70ab-471d-a14c-d93feeacd8bf")
 	)
 	(label "+5V_IN"
-		(at 34.29 52.07 0)
+		(at 33.02 52.07 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2989,7 +3292,7 @@
 	)
 	(hierarchical_label "OCXO_VCC"
 		(shape output)
-		(at 245.11 91.44 270)
+		(at 245.11 99.06 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3314,6 +3617,85 @@
 			(project "CLOCK_CORE"
 				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
 					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 261.62 95.25 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "12e9c617-a5e3-4896-a542-04fbc6f53a15")
+		(property "Reference" "#PWR0132"
+			(at 265.43 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 266.7 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 261.62 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 261.62 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 261.62 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "91067518-7104-498d-a647-997df85666b0")
+		)
+		(instances
+			(project "CLOCK_CORE"
+				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
+					(reference "#PWR0132")
 					(unit 1)
 				)
 			)
@@ -3993,7 +4375,7 @@
 	)
 	(symbol
 		(lib_id "JLCImport:BSMD1206C-1300T")
-		(at 41.91 52.07 0)
+		(at 40.64 52.07 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4004,7 +4386,7 @@
 		(fields_autoplaced yes)
 		(uuid "2efdec24-b587-4c69-b6d5-ce519c22c6c5")
 		(property "Reference" "F1"
-			(at 41.91 45.72 0)
+			(at 40.64 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4014,7 +4396,7 @@
 			)
 		)
 		(property "Value" "BSMD1206C-1300T"
-			(at 41.91 48.26 0)
+			(at 40.64 48.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4024,7 +4406,7 @@
 			)
 		)
 		(property "Footprint" "JLCImport:BSMD1206C-1300T"
-			(at 40.894 43.942 0)
+			(at 39.624 43.942 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4035,7 +4417,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2412171635_BHFUSE-BSMD1206C-1300T_C41367225.pdf"
-			(at 40.894 43.942 0)
+			(at 39.624 43.942 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4046,7 +4428,7 @@
 			)
 		)
 		(property "Description" "-55℃~+150℃ 1.52 1.6mm 3.2mm 3A 50A 72V Surface Mount Fuse 1206 Disposable fuses ROHS"
-			(at 40.894 43.942 0)
+			(at 39.624 43.942 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4057,7 +4439,7 @@
 			)
 		)
 		(property "LCSC" "C41367225"
-			(at 41.91 52.07 0)
+			(at 40.64 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4068,7 +4450,7 @@
 			)
 		)
 		(property "Manufacturer" "BHFUSE"
-			(at 41.91 52.07 0)
+			(at 40.64 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4079,7 +4461,7 @@
 			)
 		)
 		(property "Manufacturer Part" "BSMD1206C-1300T"
-			(at 42.418 45.974 0)
+			(at 41.148 45.974 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4419,6 +4801,96 @@
 			(project "CLOCK_CORE"
 				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 181.61 135.89 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "421d2081-abf2-41fc-9739-d2e8e3ad3c78")
+		(property "Reference" "D5"
+			(at 184.658 135.636 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 178.054 135.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 181.61 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 181.61 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 181.61 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8c693ff0-3476-44de-8ac0-193f0c3873a5")
+		)
+		(pin "2"
+			(uuid "b12a01b4-f386-41ec-a663-d020927db38c")
+		)
+		(instances
+			(project "CLOCK_CORE"
+				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -5916,6 +6388,85 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 181.61 142.24 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a7192c16-2a20-415d-93a5-55d3357c60ed")
+		(property "Reference" "#PWR0133"
+			(at 181.61 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 181.61 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 181.61 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 181.61 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0aa5b37d-a49e-466f-9d7d-ac5debe69946")
+		)
+		(instances
+			(project "CLOCK_CORE"
+				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
+					(reference "#PWR0133")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 104.14 143.51 0)
 		(unit 1)
 		(body_style 1)
@@ -6618,6 +7169,85 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 48.26 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bb07d5a7-1dd0-4040-a7bb-d195ee54288d")
+		(property "Reference" "#PWR0131"
+			(at 48.26 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 48.26 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.26 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 48.26 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3b94bbb3-4ced-49a4-8491-79bd9d85e675")
+		)
+		(instances
+			(project "CLOCK_CORE"
+				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
+					(reference "#PWR0131")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 168.91 63.5 0)
 		(unit 1)
 		(body_style 1)
@@ -7171,6 +7801,96 @@
 			(project "CLOCK_CORE"
 				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
 					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 252.73 95.25 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d78e007e-e4fe-4245-af81-ec6ee15d86a9")
+		(property "Reference" "D4"
+			(at 252.476 92.202 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 252.73 98.806 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 252.73 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 252.73 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 252.73 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 252.73 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6a8a4246-8476-4471-88a1-155c308a3e63")
+		)
+		(pin "2"
+			(uuid "a0481cc0-7ea3-41ae-83be-e58308487690")
+		)
+		(instances
+			(project "CLOCK_CORE"
+				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -7841,6 +8561,99 @@
 			(project "CLOCK_CORE"
 				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
 					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 48.26 64.77 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f40c1ce9-97ec-4796-ac30-1536f0b178e6")
+		(property "Reference" "D3"
+			(at 52.07 65.0874 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 52.07 67.6274 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 48.26 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 48.26 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 48.26 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "65c629bc-b464-4676-87e4-64d1fad8fbbc")
+		)
+		(pin "2"
+			(uuid "eb2a181d-1028-462d-ae09-2204beb3f519")
+		)
+		(instances
+			(project "CLOCK_CORE"
+				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
+					(reference "D3")
 					(unit 1)
 				)
 			)

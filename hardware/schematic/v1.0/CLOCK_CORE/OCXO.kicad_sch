@@ -2108,6 +2108,16 @@
 	)
 	(wire
 		(pts
+			(xy 115.57 53.34) (xy 119.38 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ede4ccc-212f-489a-8d42-4a9dcffb8343")
+	)
+	(wire
+		(pts
 			(xy 152.4 125.73) (xy 160.02 125.73)
 		)
 		(stroke
@@ -2228,13 +2238,13 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 53.34) (xy 119.38 53.34)
+			(xy 105.41 53.34) (xy 107.95 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "517e4b6f-89b6-4f8e-8cb6-a3edf00a7f10")
+		(uuid "56c485db-59ee-4371-bb4a-a2392de9227f")
 	)
 	(polyline
 		(pts
@@ -2298,6 +2308,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 66.04) (xy 114.3 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ed9c61b-e08f-40ea-a15d-62c3590e627d")
+	)
+	(wire
+		(pts
 			(xy 143.51 125.73) (xy 147.32 125.73)
 		)
 		(stroke
@@ -2355,6 +2375,16 @@
 			(type default)
 		)
 		(uuid "9d017262-279b-4c97-9c8c-c84f1a1ba9b8")
+	)
+	(wire
+		(pts
+			(xy 114.3 57.15) (xy 119.38 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d9d2326-6124-402c-8a2b-df3ffbb48ee5")
 	)
 	(wire
 		(pts
@@ -2638,16 +2668,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 57.15) (xy 119.38 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef1407d7-f4ab-41f0-b9a1-f6ea07d17b12")
-	)
-	(wire
-		(pts
 			(xy 140.97 125.73) (xy 143.51 125.73)
 		)
 		(stroke
@@ -2736,9 +2756,9 @@
 		)
 		(uuid "eb3f32ef-190b-4aba-bf51-da7e41f3eaa4")
 	)
-	(global_label "OCXO_OUT"
-		(shape output)
-		(at 116.84 57.15 180)
+	(global_label "OCXO_VCC"
+		(shape input)
+		(at 105.41 53.34 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2746,9 +2766,9 @@
 			)
 			(justify right)
 		)
-		(uuid "081713b2-23e1-48fe-8c70-d4c428c36be0")
+		(uuid "15aca641-17d8-453d-9ec3-8becced64fae")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 111.4962 57.15 0)
+			(at 92.6881 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2760,9 +2780,9 @@
 			)
 		)
 	)
-	(global_label "OCXO_VCC"
-		(shape input)
-		(at 116.84 53.34 180)
+	(global_label "OCXO_OUT"
+		(shape output)
+		(at 114.3 66.04 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2770,9 +2790,9 @@
 			)
 			(justify right)
 		)
-		(uuid "0e5ee421-1895-4c33-9825-ff65b2d40c7a")
+		(uuid "1c815e71-e0fb-4023-8654-a8cedbe169e2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 104.1181 53.34 0)
+			(at 114.3 78.7619 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3929,6 +3949,87 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 114.3 60.96 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "650c55ff-c6d7-4af3-8edd-a35bae8627ab")
+		(property "Reference" "R30"
+			(at 112.776 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0R"
+			(at 112.522 62.484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 116.078 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 114.3 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c26a5f8a-7a75-4f93-85e7-a9be9dc6515e")
+		)
+		(pin "1"
+			(uuid "770675bc-562b-42d0-aa02-3f76bb515d35")
+		)
+		(instances
+			(project "CLOCK_CORE"
+				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/645fcd89-025a-4233-88ed-d1f363faa68e"
+					(reference "R30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 215.9 50.8 180)
 		(unit 1)
 		(body_style 1)
@@ -4323,6 +4424,87 @@
 			(project "CLOCK_CORE"
 				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/645fcd89-025a-4233-88ed-d1f363faa68e"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 111.76 53.34 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "82889544-17b4-450e-8a33-5d9ec392b1d0")
+		(property "Reference" "R39"
+			(at 109.728 50.546 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0R"
+			(at 110.49 55.88 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 111.76 51.562 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 111.76 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "493c0e5f-9425-4248-aac1-bcce7ef8da5d")
+		)
+		(pin "1"
+			(uuid "2228a0f8-bd9c-4244-8638-8e5616c0abe8")
+		)
+		(instances
+			(project "CLOCK_CORE"
+				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/645fcd89-025a-4233-88ed-d1f363faa68e"
+					(reference "R39")
 					(unit 1)
 				)
 			)

@@ -1835,6 +1835,17 @@
 		)
 		(uuid "2e7dd3ff-d171-4c02-ac10-87fb75c4c353")
 	)
+	(text "OCXO 二选一"
+		(exclude_from_sim no)
+		(at 48.768 50.292 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9c9edcce-0bae-4b67-9be9-889be29ede22")
+	)
 	(text "OCXO 25.4x25.4mm"
 		(exclude_from_sim no)
 		(at 177.292 158.75 0)
@@ -4326,7 +4337,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "8ad0ab58-a693-4e05-a616-6b195b3fde91")
 		(property "Reference" "U1"

@@ -6796,7 +6796,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "b31f983d-b7ef-4a23-b2e3-008597513a73")
 		(property "Reference" "R20"
 			(at 249.936 83.566 90)

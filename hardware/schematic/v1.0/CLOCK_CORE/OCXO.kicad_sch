@@ -1837,7 +1837,7 @@
 	)
 	(text "OCXO 二选一"
 		(exclude_from_sim no)
-		(at 48.768 50.292 0)
+		(at 173.228 39.116 0)
 		(effects
 			(font
 				(size 1.27 1.27)

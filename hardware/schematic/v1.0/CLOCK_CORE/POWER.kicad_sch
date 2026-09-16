@@ -2461,6 +2461,16 @@
 	)
 	(wire
 		(pts
+			(xy 181.61 55.88) (xy 181.61 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3dbca61b-1adf-41fb-ad98-a6d184a13ceb")
+	)
+	(wire
+		(pts
 			(xy 106.68 55.88) (xy 106.68 58.42)
 		)
 		(stroke
@@ -2851,26 +2861,6 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 129.54) (xy 166.37 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96020c7c-065b-436e-9ff2-eadc66bc6fbc")
-	)
-	(wire
-		(pts
-			(xy 181.61 132.08) (xy 181.61 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96579975-98f5-49a3-a980-beb8ae47d612")
-	)
-	(wire
-		(pts
 			(xy 129.54 134.62) (xy 137.16 134.62)
 		)
 		(stroke
@@ -3171,7 +3161,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 139.7) (xy 181.61 142.24)
+			(xy 181.61 64.77) (xy 181.61 67.31)
 		)
 		(stroke
 			(width 0)
@@ -3188,6 +3178,16 @@
 			(type default)
 		)
 		(uuid "f5ab4814-5b2c-41f0-acd8-f7d413d69b45")
+	)
+	(wire
+		(pts
+			(xy 168.91 55.88) (xy 181.61 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5e774e1-bba3-4315-957b-afecf02367f8")
 	)
 	(wire
 		(pts
@@ -4807,96 +4807,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 181.61 135.89 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "421d2081-abf2-41fc-9739-d2e8e3ad3c78")
-		(property "Reference" "D5"
-			(at 184.658 135.636 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 178.054 135.89 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 181.61 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 181.61 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 181.61 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 181.61 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8c693ff0-3476-44de-8ac0-193f0c3873a5")
-		)
-		(pin "2"
-			(uuid "b12a01b4-f386-41ec-a663-d020927db38c")
-		)
-		(instances
-			(project "CLOCK_CORE"
-				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
-					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 157.48 134.62 0)
 		(unit 1)
@@ -5207,6 +5117,96 @@
 			(project "CLOCK_CORE"
 				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
 					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 181.61 60.96 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "63848ce1-eb34-4117-a0fc-908fc8ed57ca")
+		(property "Reference" "D5"
+			(at 184.912 61.214 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 184.404 57.404 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 181.61 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 181.61 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 181.61 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d1fe537b-8a5c-4774-af95-b1058c007ae8")
+		)
+		(pin "2"
+			(uuid "50d1327c-bcda-4b98-9640-9803419aa378")
+		)
+		(instances
+			(project "CLOCK_CORE"
+				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/6e31b722-7b29-4340-8cba-f8ca04169b2e"
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -6388,7 +6388,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 181.61 142.24 0)
+		(at 181.61 67.31 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6399,7 +6399,7 @@
 		(fields_autoplaced yes)
 		(uuid "a7192c16-2a20-415d-93a5-55d3357c60ed")
 		(property "Reference" "#PWR0133"
-			(at 181.61 146.05 0)
+			(at 181.61 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6410,7 +6410,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 181.61 147.32 0)
+			(at 181.61 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6421,7 +6421,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 181.61 142.24 0)
+			(at 181.61 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6432,7 +6432,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 181.61 142.24 0)
+			(at 181.61 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6443,7 +6443,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 181.61 142.24 0)
+			(at 181.61 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

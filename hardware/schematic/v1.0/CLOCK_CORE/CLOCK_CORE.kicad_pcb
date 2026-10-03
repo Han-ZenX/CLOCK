@@ -3520,15 +3520,16 @@
 		)
 	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
+		(locked yes)
 		(layer "F.Cu")
 		(uuid "1e550604-571e-4c61-a315-3832aaa21847")
-		(at 150.162501 108.6625 90)
+		(at 151.3 106.87 90)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C45"
 			(at 0.03 1.1 90)
 			(layer "F.SilkS")
-			(uuid "a562950d-71a4-4b55-8f64-3316732a3055")
+			(uuid "111780c0-35a3-4772-92ed-c265285f9404")
 			(effects
 				(font
 					(size 0.5 0.5)
@@ -3540,7 +3541,7 @@
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6e45e6b4-9199-4749-b71e-1b270b1a1e4c")
+			(uuid "d7c15033-28f3-4330-9ac9-df1b8c814a2e")
 			(effects
 				(font
 					(size 1 1)
@@ -3552,7 +3553,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6e3ca12f-c511-4dc8-801d-1bf2f4cdbd29")
+			(uuid "9ce9cdd6-604c-46e3-8405-9be2fe940c69")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3563,7 +3564,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "df90430b-f0ef-4400-b261-e49d0fc45801")
+			(uuid "f6ea6cfd-61da-4472-9ebe-739505003d9e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21311,7 +21312,7 @@
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "B.Cu")
 		(uuid "1907db17-2bf8-41d7-874f-ca9edc2457f5")
-		(at 139.617501 94.4 180)
+		(at 139.64 94.47 180)
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C41"
@@ -26049,12 +26050,30 @@
 		(uuid "151454a0-da52-462d-8092-31189d0b81e2")
 	)
 	(segment
+		(start 149.8375 106.2625)
+		(end 151.1725 106.2625)
+		(width 0.2)
+		(locked yes)
+		(layer "F.Cu")
+		(net "/LMK5B12204/PDN")
+		(uuid "03a6a25c-79ae-4c6e-b019-ac607787897a")
+	)
+	(segment
 		(start 126.918061 86.72)
 		(end 127.872748 87.674687)
 		(width 0.2)
 		(layer "F.Cu")
 		(net "/LMK5B12204/PDN")
 		(uuid "17eadaa8-4ceb-4f39-91d3-62bb7892e38c")
+	)
+	(segment
+		(start 151.1725 106.2625)
+		(end 151.3 106.39)
+		(width 0.2)
+		(locked yes)
+		(layer "F.Cu")
+		(net "/LMK5B12204/PDN")
+		(uuid "8b041640-aa71-4844-a3b1-de7f40ad216e")
 	)
 	(segment
 		(start 126.285 86.72)

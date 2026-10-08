@@ -11215,13 +11215,14 @@
 		)
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
+		(locked yes)
 		(layer "F.Cu")
 		(uuid "73512a28-d6fd-4c49-a059-58cda3521a54")
-		(at 148.212501 109.0625)
+		(at 149.12 108.74 180)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R24"
-			(at 1.857499 -0.0025 0)
+			(at 0 -0.94 0)
 			(layer "F.SilkS")
 			(uuid "4012ec19-2147-48a4-8740-f95f23f88a4e")
 			(effects
@@ -11290,16 +11291,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -0.153641 -0.38)
-			(end 0.153641 -0.38)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "5af56648-37fe-4c20-9bda-d9b6a207765f")
-		)
-		(fp_line
 			(start -0.153641 0.38)
 			(end 0.153641 0.38)
 			(stroke
@@ -11309,9 +11300,20 @@
 			(layer "F.SilkS")
 			(uuid "0af56f47-51ea-485a-8274-5d3482d714c0")
 		)
-		(fp_rect
-			(start -0.93 -0.47)
-			(end 0.93 0.47)
+		(fp_line
+			(start -0.153641 -0.38)
+			(end 0.153641 -0.38)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5af56648-37fe-4c20-9bda-d9b6a207765f")
+		)
+		(fp_poly
+			(pts
+				(xy -0.93 -0.47) (xy 0.93 -0.47) (xy 0.93 0.47) (xy -0.93 0.47)
+			)
 			(stroke
 				(width 0.05)
 				(type solid)
@@ -11320,9 +11322,10 @@
 			(layer "F.CrtYd")
 			(uuid "511420e9-ff17-44be-b707-29344e90a1e8")
 		)
-		(fp_rect
-			(start -0.525 -0.27)
-			(end 0.525 0.27)
+		(fp_poly
+			(pts
+				(xy -0.525 -0.27) (xy 0.525 -0.27) (xy 0.525 0.27) (xy -0.525 0.27)
+			)
 			(stroke
 				(width 0.1)
 				(type solid)
@@ -11343,7 +11346,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.51 0)
+			(at -0.509999 0 180)
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -11352,7 +11355,7 @@
 			(uuid "56a4d90c-a34a-4ac1-9c81-a8e241f711da")
 		)
 		(pad "2" smd roundrect
-			(at 0.51 0)
+			(at 0.509999 0 180)
 			(size 0.54 0.64)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -26125,6 +26128,22 @@
 		(uuid "de1a75e2-9409-4854-8d66-8752aef50171")
 	)
 	(segment
+		(start 147.65 106.95)
+		(end 147.65 107.779999)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/LMK5B12204/HW_SW_CTRL")
+		(uuid "5f2c9a5a-28f3-4f63-9a4d-943933b8aa7a")
+	)
+	(segment
+		(start 147.65 107.779999)
+		(end 148.610001 108.74)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/LMK5B12204/HW_SW_CTRL")
+		(uuid "b33cf285-c9fa-4d06-b262-85f00d4b695b")
+	)
+	(segment
 		(start 151.05 120.0625)
 		(end 151.05 123.1125)
 		(width 0.3)
@@ -26132,6 +26151,70 @@
 		(layer "F.Cu")
 		(net "/LMK5B12204/SYNCN")
 		(uuid "151454a0-da52-462d-8092-31189d0b81e2")
+	)
+	(segment
+		(start 152.5175 120.0625)
+		(end 152.52 120.06)
+		(width 0.3)
+		(layer "F.Cu")
+		(net "/LMK5B12204/SYNCN")
+		(uuid "255d26a5-1061-4f3a-b2f1-9569da7eb28f")
+	)
+	(segment
+		(start 151.05 120.0625)
+		(end 152.5175 120.0625)
+		(width 0.3)
+		(layer "F.Cu")
+		(net "/LMK5B12204/SYNCN")
+		(uuid "276d9093-22ed-402f-9fc6-21f0e0ff8d71")
+	)
+	(segment
+		(start 149.15 106.95)
+		(end 150.73 108.53)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/LMK5B12204/SYNCN")
+		(uuid "a0fa4424-99ee-4090-8296-3faf80c3088d")
+	)
+	(via
+		(at 152.52 120.06)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net "/LMK5B12204/SYNCN")
+		(uuid "340f963a-8572-4769-9108-e2cc021c29c2")
+	)
+	(via
+		(at 150.73 108.53)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net "/LMK5B12204/SYNCN")
+		(uuid "c03da22b-487e-4c4f-a16d-a6d427709341")
+	)
+	(segment
+		(start 150.73 108.53)
+		(end 150.73 115.69)
+		(width 0.3)
+		(layer "B.Cu")
+		(net "/LMK5B12204/SYNCN")
+		(uuid "23e567c4-7bc8-4180-9558-935afc31295f")
+	)
+	(segment
+		(start 152.52 117.48)
+		(end 152.52 120.06)
+		(width 0.3)
+		(layer "B.Cu")
+		(net "/LMK5B12204/SYNCN")
+		(uuid "7f8e4071-070a-4295-b35d-18263b5d7c06")
+	)
+	(segment
+		(start 150.73 115.69)
+		(end 152.52 117.48)
+		(width 0.3)
+		(layer "B.Cu")
+		(net "/LMK5B12204/SYNCN")
+		(uuid "d0b21626-62ef-4f56-85a7-6acff90b4b96")
 	)
 	(segment
 		(start 149.8375 106.2625)

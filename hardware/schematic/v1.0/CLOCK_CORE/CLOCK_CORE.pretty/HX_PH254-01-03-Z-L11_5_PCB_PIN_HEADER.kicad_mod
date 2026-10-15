@@ -1,0 +1,154 @@
+(footprint "HX_PH254-01-03-Z-L11_5_PCB_PIN_HEADER"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "-40℃~+105℃ 1 1kV 1x3P 2.54mm 2.5mm 3A 3P 3mm 6mm Brass Gold Pin Header Through Hole 插件,P=2.54mm Pin Headers ROHS")
+	(tags "C52016391 HDR-TH_3P-P2.54-V-M-1 HX PH254-01-03-Z-L11.5 pcb pin header hanxia")
+	(property "Reference" "REF**"
+		(at 0 -2.27 0)
+		(layer "F.SilkS")
+		(uuid "292e7e8d-cb10-444a-bbd2-8dd05ce3ecad")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "~"
+		(at 0 2.27 0)
+		(layer "F.Fab")
+		(uuid "d32e0f71-260e-4c87-bb06-4fc59ca01c68")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://item.szlcsc.com/50265.html"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "20795477-f9ac-4dbc-a12e-a03cf3187b00")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "-40℃~+105℃ 1 1kV 1x3P 2.54mm 2.5mm 3A 3P 3mm 6mm Brass Gold Pin Header Through Hole 插件,P=2.54mm Pin Headers ROHS"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0fa7fafb-fa0b-4ae6-ba5d-453ee8fd2768")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C52016391"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "554560e6-9564-4875-bc37-7f9cc5b0e55d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -3.81 -1.27)
+		(end -3.81 1.27)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "89ae91bf-f636-46c8-84dd-5e1849e72558")
+	)
+	(fp_line
+		(start -3.81 1.27)
+		(end 3.81 1.27)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d34d1194-1250-43e3-a38e-0c700c6f683e")
+	)
+	(fp_line
+		(start -1.905 -1.27)
+		(end -3.81 -1.27)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "db0d68ed-15b6-479d-b6bf-aa42707089c1")
+	)
+	(fp_line
+		(start 3.81 -1.27)
+		(end -1.905 -1.27)
+		(stroke
+			(width 0.203)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9c8be788-73df-4223-8896-83d7bf9e3f37")
+	)
+	(fp_line
+		(start 3.81 1.27)
+		(end 3.81 -1.27)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a38257dd-cf90-4c45-92f9-3aec0c9d1223")
+	)
+	(pad "1" thru_hole rect
+		(at -2.54 0)
+		(size 1.5748 1.6)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "aa14f3e2-593a-4253-83e0-c674aaaedc05")
+	)
+	(pad "2" thru_hole oval
+		(at 0 0)
+		(size 1.6 1.6)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a23ea089-d31c-49c3-9e38-6dae5dad08a8")
+	)
+	(pad "3" thru_hole oval
+		(at 2.54 0)
+		(size 1.6 1.6)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "8fc5327d-c8bd-4033-afd3-2c88c53ebd5f")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/CLOCK_CORE.3dshapes/HX_PH254-01-03-Z-L11_5_PCB_PIN_HEADER.wrl"
+		(offset
+			(xyz 2.54 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "CLOCK_CORE") (type "KiCad") (uri "${KIPRJMOD}/CLOCK_CORE.pretty") (options "") (descr ""))
+)

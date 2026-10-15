@@ -1,0 +1,344 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-15T12:57:53",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.4",
+    "schematic_parity": [],
+    "source": "CLOCK_CORE.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "走线 [VDDDIG] (F.Cu), 长度: 1.1625 mm",
+                    "pos": {
+                        "x": 142.462501,
+                        "y": 112.7
+                    },
+                    "uuid": "d07ad81d-fe78-4f66-88f2-ecbc135f5028"
+                },
+                {
+                    "description": "B.Cu 上 C51 的焊盘 2 [VDDDIG]",
+                    "pos": {
+                        "x": 144.28,
+                        "y": 109.08
+                    },
+                    "uuid": "89460414-4b09-42cf-a0bf-2bdb0fe596c8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "B.Cu 上 C51 的焊盘 2 [VDDDIG]",
+                    "pos": {
+                        "x": 144.28,
+                        "y": 109.08
+                    },
+                    "uuid": "89460414-4b09-42cf-a0bf-2bdb0fe596c8"
+                },
+                {
+                    "description": "F.Cu 上 U5 的焊盘 4 [VDDDIG]",
+                    "pos": {
+                        "x": 145.15,
+                        "y": 106.95
+                    },
+                    "uuid": "fccbf656-3b7e-4741-9624-b40369e4c6e8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "F.Cu 上 R23 的焊盘 2 [3.3V_OCXO]",
+                    "pos": {
+                        "x": 129.82,
+                        "y": 67.280002
+                    },
+                    "uuid": "87539e9d-c428-44fb-a535-ff37541732aa"
+                },
+                {
+                    "description": "填充区 '3.3V_OCXO' [3.3V_OCXO]在 F.Cu 上, 优先级 3",
+                    "pos": {
+                        "x": 131.610412,
+                        "y": 62.27
+                    },
+                    "uuid": "94897c9b-227a-451f-8180-97b31eabc26a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": [
+        {
+            "description": "Via is not connected or connected on only one layer",
+            "items": [
+                {
+                    "description": "过孔 [VDDDIG] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 142.462501,
+                        "y": 112.7
+                    },
+                    "uuid": "b0e42eb7-6ee3-4b84-a050-8e5e9057b3e5"
+                }
+            ],
+            "severity": "warning",
+            "type": "via_dangling"
+        },
+        {
+            "description": "封装 'VQFN-48-1EP_7x7mm_P0.5mm_EP5.15x5.15mm_ThermalVias' 与库 'Package_DFN_QFN' 中的副本不匹配",
+            "items": [
+                {
+                    "description": "封装 U5",
+                    "pos": {
+                        "x": 146.4,
+                        "y": 103.5125
+                    },
+                    "uuid": "042b359d-a165-4625-bb09-9d7a1b4ab471"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "封装 'LAIL-PHC2_54-2P-01-XH-L' 与库 'JLCImport' 中的副本不匹配",
+            "items": [
+                {
+                    "description": "封装 CN1",
+                    "pos": {
+                        "x": 114.5,
+                        "y": 82.150001
+                    },
+                    "uuid": "25acf0ae-9d93-4025-8f91-d42835cdc34c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "封装 'TAJB107M010RNJ' 与库 'JLCImport' 中的副本不匹配",
+            "items": [
+                {
+                    "description": "封装 C22",
+                    "pos": {
+                        "x": 128.45,
+                        "y": 75.060551
+                    },
+                    "uuid": "310c1954-9327-440f-844f-8835fb71d6a2"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "封装 'PinHeader_1x04_P2.54mm_Vertical' 与库 'Connector_PinHeader_2.54mm' 中的副本不匹配",
+            "items": [
+                {
+                    "description": "封装 J3",
+                    "pos": {
+                        "x": 178.2,
+                        "y": 80.96
+                    },
+                    "uuid": "c58f5b98-88cb-479a-be13-fd915e3b2512"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "items": [
+                {
+                    "description": "C28 的参考字段",
+                    "pos": {
+                        "x": 148.17,
+                        "y": 96.22
+                    },
+                    "uuid": "65741a63-e472-440f-add5-43750f0cc991"
+                },
+                {
+                    "description": "C30 的参考字段",
+                    "pos": {
+                        "x": 147.15,
+                        "y": 96.8
+                    },
+                    "uuid": "e02490ea-430b-405c-aea1-c71f771abd3d"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "U1 的 矩形, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 136.93,
+                        "y": 70.22
+                    },
+                    "uuid": "572af52b-cd89-4a37-aca0-6834ef61e7d3"
+                },
+                {
+                    "description": "U2 的PTH 焊盘 2 [GND]",
+                    "pos": {
+                        "x": 146.926873,
+                        "y": 90.52692
+                    },
+                    "uuid": "b111f7fc-9a63-40e2-806d-7dd1af01c179"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "U1 的 矩形, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 136.93,
+                        "y": 70.22
+                    },
+                    "uuid": "572af52b-cd89-4a37-aca0-6834ef61e7d3"
+                },
+                {
+                    "description": "U2 的PTH 焊盘 3 [VCTRL]",
+                    "pos": {
+                        "x": 156.447,
+                        "y": 90.52692
+                    },
+                    "uuid": "2f041d7c-86f0-4e29-9a28-5ea84d226936"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "U1 的 矩形, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 136.93,
+                        "y": 70.22
+                    },
+                    "uuid": "572af52b-cd89-4a37-aca0-6834ef61e7d3"
+                },
+                {
+                    "description": "U2 的PTH 焊盘 1 [OCXO_OUT]",
+                    "pos": {
+                        "x": 137.407,
+                        "y": 90.52692
+                    },
+                    "uuid": "8cadc80d-73a8-4404-a583-1df92e2ae16a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "U1 的 矩形, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 136.93,
+                        "y": 70.22
+                    },
+                    "uuid": "572af52b-cd89-4a37-aca0-6834ef61e7d3"
+                },
+                {
+                    "description": "U2 的PTH 焊盘 5 [OCXO_VCC]",
+                    "pos": {
+                        "x": 137.407,
+                        "y": 71.48708
+                    },
+                    "uuid": "ff7b9d8d-81c3-418d-a97a-50f5f1a33743"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "U1 的 矩形, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 136.93,
+                        "y": 70.22
+                    },
+                    "uuid": "572af52b-cd89-4a37-aca0-6834ef61e7d3"
+                },
+                {
+                    "description": "U2 的PTH 焊盘 4 [unconnected-(U2-VREF/NC-Pad4)]",
+                    "pos": {
+                        "x": 156.447,
+                        "y": 71.48708
+                    },
+                    "uuid": "bf598efd-5a86-42f1-8026-03fb33cc0e49"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "U1 的 圆形, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 137.93,
+                        "y": 89.499906
+                    },
+                    "uuid": "cd720f74-c997-491b-aa20-e2dff0721389"
+                },
+                {
+                    "description": "U2 的PTH 焊盘 1 [OCXO_OUT]",
+                    "pos": {
+                        "x": 137.407,
+                        "y": 90.52692
+                    },
+                    "uuid": "8cadc80d-73a8-4404-a583-1df92e2ae16a"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        }
+    ]
+}

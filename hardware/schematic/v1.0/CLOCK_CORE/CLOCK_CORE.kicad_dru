@@ -1,0 +1,14 @@
+(version 1)
+
+# U5 has 0.5 mm pitch and 0.25 mm pad-to-pad gaps.
+# Only clearance checks involving its pads use this local escape allowance.
+# REF_IN and LOOP retain their 0.30 mm netclass clearance elsewhere.
+(rule "U5 fine-pitch pad escape"
+  (condition "(A.Type == 'Pad' && A.memberOfFootprint('U5')) || (B.Type == 'Pad' && B.memberOfFootprint('U5'))")
+  (constraint clearance (min 0.20mm)))
+
+# U3/U4 pin-to-exposed-pad spacing is approximately 0.247 mm.
+# Keep the 0.25 mm power-net clearance outside each package.
+(rule "U3 U4 internal pad clearance"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && ((A.memberOfFootprint('U3') && B.memberOfFootprint('U3')) || (A.memberOfFootprint('U4') && B.memberOfFootprint('U4')))")
+  (constraint clearance (min 0.20mm)))

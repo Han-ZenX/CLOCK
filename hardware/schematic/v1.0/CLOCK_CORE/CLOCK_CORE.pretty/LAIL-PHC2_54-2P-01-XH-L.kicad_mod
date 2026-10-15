@@ -2,24 +2,27 @@
 	(version 20260206)
 	(generator "pcbnew")
 	(generator_version "10.0")
+	(locked yes)
 	(layer "F.Cu")
 	(descr "-25℃~+85℃ 1 1x2P 2 2.54mm 250V 2P 3A 5.8mm 7.1mm 7.5mm Brass PA66 Through Hole Tin UL94V-0 White XH Plugin,P=2.5mm Wire To Board Connector ROHS")
 	(tags "C54905973 CONN-TH_2P-P2.50_HC-XH-2A-G LAIL-PHC2.54-2P-01-XH-L LAILAN")
 	(property "Reference" "REF**"
-		(at 0 -4.5 0)
+		(at 0.049999 -4.5 180)
 		(layer "F.SilkS")
-		(uuid "895b5460-a826-4144-b941-9190f9703b1a")
+		(hide yes)
+		(uuid "acb82d36-d7a5-4143-b41e-f3a1eeb9f642")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.5 0.5)
+				(thickness 0.1)
 			)
 		)
 	)
-	(property "Value" "~"
-		(at 0 3.4 0)
+	(property "Value" "LAIL-PHC2_54-2P-01-XH-L"
+		(at 0 3.4 180)
 		(layer "F.Fab")
-		(uuid "84f1e5bd-72e9-4e38-a904-9ab94fb1f325")
+		(hide yes)
+		(uuid "18959e12-1487-4cec-9c74-de4379ccd970")
 		(effects
 			(font
 				(size 1 1)
@@ -28,10 +31,10 @@
 		)
 	)
 	(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20230105/4FFD2EFD3DA44AA828171A44400F3EDE.pdf"
-		(at 0 0 0)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "52bb9890-a43d-4d8b-b7d2-1051d78a20e0")
+		(uuid "cfabcde7-62fa-47f7-a8b2-99b308be524a")
 		(effects
 			(font
 				(size 1 1)
@@ -40,10 +43,10 @@
 		)
 	)
 	(property "Description" "-25℃~+85℃ 1 1x2P 2 2.54mm 250V 2P 3A 5.8mm 7.1mm 7.5mm Brass PA66 Through Hole Tin UL94V-0 White XH Plugin,P=2.5mm Wire To Board Connector ROHS"
-		(at 0 0 0)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "38176cdc-3516-415a-9103-eb1e8fa48c02")
+		(uuid "ffc76769-8681-4d5d-951d-cd82bd6e330b")
 		(effects
 			(font
 				(size 1 1)
@@ -52,10 +55,10 @@
 		)
 	)
 	(property "LCSC" "C54905973"
-		(at 0 0 0)
+		(at 0 0 180)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "1dea4dff-212c-4484-8570-513f2bf425b6")
+		(uuid "fd67989b-61f1-490a-bed1-47ecc9fe5477")
 		(effects
 			(font
 				(size 1 1)
@@ -63,6 +66,8 @@
 			)
 		)
 	)
+	(sheetname "/POWER/")
+	(sheetfile "POWER.kicad_sch")
 	(attr through_hole)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
@@ -73,7 +78,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "d88ee620-2e93-4b3e-a626-0941106f77fd")
+		(uuid "262c5543-0fc2-4a5d-996a-956f896074f4")
 	)
 	(fp_line
 		(start -3.75 0.981)
@@ -83,7 +88,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "356ae54f-14d6-46b7-8321-a3d39b2c0c87")
+		(uuid "eb570326-c453-432e-a51a-a7cca75cf7fb")
 	)
 	(fp_line
 		(start -3.75 1.721)
@@ -93,7 +98,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "b76850cd-a186-4c95-8799-fdef0a2eb5ee")
+		(uuid "35bfecc4-bffa-45bc-9611-acefc07c0a99")
 	)
 	(fp_line
 		(start -3.15 -2.9)
@@ -103,7 +108,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "fe4a97ea-f011-43c9-9541-7aca030ff771")
+		(uuid "423b1200-c855-4dfc-a114-0c8968f76484")
 	)
 	(fp_line
 		(start -3.15 0.981)
@@ -113,7 +118,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "30146927-67a1-44ab-a882-cefd2b0b27a7")
+		(uuid "0d295918-91cc-4996-90ec-fd20e19e03be")
 	)
 	(fp_line
 		(start -1.6 1.721)
@@ -123,7 +128,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "a572967c-365b-4787-8e2a-b9f6fbbc6c7c")
+		(uuid "efef5fba-c864-42fa-9aaf-1fda66629515")
 	)
 	(fp_line
 		(start 1.65 1.709852)
@@ -133,27 +138,37 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "c84f3ed4-69ff-42c3-9533-31322336dbbc")
+		(uuid "404df73e-efee-4024-8e84-c08e1128d2fd")
 	)
 	(fp_line
 		(start 3.1 -2.9)
-		(end 3.1 0.95)
+		(end 3.1 0.949999)
 		(stroke
 			(width 0.254)
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "06ef06ef-ca15-49e6-af69-3d4d3590023c")
+		(uuid "2b1cc358-dd04-4b28-ab7c-bfe970c9bc09")
 	)
 	(fp_line
-		(start 3.1 0.95)
+		(start 3.1 0.949999)
 		(end 3.75 0.95)
 		(stroke
 			(width 0.254)
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "55c611a5-708e-44e2-b9c9-5ca23fcdf7f4")
+		(uuid "1a96325f-5f5e-47ee-a2f2-eb880da04199")
+	)
+	(fp_line
+		(start 3.749999 1.709852)
+		(end 1.65 1.709852)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1dad6942-edf1-4475-afaf-fd7100c7fc7d")
 	)
 	(fp_line
 		(start 3.75 -3.5)
@@ -163,7 +178,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "8e16efe0-aaca-444f-9f57-b978d0cee25c")
+		(uuid "1069f185-dd24-46f9-b117-91987350bd01")
 	)
 	(fp_line
 		(start 3.75 -3.5)
@@ -173,17 +188,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "79287801-92a1-4a79-8ca4-420030c3d945")
-	)
-	(fp_line
-		(start 3.75 1.709852)
-		(end 1.65 1.709852)
-		(stroke
-			(width 0.254)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "580c2289-d36f-4846-a85e-daffa158b467")
+		(uuid "d0a2c407-2587-41ee-9fa9-06b08892ad25")
 	)
 	(fp_line
 		(start 3.75 2.4)
@@ -193,11 +198,11 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "56e59688-5c96-4e55-9b7b-5c4be288e0e1")
+		(uuid "4447830b-91a8-44c7-a6b5-1745493f10c6")
 	)
 	(fp_poly
 		(pts
-			(xy -3.7 1.85) (xy -1.7 1.85) (xy -1.7 2.3) (xy -3.7 2.3)
+			(xy -3.700001 1.85) (xy -1.7 1.85) (xy -1.7 2.3) (xy -3.7 2.300001)
 		)
 		(stroke
 			(width 0)
@@ -205,7 +210,7 @@
 		)
 		(fill yes)
 		(layer "F.Fab")
-		(uuid "77cd2031-748c-45fa-bff9-de95574ddd5f")
+		(uuid "ba137109-923e-4fa7-b0ed-75a58fefa14c")
 	)
 	(fp_poly
 		(pts
@@ -217,7 +222,7 @@
 		)
 		(fill yes)
 		(layer "F.Fab")
-		(uuid "dd030588-3238-42bd-98e5-98fae57cb1fa")
+		(uuid "21727ee0-2ca5-458a-8f9c-d670b5b57e51")
 	)
 	(fp_poly
 		(pts
@@ -230,23 +235,23 @@
 		)
 		(fill yes)
 		(layer "F.Fab")
-		(uuid "c0ade80e-0580-4342-8cf7-44606966e954")
+		(uuid "95dc57af-0a8b-4dc0-a751-c6a09b0214e9")
 	)
 	(pad "1" thru_hole rect
-		(at -1.25 0)
+		(at -1.249999 0)
 		(size 1.524 1.5)
 		(drill 0.9)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "f17aa51c-1478-4e69-8ea1-0442dd89492e")
+		(uuid "759261d2-95a8-4542-801a-09fb13a84d12")
 	)
 	(pad "2" thru_hole oval
-		(at 1.25 0)
+		(at 1.249999 0)
 		(size 1.5 1.5)
 		(drill 0.9)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "19ddac32-3485-4b22-bb2f-e12c36a3317f")
+		(uuid "8d0e53d5-1e41-4278-8c48-689339dda8aa")
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/CLOCK_CORE.3dshapes/LAIL-PHC2_54-2P-01-XH-L.wrl"

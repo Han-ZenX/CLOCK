@@ -1,0 +1,38 @@
+[
+  {
+    "Path": "G:\\C++\\CLOCK-master\\hardware\\schematic\\v1.0\\CLOCK_CORE\\CLOCK_CORE.kicad_dru",
+    "Hash": "14D17879EAC739C07C820242F0FC5B71ABEF1CC79B31E01C137F6FBCFC2E16F9"
+  },
+  {
+    "Path": "G:\\C++\\CLOCK-master\\hardware\\schematic\\v1.0\\CLOCK_CORE\\CLOCK_CORE.kicad_pcb",
+    "Hash": "6206BAC4AB46FA59EEC5F0103170F87232220D967CB4524975965D9D6E21768A"
+  },
+  {
+    "Path": "G:\\C++\\CLOCK-master\\hardware\\schematic\\v1.0\\CLOCK_CORE\\CLOCK_CORE.kicad_pro",
+    "Hash": "0F5EBA5C21C1CEF58FB0755E626B8564C66017F895CEB428E17FDEF46F866771"
+  },
+  {
+    "Path": "G:\\C++\\CLOCK-master\\hardware\\schematic\\v1.0\\CLOCK_CORE\\CLOCK_CORE.kicad_sch",
+    "Hash": "0BC82A791435167AC11B0F89E54E9D98393007D0AEF51A39057D15A58F6CED65"
+  },
+  {
+    "Path": "G:\\C++\\CLOCK-master\\hardware\\schematic\\v1.0\\CLOCK_CORE\\DEBUG.kicad_sch",
+    "Hash": "AB93AD46C2345ECE00CED77652E2ED9EE66370154CC37DC4D1AB4BF0A2905406"
+  },
+  {
+    "Path": "G:\\C++\\CLOCK-master\\hardware\\schematic\\v1.0\\CLOCK_CORE\\LMK5B12204.kicad_sch",
+    "Hash": "3CCD17CD8A477995EF43476121BBC0CB60AFCDB73D55990CDC6BF7738D591B0C"
+  },
+  {
+    "Path": "G:\\C++\\CLOCK-master\\hardware\\schematic\\v1.0\\CLOCK_CORE\\OCXO.kicad_sch",
+    "Hash": "56FB0E5F610242D0C06698BA663E4BD45D015DDAEBF4B72B5C3BD72E0C8EE348"
+  },
+  {
+    "Path": "G:\\C++\\CLOCK-master\\hardware\\schematic\\v1.0\\CLOCK_CORE\\POWER.kicad_sch",
+    "Hash": "0F4524E3E82B880F9FCBC7BD4CBF0C850D24EDD184BBD3CA5096F113BF75C6C0"
+  },
+  {
+    "Path": "G:\\C++\\CLOCK-master\\hardware\\schematic\\v1.0\\CLOCK_CORE\\SIGNAL.kicad_sch",
+    "Hash": "2EBCEEDF7EC92FF14DA5B40CAE31D18DD421FAD11C749C9037A37483DACBE7DB"
+  }
+]

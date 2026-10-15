@@ -4063,7 +4063,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "53506515-98f5-4b31-8a18-45d1354b9049")
 		(property "Reference" "R9"
 			(at 240.284 53.594 0)
@@ -4076,7 +4076,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DNP"
+		(property "Value" "100"
 			(at 240.792 51.054 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4225,7 +4225,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "5ce5bf77-d65e-412f-b754-400f82050756")
 		(property "Reference" "R12"
 			(at 240.284 127.254 0)
@@ -4238,7 +4238,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DNP"
+		(property "Value" "100"
 			(at 240.792 124.714 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4983,7 +4983,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "7387b550-39fe-40b7-91c7-decef807f6c0")
 		(property "Reference" "R3"
 			(at 100.584 52.324 0)
@@ -4996,7 +4996,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DNP"
+		(property "Value" "100"
 			(at 101.092 49.784 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7799,7 +7799,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "e78b3a3b-0683-4315-a188-48a3c0548aeb")
 		(property "Reference" "R6"
 			(at 100.584 127.254 0)
@@ -7812,7 +7812,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "DNP"
+		(property "Value" "100"
 			(at 101.092 124.714 0)
 			(show_name no)
 			(do_not_autoplace no)

@@ -2986,7 +2986,7 @@
 				)
 			)
 		)
-		(property "Value" "DNP"
+		(property "Value" "0"
 			(at 0 1.65 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3042,7 +3042,7 @@
 				(pins "1" "2")
 			)
 		)
-		(attr smd)
+		(attr smd dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.227064 0.735)
@@ -5300,7 +5300,7 @@
 				(pins "1" "2" "3" "5" "4")
 			)
 		)
-		(attr smd)
+		(attr smd dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_rect
 			(start -10 -7.25)

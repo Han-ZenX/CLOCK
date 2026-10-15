@@ -6808,7 +6808,7 @@
 				)
 			)
 		)
-		(property "Value" "DNP"
+		(property "Value" "0"
 			(at 255.016 83.566 90)
 			(show_name no)
 			(do_not_autoplace no)

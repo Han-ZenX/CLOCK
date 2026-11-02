@@ -2188,12 +2188,6 @@
 		(uuid "6770ccc9-159f-4e3f-bcdf-f3cf0d13698d")
 	)
 	(junction
-		(at 135.89 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "68b05031-b96d-4b98-a643-94808cf4fe5a")
-	)
-	(junction
 		(at 97.79 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2222,6 +2216,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7eea9ebe-ba58-4466-ae8b-21fa861ee90c")
+	)
+	(junction
+		(at 135.89 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "801c7e20-e092-44db-9837-12a8be06b098")
 	)
 	(junction
 		(at 129.54 151.13)
@@ -3065,6 +3065,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 125.73) (xy 135.89 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ef11f18-5599-470c-97dc-0013a58fc405")
+	)
+	(wire
+		(pts
 			(xy 189.23 118.11) (xy 185.42 118.11)
 		)
 		(stroke
@@ -3312,16 +3322,6 @@
 			(type default)
 		)
 		(uuid "86f05c22-241c-44ad-8f4d-5dab236e9aa4")
-	)
-	(wire
-		(pts
-			(xy 135.89 125.73) (xy 135.89 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89410717-fa99-454f-a2d0-f0fe05d42d2d")
 	)
 	(wire
 		(pts
@@ -3832,6 +3832,16 @@
 			(type default)
 		)
 		(uuid "eb372312-8cd9-47d9-af3a-fbf4a9abc9f3")
+	)
+	(wire
+		(pts
+			(xy 135.89 134.62) (xy 135.89 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb3ef9aa-2911-4abb-be6b-390d0b213cf9")
 	)
 	(wire
 		(pts
@@ -5275,14 +5285,14 @@
 	)
 	(hierarchical_label "PDN"
 		(shape input)
-		(at 135.89 129.54 270)
+		(at 135.89 135.89 270)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "24d9ec3e-8431-4abc-82c7-c5e92e56239d")
+		(uuid "250cd8e7-adaf-4c6d-a2e1-c293df6e3697")
 	)
 	(hierarchical_label "OUT1_N"
 		(shape output)
@@ -6722,7 +6732,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2d96c2d0-c328-4ded-b5f7-e49cec3c72df")
-		(property "Reference" "R46"
+		(property "Reference" "R52"
 			(at 116.586 70.612 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6830,7 +6840,7 @@
 		(instances
 			(project "CLOCK_CORE"
 				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/a1122762-ddd2-4d47-8370-0968bbc1155e"
-					(reference "R46")
+					(reference "R52")
 					(unit 1)
 				)
 			)
@@ -13089,6 +13099,131 @@
 		)
 	)
 	(symbol
+		(lib_id "CLOCK_CORE:R")
+		(at 135.89 130.81 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b2785c43-757a-4319-837c-0cac3b653fbb")
+		(property "Reference" "R53"
+			(at 134.366 129.286 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 133.858 132.842 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "CLOCK_CORE:R_0402_1005Metric"
+			(at 137.668 130.81 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C17168.pdf"
+			(at 135.89 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "0 ohm; +/-1%; 62.5mW; 0402"
+			(at 135.89 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C17168"
+			(at 135.89 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL"
+			(at 135.89 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "0402WGF0000TCE"
+			(at 135.89 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC URL" "https://www.lcsc.com/product-detail/C17168.html"
+			(at 135.89 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "c22f02e0-9633-4d40-bba2-e45265f4b07a")
+		)
+		(pin "1"
+			(uuid "bb4af3bd-8eef-485c-ab1f-d6cef9aaf0d4")
+		)
+		(instances
+			(project "CLOCK_CORE"
+				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/a1122762-ddd2-4d47-8370-0968bbc1155e"
+					(reference "R53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "CLOCK_CORE:+3.3V")
 		(at 30.48 106.68 0)
 		(unit 1)
@@ -13777,7 +13912,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d13ed162-ebdd-4ec4-b1de-6332a6c70435")
-		(property "Reference" "R45"
+		(property "Reference" "R51"
 			(at 107.696 70.612 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13885,7 +14020,7 @@
 		(instances
 			(project "CLOCK_CORE"
 				(path "/a25f2a35-4889-4be5-9b80-12803bbbfe96/a1122762-ddd2-4d47-8370-0968bbc1155e"
-					(reference "R45")
+					(reference "R51")
 					(unit 1)
 				)
 			)

@@ -6765,7 +6765,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C17168.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C4125.pdf"
 			(at 118.11 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -6776,7 +6776,7 @@
 				)
 			)
 		)
-		(property "Description" "0 ohm; +/-1%; 62.5mW; 0402"
+		(property "Description" "499 ohm; +/-1%; 62.5mW; 50V; +/-100ppm/C; 0402"
 			(at 118.11 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -6787,7 +6787,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C4125"
 			(at 118.11 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -6809,7 +6809,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "0402WGF0000TCE"
+		(property "Manufacturer Part" "0402WGF4990TCE"
 			(at 118.11 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -6820,7 +6820,7 @@
 				)
 			)
 		)
-		(property "LCSC URL" "https://www.lcsc.com/product-detail/C17168.html"
+		(property "LCSC URL" "https://item.szlcsc.com/4532.html"
 			(at 118.11 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -13945,7 +13945,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C17168.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C4125.pdf"
 			(at 109.22 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -13956,7 +13956,7 @@
 				)
 			)
 		)
-		(property "Description" "0 ohm; +/-1%; 62.5mW; 0402"
+		(property "Description" "499 ohm; +/-1%; 62.5mW; 50V; +/-100ppm/C; 0402"
 			(at 109.22 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -13967,7 +13967,7 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C4125"
 			(at 109.22 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -13989,7 +13989,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "0402WGF0000TCE"
+		(property "Manufacturer Part" "0402WGF4990TCE"
 			(at 109.22 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -14000,7 +14000,7 @@
 				)
 			)
 		)
-		(property "LCSC URL" "https://www.lcsc.com/product-detail/C17168.html"
+		(property "LCSC URL" "https://item.szlcsc.com/4532.html"
 			(at 109.22 72.39 0)
 			(hide yes)
 			(show_name no)

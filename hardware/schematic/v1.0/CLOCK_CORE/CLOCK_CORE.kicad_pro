@@ -210,7 +210,8 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.36
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -532,12 +533,12 @@
       {
         "clearance": 0.2,
         "diff_pair_gap": 0.2,
-        "diff_pair_width": 0.118,
+        "diff_pair_width": 0.2266,
         "name": "CLK_OUT",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.15,
+        "track_width": 0.36,
         "tuning_profile": ""
       },
       {
@@ -582,7 +583,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.15,
+        "track_width": 0.36,
         "tuning_profile": ""
       }
     ],

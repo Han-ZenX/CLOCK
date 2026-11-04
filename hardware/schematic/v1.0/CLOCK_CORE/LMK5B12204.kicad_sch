@@ -7147,7 +7147,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C3611975"
+		(property "LCSC" "C5215076"
 			(at 124.46 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -7169,7 +7169,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "LMK5B12204RGZR"
+		(property "Manufacturer Part" "LMK5B12204RGZT"
 			(at 124.46 67.31 0)
 			(hide yes)
 			(show_name no)
